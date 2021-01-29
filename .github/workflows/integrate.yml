@@ -1,0 +1,27 @@
+name: Integrate
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - "*"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14]
+    name: Build
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - uses: actions/cache@v1
+        with:
+          path: .cache/yarn
+          key: yarn-${{ hashFiles('yarn.lock') }}
+      - run: yarn install --frozen-lockfile --ignore-platform --cache-folder .cache/yarn
+      - run: yarn build
+      - run: yarn test
