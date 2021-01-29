@@ -1,0 +1,8 @@
+node_modules
+
+**/*.log
+**/*.tsbuildinfo
+
+**/*.js
+**/*.d.ts
+**/*.map
