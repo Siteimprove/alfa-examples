@@ -7,8 +7,8 @@
   },
   "devDependencies": {
     "@siteimprove/alfa-assert": "^0.10.0",
-    "@siteimprove/alfa-future": "^0.10.0",
     "@siteimprove/alfa-chai": "^0.10.0",
+    "@siteimprove/alfa-future": "^0.10.0",
     "@siteimprove/alfa-puppeteer": "^0.10.0",
     "@siteimprove/alfa-rules": "^0.10.0",
     "@types/chai": "^4.2.3",
