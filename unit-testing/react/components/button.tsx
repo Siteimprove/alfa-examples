@@ -1,7 +1,5 @@
-import * as React from "react";
+import { FunctionComponent } from "react";
 
-export class Button extends React.Component {
-  public render() {
-    return <button className="btn">{this.props.children}</button>;
-  }
-}
+export const Button: FunctionComponent = ({ children }) => (
+  <button className="btn">{children}</button>
+);

@@ -5,7 +5,7 @@ import * as alfa from "@siteimprove/alfa-jest";
 import rules from "@siteimprove/alfa-rules";
 
 import * as enzyme from "enzyme";
-import * as Adapter from "enzyme-adapter-react-16";
+import Adapter from "enzyme-adapter-react-16";
 
 enzyme.configure({ adapter: new Adapter() });
 

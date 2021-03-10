@@ -7,7 +7,7 @@ let fixture: ComponentFixture<ButtonComponent>;
 
 beforeEach(async () => {
   await TestBed.configureTestingModule({
-    declarations: [ButtonComponent]
+    declarations: [ButtonComponent],
   }).compileComponents();
 });
 
@@ -16,6 +16,6 @@ beforeEach(() => {
   fixture.detectChanges();
 });
 
-it("should be accessible", () => {
-  expect(fixture).toBeAccessible();
+it("should be accessible", async () => {
+  await expect(fixture).toBeAccessible();
 });
