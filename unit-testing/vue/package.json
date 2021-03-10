@@ -17,8 +17,8 @@
     ]
   },
   "dependencies": {
-    "vue": "^2.6.10",
-    "vue-template-compiler": "^2.6.10"
+    "vue": "^2.6.12",
+    "vue-template-compiler": "^2.6.12"
   },
   "devDependencies": {
     "@siteimprove/alfa-assert": "^0.14.1",
@@ -27,6 +27,6 @@
     "@siteimprove/alfa-vue": "^0.14.1",
     "@types/jest": "^25.2.3",
     "@vue/test-utils": "^1.0.0-beta.29",
-    "jest": "^24.8.0"
+    "jest": "^26.6.3"
   }
 }

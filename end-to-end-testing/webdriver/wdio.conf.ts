@@ -1,12 +1,15 @@
-import { Config } from "webdriverio";
-
-export const config: Config = {
+export const config: WebdriverIO.Config = {
   runner: "local",
   path: "/",
   specs: ["./test/**/*.spec.js"],
   capabilities: [{ browserName: "chrome" }],
   logLevel: "info",
+  baseUrl: "http://localhost",
+  waitforTimeout: 10000,
+  connectionRetryTimeout: 90000,
+  connectionRetryCount: 3,
   services: ["chromedriver"],
   framework: "mocha",
-  reporters: ["spec"]
+  reporters: ["spec"],
+  outputDir: __dirname,
 };

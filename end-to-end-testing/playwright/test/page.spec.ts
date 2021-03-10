@@ -1,18 +1,19 @@
+/// <reference types="node" />
 /// <reference types="mocha" />
 
 import * as chai from "chai";
-import * as puppeteer from "puppeteer";
+import * as playwright from "playwright";
 
 import { Handler } from "@siteimprove/alfa-assert";
 import { Future } from "@siteimprove/alfa-future";
-import { Puppeteer } from "@siteimprove/alfa-puppeteer";
+import { Playwright } from "@siteimprove/alfa-playwright";
 
 import * as alfa from "@siteimprove/alfa-chai";
 import rules from "@siteimprove/alfa-rules";
 
 chai.use(
   alfa.Chai.createPlugin(
-    (value: Puppeteer.Type) => Future.from(Puppeteer.toPage(value)),
+    (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
     rules,
     [Handler.persist(() => "test/outcomes/page.spec.json")]
   )
@@ -21,11 +22,11 @@ chai.use(
 const { expect } = chai;
 
 describe("page.html", () => {
-  let browser: puppeteer.Browser;
-  let page: puppeteer.Page;
+  let browser: playwright.Browser;
+  let page: playwright.Page;
 
   before(async () => {
-    browser = await puppeteer.launch();
+    browser = await playwright.chromium.launch();
     page = await browser.newPage();
 
     await page.goto(`file://${require.resolve("./fixtures/page.html")}`);

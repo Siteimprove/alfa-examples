@@ -2,7 +2,7 @@
   "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "types": ["mocha", "webdriverio/async"]
+    "types": ["mocha"]
   },
-  "files": ["test/page.spec.ts", "wdio.conf.ts"]
+  "files": ["test/page.spec.ts"]
 }
