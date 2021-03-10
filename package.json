@@ -5,9 +5,9 @@
     "build": "tsc --build"
   },
   "workspaces": [
-    "custom-testing/**/*",
-    "end-to-end-testing/**/*",
-    "unit-testing/**/*"
+    "custom-testing/*",
+    "end-to-end-testing/*",
+    "unit-testing/*"
   ],
   "devDependencies": {
     "@types/node": "^14.14.22",
