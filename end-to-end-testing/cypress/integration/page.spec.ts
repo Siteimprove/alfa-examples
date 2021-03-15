@@ -2,5 +2,5 @@
 
 it("should be accessible", () => {
   cy.visit("/fixtures/page.html");
-  cy.document().audit();
+  cy.document().should("be.accessible");
 });
