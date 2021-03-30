@@ -3,18 +3,19 @@
 import * as chai from "chai";
 import * as puppeteer from "puppeteer";
 
-import { Handler } from "@siteimprove/alfa-assert";
 import { Future } from "@siteimprove/alfa-future";
 import { Puppeteer } from "@siteimprove/alfa-puppeteer";
 
 import * as alfa from "@siteimprove/alfa-chai";
 import rules from "@siteimprove/alfa-rules";
 
+import { persist } from "../../../common/persist";
+
 chai.use(
   alfa.Chai.createPlugin(
     (value: Puppeteer.Type) => Future.from(Puppeteer.toPage(value)),
     rules,
-    [Handler.persist(() => "test/outcomes/page.spec.json")]
+    [persist(() => "test/outcomes/page.spec.json")]
   )
 );
 

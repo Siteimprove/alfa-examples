@@ -4,5 +4,10 @@
   "compilerOptions": {
     "types": ["mocha", "webdriverio/async"]
   },
-  "files": ["test/page.spec.ts", "wdio.conf.ts"]
+  "files": ["test/page.spec.ts", "wdio.conf.ts"],
+  "references": [
+    {
+      "path": "../../common"
+    }
+  ]
 }

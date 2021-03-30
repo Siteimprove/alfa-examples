@@ -6,5 +6,10 @@
     "types": ["jest"],
     "jsx": "react-jsx"
   },
-  "files": ["components/button.spec.tsx", "components/button.tsx", "setup.ts"]
+  "files": ["components/button.spec.tsx", "components/button.tsx", "setup.ts"],
+  "references": [
+    {
+      "path": "../../common"
+    }
+  ]
 }

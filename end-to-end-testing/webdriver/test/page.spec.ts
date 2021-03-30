@@ -1,17 +1,18 @@
 import * as chai from "chai";
 
-import { Handler } from "@siteimprove/alfa-assert";
 import { Future } from "@siteimprove/alfa-future";
 import { WebElement } from "@siteimprove/alfa-webdriver";
 
 import * as alfa from "@siteimprove/alfa-chai";
 import rules from "@siteimprove/alfa-rules";
 
+import { persist } from "../../../common/persist";
+
 chai.use(
   alfa.Chai.createPlugin(
     (value: WebElement) => Future.from(WebElement.toPage(value, browser)),
     rules,
-    [Handler.persist(() => "test/outcomes/page.spec.json")]
+    [persist(() => "test/outcomes/page.spec.json")]
   )
 );
 

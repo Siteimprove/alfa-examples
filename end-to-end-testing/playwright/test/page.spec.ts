@@ -4,18 +4,19 @@
 import * as chai from "chai";
 import * as playwright from "playwright";
 
-import { Handler } from "@siteimprove/alfa-assert";
 import { Future } from "@siteimprove/alfa-future";
 import { Playwright } from "@siteimprove/alfa-playwright";
 
 import * as alfa from "@siteimprove/alfa-chai";
 import rules from "@siteimprove/alfa-rules";
 
+import { persist } from "../../../common/persist";
+
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
     rules,
-    [Handler.persist(() => "test/outcomes/page.spec.json")]
+    [persist(() => "test/outcomes/page.spec.json")]
   )
 );
 

@@ -6,11 +6,11 @@
     "test": "mocha"
   },
   "devDependencies": {
-    "@siteimprove/alfa-assert": "^0.15.2",
-    "@siteimprove/alfa-chai": "^0.15.2",
-    "@siteimprove/alfa-future": "^0.15.2",
-    "@siteimprove/alfa-puppeteer": "^0.15.2",
-    "@siteimprove/alfa-rules": "^0.15.2",
+    "@siteimprove/alfa-assert": "^0.16.0",
+    "@siteimprove/alfa-chai": "^0.16.0",
+    "@siteimprove/alfa-future": "^0.16.0",
+    "@siteimprove/alfa-puppeteer": "^0.16.0",
+    "@siteimprove/alfa-rules": "^0.16.0",
     "@types/chai": "^4.2.3",
     "@types/mocha": "^5.2.7",
     "chai": "^4.3.3",

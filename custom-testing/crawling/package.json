@@ -6,9 +6,9 @@
     "test": "node test.js"
   },
   "devDependencies": {
-    "@siteimprove/alfa-act": "^0.15.2",
-    "@siteimprove/alfa-crawler": "^0.15.2",
-    "@siteimprove/alfa-frontier": "^0.15.2",
-    "@siteimprove/alfa-rules": "^0.15.2"
+    "@siteimprove/alfa-act": "^0.16.0",
+    "@siteimprove/alfa-crawler": "^0.16.0",
+    "@siteimprove/alfa-frontier": "^0.16.0",
+    "@siteimprove/alfa-rules": "^0.16.0"
   }
 }

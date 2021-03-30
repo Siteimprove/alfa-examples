@@ -4,5 +4,10 @@
   "compilerOptions": {
     "types": ["mocha"]
   },
-  "files": ["test/page.spec.ts"]
+  "files": ["test/page.spec.ts"],
+  "references": [
+    {
+      "path": "../../common"
+    }
+  ]
 }

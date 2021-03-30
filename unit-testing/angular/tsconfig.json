@@ -5,5 +5,10 @@
     "experimentalDecorators": true,
     "types": ["jest"]
   },
-  "files": ["components/button.spec.ts", "components/button.ts", "setup.ts"]
+  "files": ["components/button.spec.ts", "components/button.ts", "setup.ts"],
+  "references": [
+    {
+      "path": "../../common"
+    }
+  ]
 }
