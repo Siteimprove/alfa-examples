@@ -10,10 +10,10 @@ import { Mapper } from "@siteimprove/alfa-mapper";
 
 import earl from "@siteimprove/alfa-formatter-earl";
 
-export function persist<I, T, Q>(
+export function persist<I, T, Q, S>(
   output: Mapper<I, string>,
-  format: Formatter<I, T, Q> = earl()
-): Handler<I, T, Q> {
+  format: Formatter<I, T, Q, S> = earl()
+): Handler<I, T, Q, S> {
   return (input, rules, outcomes, message) =>
     Future.from(async () => {
       const file = path.relative(process.cwd(), output(input));
