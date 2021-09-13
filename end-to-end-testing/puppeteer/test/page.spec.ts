@@ -24,12 +24,15 @@ const { expect } = chai;
 describe("page.html", () => {
   let browser: puppeteer.Browser;
   let page: puppeteer.Page;
+  let document: puppeteer.JSHandle;
 
   before(async () => {
     browser = await puppeteer.launch();
     page = await browser.newPage();
 
     await page.goto(`file://${require.resolve("./fixtures/page.html")}`);
+
+    document = await page.evaluateHandle(() => window.document);
   });
 
   after(async () => {
@@ -37,6 +40,6 @@ describe("page.html", () => {
   });
 
   it("should be accessible", async () => {
-    await expect(await page.$("html")).to.be.accessible();
+    await expect(document).to.be.accessible();
   });
 });

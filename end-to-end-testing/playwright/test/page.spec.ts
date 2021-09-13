@@ -25,12 +25,15 @@ const { expect } = chai;
 describe("page.html", () => {
   let browser: playwright.Browser;
   let page: playwright.Page;
+  let document: playwright.JSHandle;
 
   before(async () => {
     browser = await playwright.chromium.launch();
     page = await browser.newPage();
 
     await page.goto(`file://${require.resolve("./fixtures/page.html")}`);
+
+    document = await page.evaluateHandle(() => window.document);
   });
 
   after(async () => {
@@ -38,6 +41,6 @@ describe("page.html", () => {
   });
 
   it("should be accessible", async () => {
-    await expect(await page.$("html")).to.be.accessible();
+    await expect(document).to.be.accessible();
   });
 });
