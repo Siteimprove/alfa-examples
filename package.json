@@ -1,8 +1,11 @@
 {
   "$schema": "http://json.schemastore.org/package",
   "private": true,
+  "name": "@siteimprove/alfa-examples",
   "scripts": {
-    "build": "tsc --build"
+    "build": "tsc --build",
+    "watch": "tsc --build --watch",
+    "clean": "tsc --build --clean"
   },
   "workspaces": [
     "custom-testing/*",

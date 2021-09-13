@@ -1514,6 +1514,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-examples@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@siteimprove/alfa-examples@workspace:."
+  dependencies:
+    "@types/node": ^14.14.22
+    prettier: ^2.2.1
+    typescript: ^4.3.5
+  languageName: unknown
+  linkType: soft
+
 "@siteimprove/alfa-fnv@npm:^0.21.2":
   version: 0.21.2
   resolution: "@siteimprove/alfa-fnv@npm:0.21.2::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40siteimprove%2Falfa-fnv%2F0.21.2%2F69200f9792bcce3268e11d6865ce72e99ec3210a0cebec5f1c86c39e95917598"
@@ -10633,16 +10643,6 @@ __metadata:
   checksum: 87f4164e396f0171b0a3386cc1877a817f572148ee13a7e113b238e48e8a9f2f31d009a92ec38a591ff1567d9662c6b67fd8818a2dbbaed74bc26a87a2a4a9a0
   languageName: node
   linkType: hard
-
-"root-workspace-0b6124@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
-  dependencies:
-    "@types/node": ^14.14.22
-    prettier: ^2.2.1
-    typescript: ^4.3.5
-  languageName: unknown
-  linkType: soft
 
 "rst-selector-parser@npm:^2.2.3":
   version: 2.2.3
