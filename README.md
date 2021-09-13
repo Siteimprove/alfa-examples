@@ -32,4 +32,8 @@ To start a watcher to build the project as files are changed, do:
 yarn watch
 ```
 
+## License
+
+Copyright &copy; [Siteimprove A/S](https://siteimprove.com/). Released under the terms of the [MIT license](LICENSE.md).
+
 [alfa]: https://github.com/Siteimprove/alfa
