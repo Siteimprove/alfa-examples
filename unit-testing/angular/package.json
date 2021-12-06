@@ -21,7 +21,8 @@
     ],
     "moduleFileExtensions": [
       "js"
-    ]
+    ],
+    "testEnvironment": "jsdom"
   },
   "dependencies": {
     "@angular/common": "^8.2.0",
