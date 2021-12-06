@@ -5,7 +5,8 @@
   "scripts": {
     "build": "tsc --build",
     "watch": "tsc --build --watch",
-    "clean": "tsc --build --clean"
+    "clean": "tsc --build --clean",
+    "test": "yarn workspaces foreach -v -p --include 'unit-testing-*' run test"
   },
   "workspaces": [
     "custom-testing/*",
