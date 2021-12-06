@@ -6,8 +6,8 @@
     "test": "node test.js"
   },
   "devDependencies": {
-    "@siteimprove/alfa-act": "^0.25.0",
-    "@siteimprove/alfa-rules": "^0.25.0",
-    "@siteimprove/alfa-scraper": "^0.25.0"
+    "@siteimprove/alfa-act": "^0.26.0",
+    "@siteimprove/alfa-rules": "^0.26.0",
+    "@siteimprove/alfa-scraper": "^0.26.0"
   }
 }
