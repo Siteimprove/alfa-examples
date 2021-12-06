@@ -33,10 +33,10 @@ beforeEach(() => {
   namedFixture.detectChanges();
 });
 
-it("should not be accessible", async () => {
+it("should not have a name", async () => {
   await expect(emptyFixture).not.toBeAccessible();
 });
 
-it("should be accessible", async () => {
+it("should have a name", async () => {
   await expect(namedFixture).toBeAccessible();
 });

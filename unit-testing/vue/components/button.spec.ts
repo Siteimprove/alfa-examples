@@ -2,7 +2,7 @@
 
 import { mount } from "@vue/test-utils";
 
-import { Button } from "./button";
+import { EmptyButton, NamedButton } from "./button";
 
 // window.matchMedia is not currently implemented by JSDOM, used by Jest, so
 // we need to mock it.
@@ -17,6 +17,10 @@ window.matchMedia =
     };
   };
 
-it("should be accessible", async () => {
-  await expect(mount(Button)).not.toBeAccessible();
+it("should not have a name", async () => {
+  await expect(mount(EmptyButton)).not.toBeAccessible();
+});
+
+it("should have a name", async () => {
+  await expect(mount(NamedButton)).toBeAccessible();
 });
