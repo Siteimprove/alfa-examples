@@ -1,20 +1,20 @@
 import * as fs from "fs";
 import * as path from "path";
+import * as url from "url";
 
 import { Audit, Outcome } from "@siteimprove/alfa-act";
 import { Scraper } from "@siteimprove/alfa-scraper";
 
 import rules from "@siteimprove/alfa-rules";
 
-const [url] = process.argv.slice(2);
+const input = path.join(__dirname, "fixtures", "page.html");
+const output = path.join(__dirname, "outcomes", "page.html.json");
+const local = url.pathToFileURL(input).toString();
 
-if (!url) {
-  console.error("You must pass a URL to the script");
-  process.exit(1);
-}
+const page = process.argv?.[2] ?? local;
 
 Scraper.with(async (scraper) => {
-  for (const input of await scraper.scrape(url)) {
+  for (const input of await scraper.scrape(page)) {
     const outcomes = await Audit.of(input, rules)
       .evaluate()
       .map((outcomes) => [...outcomes]);
@@ -28,12 +28,14 @@ Scraper.with(async (scraper) => {
     console.groupEnd();
 
     const file =
-      path.join(
-        __dirname,
-        "outcomes",
-        url.host.get(),
-        ...url.path.filter((segment) => segment !== "")
-      ) + ".json";
+      url.toString() === local
+        ? output
+        : path.join(
+            __dirname,
+            "outcomes",
+            url.host.get(),
+            ...url.path.filter((segment) => segment !== "")
+          ) + ".json";
 
     fs.mkdirSync(path.dirname(file), { recursive: true });
 

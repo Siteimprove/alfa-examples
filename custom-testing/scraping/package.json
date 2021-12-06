@@ -3,7 +3,7 @@
   "private": true,
   "name": "custom-testing-scraping",
   "scripts": {
-    "test": "node test.js"
+    "test": "node scraping.js"
   },
   "devDependencies": {
     "@siteimprove/alfa-act": "^0.26.0",
