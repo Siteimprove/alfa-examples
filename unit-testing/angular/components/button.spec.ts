@@ -1,9 +1,10 @@
 /// <reference types="@siteimprove/alfa-jest" />
 
 import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { ButtonComponent } from "./button";
+import { EmptyButtonComponent, NamedButtonComponent } from "./button";
 
-let fixture: ComponentFixture<ButtonComponent>;
+let emptyFixture: ComponentFixture<EmptyButtonComponent>;
+let namedFixture: ComponentFixture<NamedButtonComponent>;
 
 // window.matchMedia is not currently implemented by JSDOM, used by Jest, so
 // we need to mock it.
@@ -20,15 +21,22 @@ window.matchMedia =
 
 beforeEach(async () => {
   await TestBed.configureTestingModule({
-    declarations: [ButtonComponent],
+    declarations: [EmptyButtonComponent, NamedButtonComponent],
   }).compileComponents();
 });
 
 beforeEach(() => {
-  fixture = TestBed.createComponent(ButtonComponent);
-  fixture.detectChanges();
+  emptyFixture = TestBed.createComponent(EmptyButtonComponent);
+  emptyFixture.detectChanges();
+
+  namedFixture = TestBed.createComponent(NamedButtonComponent);
+  namedFixture.detectChanges();
+});
+
+it("should not be accessible", async () => {
+  await expect(emptyFixture).not.toBeAccessible();
 });
 
 it("should be accessible", async () => {
-  await expect(fixture).not.toBeAccessible();
+  await expect(namedFixture).toBeAccessible();
 });
