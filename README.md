@@ -18,8 +18,10 @@ You will be prompted for your GitHub username and a personal access token. If yo
 
 
 >- **If that does not work** run
-  `yarn config set --home "npmRegistries['https://npm.pkg.github.com'].npmAuthToken" <your-token>`.
-  It will create a file `.yarnrc.yml` on your machine. This is a private file for your user, only. It will most likely be saved in a path like `C:\Users\<username>\.yarnrc.yml`
+>  ```
+>  yarn config set --home "npmRegistries['https://npm.pkg.github.com'].npmAuthToken" <your-token>
+>  ```
+>  It will create a file `.yarnrc.yml` on your machine. This is a private file for your user, only. It will most likely be saved in a path like `C:\Users\<username>\.yarnrc.yml`
 >
 > - **If that fails** and the file content is different than the below code then you can manually update the file. MAKE SURE to edit your own `.yarnrc.yml` file, not the one in this repository. The reason is because your `npmAuthTokens` should never be committed to a shared repository - keep it secret on your local machine.
 >
