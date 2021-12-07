@@ -12,7 +12,7 @@ Where
 
 `scope` and at least one `seed` are mandatory.
 
-For example, assumimg that a webserver exposes the [fixtures](fixtures) directory at `http://127.0.0.1:5500/fixtures/page1.html`:
+For example, assuming that a webserver exposes the [fixtures](fixtures) directory at `http://127.0.0.1:5500/fixtures/`:
 
 ```shell
 yarn test http://127.0.0.1:5500/fixtures/ http://127.0.0.1:5500/fixtures/page1.html
