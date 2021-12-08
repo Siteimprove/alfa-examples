@@ -4,6 +4,10 @@ import { shallow } from "enzyme";
 
 import { Button } from "./button";
 
-it("should be accessible", async () => {
-  await expect(shallow(<Button />)).toBeAccessible();
+it("should not have a name", async () => {
+  await expect(shallow(<Button></Button>)).not.toBeAccessible();
+});
+
+it("should have a name", async () => {
+  await expect(shallow(<Button>Hello</Button>)).toBeAccessible();
 });

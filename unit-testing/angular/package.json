@@ -8,7 +8,7 @@
   "jest": {
     "preset": "jest-preset-angular",
     "setupFilesAfterEnv": [
-      "jest-preset-angular",
+      "jest-preset-angular/setup-jest",
       "./setup.js"
     ],
     "globals": {
@@ -21,7 +21,8 @@
     ],
     "moduleFileExtensions": [
       "js"
-    ]
+    ],
+    "testEnvironment": "jsdom"
   },
   "dependencies": {
     "@angular/common": "^8.2.0",
@@ -34,10 +35,10 @@
     "zone.js": "^0.11.4"
   },
   "devDependencies": {
-    "@siteimprove/alfa-angular": "^0.21.2",
-    "@siteimprove/alfa-assert": "^0.21.2",
-    "@siteimprove/alfa-jest": "^0.21.2",
-    "@siteimprove/alfa-rules": "^0.21.2",
+    "@siteimprove/alfa-angular": "^0.26.0",
+    "@siteimprove/alfa-assert": "^0.26.0",
+    "@siteimprove/alfa-jest": "^0.26.0",
+    "@siteimprove/alfa-rules": "^0.26.0",
     "@types/jest": "^24.0.13",
     "jest": "^26.6.3",
     "jest-preset-angular": "^8.4.0"

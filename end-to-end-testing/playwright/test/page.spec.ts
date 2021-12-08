@@ -31,7 +31,7 @@ describe("page.html", () => {
     browser = await playwright.chromium.launch();
     page = await browser.newPage();
 
-    await page.goto(`file://${require.resolve("./fixtures/page.html")}`);
+    await page.goto(`file://${require.resolve("../../fixtures/page.html")}`);
 
     document = await page.evaluateHandle(() => window.document);
   });
