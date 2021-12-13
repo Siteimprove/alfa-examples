@@ -2593,7 +2593,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:^14.14.22, @types/node@npm:^14.14.31, @types/node@npm:^14.14.33, @types/node@npm:^14.14.37":
+"@types/node@npm:^14.14.22, @types/node@npm:^14.14.31, @types/node@npm:^14.14.37":
   version: 14.17.3
   resolution: "@types/node@npm:14.17.3"
   checksum: c24c1f222b83a4cba584ae1bce2ab262d48d9d502346d82dd261236d29ce11ad63c5a5b1bfc74e50eaae032384893d443297d4da758e1eb540d9bf2495d7814e
@@ -4765,7 +4765,6 @@ __metadata:
     "@siteimprove/alfa-wcag": ^0.27.0
     "@types/chai": ^4.2.3
     "@types/mocha": ^5.2.7
-    "@types/node": ^14.14.33
     chai: ^4.3.4
     mocha: ^8.3.2
     playwright: ^1.10.0
@@ -5438,7 +5437,6 @@ __metadata:
     "@siteimprove/alfa-rules": ^0.27.0
     "@types/chai": ^4.2.3
     "@types/mocha": ^5.2.7
-    "@types/node": ^14.14.33
     chai: ^4.3.4
     mocha: ^8.3.2
     playwright: ^1.10.0
