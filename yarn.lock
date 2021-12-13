@@ -4732,6 +4732,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"custom-testing-interacting@workspace:custom-testing/interacting":
+  version: 0.0.0-use.local
+  resolution: "custom-testing-interacting@workspace:custom-testing/interacting"
+  dependencies:
+    "@siteimprove/alfa-act": ^0.27.0
+    "@siteimprove/alfa-playwright": ^0.27.0
+    "@siteimprove/alfa-rules": ^0.27.0
+    "@siteimprove/alfa-sequence": ^0.27.0
+  languageName: unknown
+  linkType: soft
+
 "custom-testing-scraping@workspace:custom-testing/scraping":
   version: 0.0.0-use.local
   resolution: "custom-testing-scraping@workspace:custom-testing/scraping"
