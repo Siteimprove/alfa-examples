@@ -5,6 +5,7 @@
   "references": [
     { "path": "crawling" },
     { "path": "interacting" },
-    { "path": "scraping" }
+    { "path": "scraping" },
+    { "path": "selecting" }
   ]
 }
