@@ -18,7 +18,7 @@ const componentRules = rules.filter((rule) =>
   rule.hasTag((tag) => tag.equals(Scope.Component))
 );
 
-// Creating a Chai plugin which only uses A/AA rules.
+// Creating a Chai plugin which only uses component rules.
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
