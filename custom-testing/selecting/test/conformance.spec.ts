@@ -16,24 +16,31 @@ const { and } = Refinement;
 import rules from "@siteimprove/alfa-rules";
 
 import { persist } from "../../../common/persist";
+import isCriterion = Criterion.isCriterion;
 
-// Filtering rules to only keep the A and AA ones
+// Filtering rules to only keep the A and AA ones (EAA and WAD requirement)
 const AArules = rules.filter((rule) =>
   rule.requirements.some(and(Criterion.isCriterion, Conformance.isAA()))
 );
+
+/**
+ * Other possibilities to filter rules by their requirements
+ */
+// Filtering rules to only keep the WCAG 2.0 ones
+// const rules20 = rules.filter(rule => rule.requirements.some(requirement => and(isCriterion, criterion => criterion.versions)))
 
 // Creating a Chai plugin which only uses A/AA rules.
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
     AArules,
-    [persist(() => "test/outcomes/page.spec.json")]
+    [persist(() => "test/outcomes/conformance.spec.json")]
   )
 );
 
 const { expect } = chai;
 
-describe("page.html", () => {
+describe("conformance.html", () => {
   let browser: playwright.Browser;
   let page: playwright.Page;
   let document: playwright.JSHandle;
@@ -42,7 +49,7 @@ describe("page.html", () => {
     browser = await playwright.chromium.launch();
     page = await browser.newPage();
 
-    await page.goto(`file://${require.resolve("./fixtures/page.html")}`);
+    await page.goto(`file://${require.resolve("./fixtures/conformance.html")}`);
 
     document = await page.evaluateHandle(() => window.document);
   });
