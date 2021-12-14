@@ -2,13 +2,13 @@
 /// <reference types="mocha" />
 
 import { Future } from "@siteimprove/alfa-future";
+import { Iterable } from "@siteimprove/alfa-iterable";
 import { Playwright } from "@siteimprove/alfa-playwright";
 import { Refinement } from "@siteimprove/alfa-refinement";
-import { Conformance, Criterion } from "@siteimprove/alfa-wcag";
+import { Conformance, Criterion, Technique } from "@siteimprove/alfa-wcag";
 
 import * as chai from "chai";
 import * as playwright from "playwright";
-
 
 import * as alfa from "@siteimprove/alfa-chai";
 
@@ -17,18 +17,33 @@ const { and } = Refinement;
 import rules from "@siteimprove/alfa-rules";
 
 import { persist } from "../../../common/persist";
-import isCriterion = Criterion.isCriterion;
 
 // Filtering rules to only keep the A and AA ones (EAA and WAD requirement)
 const AArules = rules.filter((rule) =>
-  rule.requirements.some(and(Criterion.isCriterion, Conformance.isAA()))
+  rule.hasRequirement(and(Criterion.isCriterion, Conformance.isAA()))
 );
 
 /**
  * Other possibilities to filter rules by their requirements
  */
 // Filtering rules to only keep the WCAG 2.0 ones
-// const rules20 = rules.filter(rule => rule.requirements.some(requirement => and(isCriterion, criterion => criterion.versions)))
+const rules20 = rules.filter((rule) =>
+  rule.hasRequirement(
+    and(Criterion.isCriterion, (criterion) =>
+      Iterable.some(criterion.versions, (version) => version === "2.0")
+    )
+  )
+);
+
+// Filtering rules to only keep the WCAG 2.0 AA ones (ADA requirement)
+const AArules20 = rules.filter((rule) =>
+  rule.hasRequirement(and(Criterion.isCriterion, Conformance.isAA("2.0")))
+);
+
+// Filtering rules to only keep those that match a WCAG technique
+const techniqueRules = rules.filter((rule) =>
+  rule.hasRequirement(Technique.isTechnique)
+);
 
 // Creating a Chai plugin which only uses A/AA rules.
 chai.use(
