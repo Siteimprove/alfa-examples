@@ -3,6 +3,7 @@
   "extends": "../tsconfig.json",
   "files": [],
   "references": [
+    { "path": "adding-rules" },
     { "path": "crawling" },
     { "path": "interacting" },
     { "path": "scraping" },

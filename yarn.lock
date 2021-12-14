@@ -4721,6 +4721,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"custom-testing-adding-rules@workspace:custom-testing/adding-rules":
+  version: 0.0.0-use.local
+  resolution: "custom-testing-adding-rules@workspace:custom-testing/adding-rules"
+  dependencies:
+    "@siteimprove/alfa-act": ^0.28.0
+    "@siteimprove/alfa-chai": ^0.28.0
+    "@siteimprove/alfa-dom": ^0.28.0
+    "@siteimprove/alfa-future": ^0.28.0
+    "@siteimprove/alfa-playwright": ^0.28.0
+    "@siteimprove/alfa-refinement": ^0.28.0
+    "@siteimprove/alfa-result": ^0.28.0
+    "@siteimprove/alfa-rules": ^0.28.0
+    "@siteimprove/alfa-web": ^0.28.0
+    "@types/chai": ^4.2.3
+    "@types/mocha": ^5.2.7
+    chai: ^4.3.4
+    mocha: ^8.3.2
+    playwright: ^1.10.0
+  languageName: unknown
+  linkType: soft
+
 "custom-testing-crawling@workspace:custom-testing/crawling":
   version: 0.0.0-use.local
   resolution: "custom-testing-crawling@workspace:custom-testing/crawling"
