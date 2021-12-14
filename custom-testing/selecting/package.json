@@ -3,7 +3,7 @@
   "private": true,
   "name": "custom-testing-selecting",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --timeout 10000"
   },
   "devDependencies": {
     "@siteimprove/alfa-chai": "^0.28.0",
