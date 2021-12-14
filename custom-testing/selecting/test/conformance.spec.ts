@@ -1,13 +1,14 @@
 /// <reference types="node" />
 /// <reference types="mocha" />
 
+import { Future } from "@siteimprove/alfa-future";
+import { Playwright } from "@siteimprove/alfa-playwright";
 import { Refinement } from "@siteimprove/alfa-refinement";
 import { Conformance, Criterion } from "@siteimprove/alfa-wcag";
+
 import * as chai from "chai";
 import * as playwright from "playwright";
 
-import { Future } from "@siteimprove/alfa-future";
-import { Playwright } from "@siteimprove/alfa-playwright";
 
 import * as alfa from "@siteimprove/alfa-chai";
 

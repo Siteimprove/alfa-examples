@@ -6,9 +6,9 @@
     "test": "node interacting.js"
   },
   "devDependencies": {
-    "@siteimprove/alfa-act": "^0.27.0",
-    "@siteimprove/alfa-playwright": "^0.27.0",
-    "@siteimprove/alfa-rules": "^0.27.0",
-    "@siteimprove/alfa-sequence": "^0.27.0"
+    "@siteimprove/alfa-act": "^0.28.0",
+    "@siteimprove/alfa-playwright": "^0.28.0",
+    "@siteimprove/alfa-rules": "^0.28.0",
+    "@siteimprove/alfa-sequence": "^0.28.0"
   }
 }
