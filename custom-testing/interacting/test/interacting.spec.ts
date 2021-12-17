@@ -43,7 +43,7 @@ describe("Interacting with a page", () => {
     await browser.close();
   });
 
-  it("should be accessible only in first state", async () => {
+  it("only the first state should be accessible", async () => {
     // Checking the initial state
     await expect(document).to.be.accessible();
 
