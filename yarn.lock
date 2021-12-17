@@ -4780,6 +4780,17 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"custom-testing-navigating@workspace:custom-testing/navigating":
+  version: 0.0.0-use.local
+  resolution: "custom-testing-navigating@workspace:custom-testing/navigating"
+  dependencies:
+    "@siteimprove/alfa-act": ^0.28.0
+    "@siteimprove/alfa-playwright": ^0.28.0
+    "@siteimprove/alfa-rules": ^0.28.0
+    "@siteimprove/alfa-sequence": ^0.28.0
+  languageName: unknown
+  linkType: soft
+
 "custom-testing-scraping@workspace:custom-testing/scraping":
   version: 0.0.0-use.local
   resolution: "custom-testing-scraping@workspace:custom-testing/scraping"
