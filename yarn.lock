@@ -4773,10 +4773,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "custom-testing-interacting@workspace:custom-testing/interacting"
   dependencies:
-    "@siteimprove/alfa-act": ^0.28.0
+    "@siteimprove/alfa-chai": ^0.28.0
+    "@siteimprove/alfa-future": ^0.28.0
     "@siteimprove/alfa-playwright": ^0.28.0
     "@siteimprove/alfa-rules": ^0.28.0
-    "@siteimprove/alfa-sequence": ^0.28.0
     "@types/chai": ^4.2.3
     "@types/mocha": ^5.2.7
     chai: ^4.3.4
@@ -4789,10 +4789,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "custom-testing-navigating@workspace:custom-testing/navigating"
   dependencies:
-    "@siteimprove/alfa-act": ^0.28.0
+    "@siteimprove/alfa-chai": ^0.28.0
+    "@siteimprove/alfa-future": ^0.28.0
     "@siteimprove/alfa-playwright": ^0.28.0
     "@siteimprove/alfa-rules": ^0.28.0
-    "@siteimprove/alfa-sequence": ^0.28.0
+    "@types/chai": ^4.2.3
+    "@types/mocha": ^5.2.7
+    chai: ^4.3.4
+    mocha: ^8.3.2
+    playwright: ^1.10.0
   languageName: unknown
   linkType: soft
 
