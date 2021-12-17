@@ -1,6 +1,6 @@
 {
   "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../tsconfig.json",
-  "files": ["navigating.ts", "test/navigating.spec.ts"],
+  "files": ["test/navigating.spec.ts"],
   "references": [{ "path": "../../common" }]
 }
