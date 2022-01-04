@@ -1,6 +1,15 @@
 /// <reference types="node" />
 /// <reference types="mocha" />
 
+/**
+ * Mock up test file to illustrate pre-selecting rules in a test, rather than
+ * filtering outcomes.
+ *
+ * This does create problem if trying to share the same chai instance and
+ * therefore is not enabled by default.
+ */
+
+/*
 import { Future } from "@siteimprove/alfa-future";
 import { Playwright } from "@siteimprove/alfa-playwright";
 
@@ -23,13 +32,13 @@ chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
     componentRules,
-    [persist(() => "test/outcomes/scope.spec.json")]
+    [persist(() => "test/outcomes/selecting.json")]
   )
 );
 
 const { expect } = chai;
 
-describe("scope.html", () => {
+describe("Pre-selecting rules", () => {
   let browser: playwright.Browser;
   let page: playwright.Page;
   let document: playwright.JSHandle;
@@ -51,3 +60,4 @@ describe("scope.html", () => {
     await expect(document).to.be.accessible();
   });
 });
+*/

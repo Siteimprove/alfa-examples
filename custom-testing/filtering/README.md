@@ -1,7 +1,10 @@
-# Filtering results and Selecting rules
+# Filtering results
 
-This directory demonstrates how to select a subset of rules before running an audit. Notably how to select rules based on:
+This directory demonstrates how to [filter outcomes](test/filtering.spec.ts) after running an audit, notably based on: 
+- conformance level;
+- WCAG version;
+- scope (testing components in isolation, disregarding rules that only make sense for a full page).
 
-- [Conformance level](test/conformance.spec.ts) (the tested page has several AAA or Best Practice issues). Also shows how% to select rules by WCAG version.
-- [Scope](test/scope.spec.ts), how to test components in isolation, by disregarding rules that only make sense in the context of a full page.
-- It is also possible to [filter the outcomes](test/filter.spec.ts) after the audit run, to remove the ones that are not relevant for a particular case.
+## Pre-selecting rules
+
+It is also possible to [pre-select](test/selecting.spec.ts) the rules to apply. This is a bit better on the performance side because the "useless" rules are not evaluated. This is, however, much less flexible than filtering outcomes because a new test plugin must be created for each filter. Additionally, this may create conflict within the various test plugins and care must be taken to (de)activate them upon need. Therefore, the preferred way is to have a test plugin with all rules and filter the outcomes afterwards. Given that the hard work (building the style tree and the accessibility tree) is shared between all rules, and likely needed in all cases, the performance should still be good. 

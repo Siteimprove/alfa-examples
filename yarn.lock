@@ -4773,6 +4773,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "custom-testing-filtering@workspace:custom-testing/filtering"
   dependencies:
+    "@siteimprove/alfa-act": ^0.29.0
     "@siteimprove/alfa-chai": ^0.29.0
     "@siteimprove/alfa-future": ^0.29.0
     "@siteimprove/alfa-iterable": ^0.29.0
