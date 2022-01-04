@@ -2,6 +2,14 @@
 
 This directory demonstrates how to add custom rules to the default ruleset.
 
+Usage:
+
+```shell
+yarn test
+```
+
+The [page in the fixtures](test/fixtures/page.html) will be tested, with an extra rule added to the default ruleset.
+
 A rule is structured as:
 ```typescript
 Rule.Atomic.of<Page, /* type of test targets */>({
