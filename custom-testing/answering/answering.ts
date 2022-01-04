@@ -34,42 +34,43 @@ const page = url.pathToFileURL(input).toString();
  * we need to ensure that only these questions get an iterable of colors as
  * answer…
  */
-const oracle = <I, T, S, A>(
-  rule: act.Rule<I, T, Question, S>,
-  question: {
-    [K in keyof Question]: act.Question<K, S, T, Question[K], A>;
-  }[keyof Question]
-) => {
-  if (
-    // Checking the question URI to know what to answer
-    question.uri === "background-colors" &&
-    // Need to check the question type to ensure the return value has the correct type.
-    question.type === "color[]"
-  ) {
+function oracle<I, T, S>(): act.Oracle<I, T, Question, S> {
+  return (rule, question) => {
     if (
-      // Checking the subject of the question, so that the answer may depend on it.
-      Text.isText(question.subject) &&
-      question.subject
-        .parent()
-        .some(
-          and(Element.isElement, (element) => element.classes.includes("hello"))
-        )
+      // Checking the question URI to know what to answer
+      question.uri === "background-colors" &&
+      // Need to check the question type to ensure the return value has the correct type.
+      question.type === "color[]"
     ) {
-      // The result needs to be wrapped in all the layers needed by the
-      // interviews…
-      return Future.now(
-        Some.of(question.answer([Resolver.color(Color.named("white")) as RGB]))
-      );
+      if (
+        // Checking the subject of the question, so that the answer may depend on it.
+        Text.isText(question.subject) &&
+        question.subject
+          .parent()
+          .some(
+            and(Element.isElement, (element) =>
+              element.classes.includes("hello")
+            )
+          )
+      ) {
+        // The result needs to be wrapped in all the layers needed by the
+        // interviews…
+        return Future.now(
+          Some.of(
+            question.answer([Resolver.color(Color.named("white")) as RGB])
+          )
+        );
+      }
     }
-  }
 
-  return Future.now(None);
-};
+    return Future.now(None);
+  };
+}
 
 Scraper.with(async (scraper) => {
   for (const input of await scraper.scrape(page)) {
     // Passing the oracle to the Audit.
-    const outcomes = await act.Audit.of(input, rules, oracle)
+    const outcomes = await act.Audit.of(input, rules, oracle())
       .evaluate()
       .map((outcomes) => [...outcomes]);
 
