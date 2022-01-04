@@ -1,4 +1,4 @@
-# Selecting rules
+# Filtering results and Selecting rules
 
 This directory demonstrates how to select a subset of rules before running an audit. Notably how to select rules based on:
 

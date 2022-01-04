@@ -6,9 +6,9 @@
     { "path": "adding-rules" },
     { "path": "answering" },
     { "path": "crawling" },
+    { "path": "filtering" },
     { "path": "interacting" },
     { "path": "navigating" },
-    { "path": "scraping" },
-    { "path": "selecting" }
+    { "path": "scraping" }
   ]
 }

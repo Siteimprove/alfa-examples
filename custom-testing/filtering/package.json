@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/package",
   "private": true,
-  "name": "custom-testing-selecting",
+  "name": "custom-testing-filtering",
   "scripts": {
     "test": "mocha --timeout 10000"
   },

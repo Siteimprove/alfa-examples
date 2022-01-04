@@ -10,6 +10,6 @@ This directory demonstrates how Alfa can be used for some common testing cases:
   - [Interacting](interacting) with a know page (filling form, clicking button, …) and auditing it afterwards.
   - [Navigating](navigating) to another page (e.g. testing pages in a checkout flow).
 - Changing the ruleset:
-  - [Selecting rules](selecting) by conformance level, WCAG version, or scope (testing components in isolation).
+  - [Selecting rules](filtering) by conformance level, WCAG version, or scope (testing components in isolation).
   - [Adding a new rule](adding-rules) to the default ruleset.
   

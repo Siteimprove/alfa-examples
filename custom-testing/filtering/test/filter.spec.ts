@@ -13,7 +13,7 @@ import rules, { Scope } from "@siteimprove/alfa-rules";
 
 import { persist } from "../../../common/persist";
 
-// Creating a Chai plugin which only uses component rules.
+// Creating a Chai plugin which uses all rules.
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
