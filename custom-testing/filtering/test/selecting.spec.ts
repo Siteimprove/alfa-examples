@@ -32,7 +32,7 @@ chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
     componentRules,
-    [persist(() => "test/outcomes/selecting.json")]
+    [persist(() => "test/outcomes/selecting.spec.json")]
   )
 );
 
