@@ -53,11 +53,11 @@ async function teardown(): Promise<void> {
 /**
  * fixtures/page.html is fully accessible
  */
-describe("page.html should be fully accessible", () => {
+describe("page.html", () => {
   before(setup);
   after(teardown);
 
-  it("should be accessible", async () => {
+  it("should be fully accessible", async () => {
     const document = await load("page.html");
     await expect(document).to.be.accessible();
   });
@@ -66,7 +66,7 @@ describe("page.html should be fully accessible", () => {
 /**
  * fixtures/conformance.html is only AA accessible
  */
-describe("conformance.html should be AA accessible", () => {
+describe("conformance.html", () => {
   beforeEach(setup);
   afterEach(teardown);
 
@@ -120,7 +120,7 @@ describe("conformance.html should be AA accessible", () => {
  * fixtures/scope.html contains a single component and fails rules that only
  * make sense in the context of a full page (e.g. skip link, …)
  */
-describe("scope.html should pass component rules", () => {
+describe("scope.html", () => {
   beforeEach(setup);
   afterEach(teardown);
 
