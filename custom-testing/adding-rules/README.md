@@ -7,7 +7,7 @@ A rule is structured as:
 Rule.Atomic.of<Page, /* type of test targets */>({
   uri: /* string, unique identifier for the rule */,
   /* optional "requirements" and "tags" arrays */
-  evaluate(/* Partial "Page", usually at least a "document", often also a "device" */) {
+  evaluate(/* Partial "Page", usually at least a "document", often also a "Device" */) {
     return {
       applicability() {
         /* returns an iterable of test targets (of the type specified) */
