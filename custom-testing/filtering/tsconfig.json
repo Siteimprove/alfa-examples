@@ -2,7 +2,7 @@
   "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../tsconfig.json",
   "files": [
-    "test/conformance.spec.ts", "test/filter.spec.ts", "test/scope.spec.ts"
+    "test/filtering.spec.ts", "test/selecting.spec.ts"
   ],
   "references": [{ "path": "../../common" }]
 }
