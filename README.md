@@ -57,9 +57,9 @@ yarn watch
 
 This repository contains examples of using Alfa:
 
-- For individual [component testing](unit-testing) with various component frameworks;
-- For [page-wide testing](end-to-end-testing) with various browser automations;
-- For [custom testing](custom-testing) of some common scenarios.
+- for individual [component testing](unit-testing) with various component frameworks;
+- for [page-wide testing](end-to-end-testing) with various browser automations;
+- for [custom testing](custom-testing) of some common scenarios.
 
 ## License
 
