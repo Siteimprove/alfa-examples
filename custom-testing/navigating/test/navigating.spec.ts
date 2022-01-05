@@ -15,7 +15,7 @@ const R69 = Rules.get("R69").get();
 
 import { persist } from "../../../common/persist";
 
-// Creating a Chai plugin which only uses component rules.
+// Creating a Chai plugin which only uses R69.
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
