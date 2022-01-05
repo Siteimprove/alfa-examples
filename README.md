@@ -14,7 +14,7 @@ yarn npm login --scope siteimprove
 
 > :warning: This command must be run from the root of the repository as the registry address of the `@siteimprove` scope is defined in the [local Yarn configuration](.yarnrc.yml).
 
-You will be prompted for your GitHub username and a personal access token. If you don't already have an access token, [generate a new one](https://github.com/settings/tokens/new "Generate a personal access token") with the `read:packages` permission and paste it into the prompt. Once authenticated, do:
+You will be prompted for your GitHub username and a personal access token. If you don't already have an access token, [generate a new one](https://github.com/settings/tokens/new "Generate a personal access token") with the `read:packages` permission and paste it into the prompt.
 
 
 >- **If that does not work** run
@@ -35,6 +35,8 @@ You will be prompted for your GitHub username and a personal access token. If yo
 >        npmAuthToken: <your-token>
 >    ```
 
+ Once authenticated, do:  
+  
 ```sh
 yarn install
 ```
