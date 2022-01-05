@@ -52,8 +52,8 @@ async function teardown(): Promise<void> {
 }
 
 /**
- * Building an Oracle for the question "first-tabbable-reference-is-main" on
- * an element with id "main"
+ * Building an Oracle for the question "background-colors" on text within
+ * an element with class "hello"
  *
  * The questions used in the Oracle type link their "type" parameter to the
  * actual type of the answer provided (to ensure type safety during calls).
