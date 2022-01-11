@@ -67,7 +67,7 @@ async function teardown(): Promise<void> {
  * https://github.com/Siteimprove/alfa/blob/main/packages/alfa-rules/test/common/oracle.ts
  * for a more complete Oracle building (although it does only check the URI
  * of the question (not its subject), and therefore isn't well suited on larger
- * test where the same question might be asked with different subjects).
+ * tests where the same question might be asked with different subjects).
  */
 function oracle<I, T, S>(
   color: "blue" | "white" = "white"
@@ -93,7 +93,7 @@ function oracle<I, T, S>(
         // * calling `Some.of` leaves the possibility to not answer the question
         //   by returning `None` instead;
         // * calling `Future.now` is needed because the interview process is
-        //   asynchronous (e.g. it can be done "live" in command line),
+        //   asynchronous (e.g. it can be done "live" in a command line),
         //   therefore the Oracle itself needs to be asynchronous.
         return Future.now(Some.of([Resolver.color(Color.named(color)) as RGB]));
       }
