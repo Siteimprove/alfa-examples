@@ -53,41 +53,32 @@ async function teardown(): Promise<void> {
 
 /**
  * Building an Oracle for the question "background-colors" on text within
- * an element with class "hello"
+ * an element with class "hello".
  *
- * The questions used in the Oracle type link their "type" parameter to the
- * actual type of the answer provided (to ensure type safety during calls).
- * By wrapping the oracle in a closure, its free type parameter can be
- * automatically inferred; this avoids a rather heavy-handed typing of the
- * parameters.
- * In that case the closure also adds a parameter to tweak the answer; this is
- * just to demonstrate what happens when cantTell outcomes resolve to Failed.
- * The parameter can also be used to inject answers to all questions, see
+ * The URI of the question is linked to the expected type of answer (here,
+ * Iterable<Color>). So passing in the wrong kind of answer result in a type
+ * error at build time.
+ *
+ * Here, the oracle is wrapped in a function that adds a parameter to tweak the
+ * answer; this is just to demonstrate what happens when cantTell outcomes
+ * resolve to Failed (see the test below).
+ *
+ * Such a parameter can also be used to inject answers to all questions, see
  * https://github.com/Siteimprove/alfa/blob/main/packages/alfa-rules/test/common/oracle.ts
  * for a more complete Oracle building (although it does only check the URI
- * of the question and therefore isn't well suited on larger test where the
- * same question might be asked with different subjects)
- *
- * There is, however, no link between the URI of the question and its type
- * (nor the type of the subject). Hence, we need to manually do this bit of
- * type checking. Not checking question.type would result in a type error as
- * we need to ensure that only these questions get an iterable of colors as
- * answer…
+ * of the question (not its subject), and therefore isn't well suited on larger
+ * test where the same question might be asked with different subjects).
  */
 function oracle<I, T, S>(
   color: "blue" | "white" = "white"
-): act.Oracle<I, T, Question, S> {
+): act.Oracle<I, T, Question.Metadata, S> {
   return (rule, question) => {
-    if (
-      // Checking the question URI to know what to answer
-      question.uri === "background-colors" &&
-      // Need to check the question type to ensure the return value has the correct type.
-      question.type === "color[]"
-    ) {
+    // Checking the question URI to know what to answer
+    if (question.uri === "background-colors") {
       if (
         // Checking the subject of the question, so that the answer may depend on it.
         // In that case, the background colour is known for elements with a class
-        // of "hello" (and their text nodes children).
+        // of "hello" (and their text node children).
         Text.isText(question.subject) &&
         question.subject
           .parent()
@@ -99,19 +90,16 @@ function oracle<I, T, S>(
       ) {
         // The result needs to be wrapped in all the layers needed by the
         // interviews…
-        // * calling `question.answer` here ensures that the correct type
-        //   is used to answer the question (this matches `question.type`);
         // * calling `Some.of` leaves the possibility to not answer the question
         //   by returning `None` instead;
         // * calling `Future.now` is needed because the interview process is
         //   asynchronous (e.g. it can be done "live" in command line),
         //   therefore the Oracle itself needs to be asynchronous.
-        return Future.now(
-          Some.of(question.answer([Resolver.color(Color.named(color)) as RGB]))
-        );
+        return Future.now(Some.of([Resolver.color(Color.named(color)) as RGB]));
       }
     }
 
+    // Leave any other question unanswered.
     return Future.now(None);
   };
 }
