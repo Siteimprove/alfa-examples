@@ -8,6 +8,7 @@
     { "path": "crawling" },
     { "path": "filtering" },
     { "path": "interacting" },
+    { "path": "measuring-performances" },
     { "path": "navigating" },
     { "path": "scraping" }
   ]
