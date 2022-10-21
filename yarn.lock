@@ -2833,17 +2833,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.0":
-  version: 17.0.1
-  resolution: "@types/react@npm:17.0.1"
-  dependencies:
-    "@types/prop-types": "*"
-    csstype: ^3.0.2
-  checksum: 592d7a33898550f2139e69c1bb21397ab6f351f406623397cd7f9a4aea20140c779dd23f2934789d40b0bd87995a86c766434ba07bdd1de9533045d0f3596b68
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^17":
+"@types/react@npm:*, @types/react@npm:^17, @types/react@npm:^17.0.0":
   version: 17.0.50
   resolution: "@types/react@npm:17.0.50"
   dependencies:
