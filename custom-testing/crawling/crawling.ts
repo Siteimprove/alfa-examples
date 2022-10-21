@@ -35,7 +35,7 @@ Crawler.with(async (crawler) => {
         path.join(
           __dirname,
           "outcomes",
-          url.host.get(),
+          url.host.getOr(""),
           ...url.path.filter((segment) => segment !== "")
         ) + ".json";
 

@@ -11,7 +11,8 @@ import * as alfa from "@siteimprove/alfa-chai";
 
 // Only checking color contrast in this example
 import { Rules } from "@siteimprove/alfa-rules";
-const R69 = Rules.get("R69").get();
+// We know R69 exists and can safely getUnsafe
+const R69 = Rules.get("R69").getUnsafe();
 
 import { persist } from "../../../common/persist";
 
