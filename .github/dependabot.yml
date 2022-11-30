@@ -14,5 +14,5 @@ updates:
     schedule:
       interval: "daily"
     labels:
-      - "actions"
-      - "dependencies"
+      - "Actions"
+      - "Dependencies"
