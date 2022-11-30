@@ -9,16 +9,17 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
     strategy:
       matrix:
+        os: [ubuntu-latest, windows-2019]
         node-version: [14, 16]
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - uses: actions/cache@v2.1.6
+      - uses: actions/cache@v3
         with:
           path: .yarn/cache
           key: yarn-${{ hashFiles('yarn.lock') }}
