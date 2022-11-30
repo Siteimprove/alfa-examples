@@ -38,15 +38,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/core@npm:^8.2.0":
-  version: 8.2.14
-  resolution: "@angular/core@npm:8.2.14"
+"@angular/core@npm:^11.0.5":
+  version: 11.2.14
+  resolution: "@angular/core@npm:11.2.14"
   dependencies:
-    tslib: ^1.9.0
+    tslib: ^2.0.0
   peerDependencies:
-    rxjs: ^6.4.0
-    zone.js: ~0.9.1
-  checksum: 296f0b06803c3605a387c18518507c966d9df8132b69cd3815ba581a8db8e9a55e6de38344fed97c304d22aa85910edf4efc560fabbed09149af02f1e02eba6c
+    rxjs: ^6.5.3
+    zone.js: ^0.10.2 || ^0.11.3
+  checksum: 8dd40d6c90246726e8b6c1bf715e7ea688da7ea71da5742737d2d04ce85ccc5378e00a6aa2d796bcfaa82d11e4677b551ceda347a76242e7b0feea09e1a2e92f
   languageName: node
   linkType: hard
 
@@ -12141,7 +12141,7 @@ typescript@^4.6.3:
   dependencies:
     "@angular/common": ^8.2.0
     "@angular/compiler": ^8.2.0
-    "@angular/core": ^8.2.0
+    "@angular/core": ^11.0.5
     "@angular/platform-browser": ^8.2.0
     "@angular/platform-browser-dynamic": ^8.2.0
     "@siteimprove/alfa-angular": ^0.36.0
