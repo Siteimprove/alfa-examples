@@ -26,19 +26,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/core@npm:^11.0.0":
-  version: 11.2.4
-  resolution: "@angular/core@npm:11.2.4"
-  dependencies:
-    tslib: ^2.0.0
-  peerDependencies:
-    rxjs: ^6.5.3
-    zone.js: ^0.10.2 || ^0.11.3
-  checksum: 447cb1579aaab1fb05cc1b75d6e6ff29631b541b16a45ca9ddd61b854a145bfc4e6b50ff735d8ca7d041241ea343e8b3441008084eb3bf8f8ff984ba6ed239a9
-  languageName: node
-  linkType: hard
-
-"@angular/core@npm:^11.0.5":
+"@angular/core@npm:^11.0.0, @angular/core@npm:^11.0.5":
   version: 11.2.14
   resolution: "@angular/core@npm:11.2.14"
   dependencies:
