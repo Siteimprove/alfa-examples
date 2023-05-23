@@ -2,7 +2,8 @@ import * as fs from "fs";
 import * as path from "path";
 import * as url from "url";
 
-import { Audit, Outcome } from "@siteimprove/alfa-act";
+import { Audit, Outcome, Question } from "@siteimprove/alfa-act";
+import { Hashable } from "@siteimprove/alfa-hash";
 import { Scraper } from "@siteimprove/alfa-scraper";
 
 import rules from "@siteimprove/alfa-rules";
@@ -33,7 +34,7 @@ Scraper.with(async (scraper) => {
         : path.join(
             __dirname,
             "outcomes",
-            url.host.get(),
+            url.host.getOr(""),
             ...url.path.filter((segment) => segment !== "")
           ) + ".json";
 
@@ -43,7 +44,7 @@ Scraper.with(async (scraper) => {
   }
 });
 
-function logStats<I, T, Q>(outcomes: Array<Outcome<I, T, Q>>): void {
+function logStats<I, T extends Hashable, Q extends Question.Metadata>(outcomes: Array<Outcome<I, T, Q>>): void {
   console.log(outcomes.filter(Outcome.isPassed).length, "passed outcomes");
 
   console.log(outcomes.filter(Outcome.isFailed).length, "failed outcomes");

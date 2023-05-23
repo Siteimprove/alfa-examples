@@ -3,14 +3,16 @@
 import * as fs from "fs";
 import * as path from "path";
 
+import { Question } from "@siteimprove/alfa-act";
 import { Handler } from "@siteimprove/alfa-assert";
 import { Formatter } from "@siteimprove/alfa-formatter";
 import { Future } from "@siteimprove/alfa-future";
+import { Hashable } from "@siteimprove/alfa-hash";
 import { Mapper } from "@siteimprove/alfa-mapper";
 
 import earl from "@siteimprove/alfa-formatter-earl";
 
-export function persist<I, T, Q, S>(
+export function persist<I, T extends Hashable, Q extends Question.Metadata, S>(
   output: Mapper<I, string>,
   format: Formatter<I, T, Q, S> = earl()
 ): Handler<I, T, Q, S> {

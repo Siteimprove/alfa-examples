@@ -1,9 +1,10 @@
 import * as fs from "fs";
 import * as path from "path";
 
-import { Audit, Outcome } from "@siteimprove/alfa-act";
-import { Frontier } from "@siteimprove/alfa-frontier";
+import { Audit, Outcome, Question } from "@siteimprove/alfa-act";
 import { Crawler } from "@siteimprove/alfa-crawler";
+import { Frontier } from "@siteimprove/alfa-frontier";
+import { Hashable } from "@siteimprove/alfa-hash";
 
 import rules from "@siteimprove/alfa-rules";
 
@@ -35,7 +36,7 @@ Crawler.with(async (crawler) => {
         path.join(
           __dirname,
           "outcomes",
-          url.host.get(),
+          url.host.getOr(""),
           ...url.path.filter((segment) => segment !== "")
         ) + ".json";
 
@@ -46,7 +47,7 @@ Crawler.with(async (crawler) => {
   }
 });
 
-function logStats<I, T, Q>(outcomes: Array<Outcome<I, T, Q>>): void {
+function logStats<I, T extends Hashable, Q extends Question.Metadata>(outcomes: Array<Outcome<I, T, Q>>): void {
   console.log(outcomes.filter(Outcome.isPassed).length, "passed outcomes");
 
   console.log(outcomes.filter(Outcome.isFailed).length, "failed outcomes");

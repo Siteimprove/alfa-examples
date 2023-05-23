@@ -2,7 +2,7 @@
 /// <reference types="mocha" />
 
 import { Diagnostic, Rule } from "@siteimprove/alfa-act";
-import { Element } from "@siteimprove/alfa-dom";
+import { Element, Node } from "@siteimprove/alfa-dom";
 import { Refinement } from "@siteimprove/alfa-refinement";
 import { Err, Ok } from "@siteimprove/alfa-result";
 import { Page } from "@siteimprove/alfa-web";
@@ -15,11 +15,11 @@ import * as playwright from "playwright";
 
 import * as alfa from "@siteimprove/alfa-chai";
 
-const { and } = Refinement;
-
 import rules from "@siteimprove/alfa-rules";
 
 import { persist } from "../../../common/persist";
+
+const { and } = Refinement;
 
 /**
  * Creating a rule with:
@@ -32,7 +32,7 @@ const myRule = Rule.Atomic.of<Page, Element>({
     return {
       applicability() {
         return document
-          .descendants({ flattened: true, nested: true })
+          .descendants(Node.fullTree)
           .filter(and(Element.isElement, Element.hasName("img")));
       },
 
