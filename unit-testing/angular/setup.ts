@@ -1,6 +1,11 @@
+/// <reference types="node" />
+
 import { Angular } from "@siteimprove/alfa-angular";
 
 import * as alfa from "@siteimprove/alfa-jest";
+
+import { TextEncoder } from "util";
+global.TextEncoder = TextEncoder;
 
 // Only selecting a rule that apply to buttons.
 import { Rules } from "@siteimprove/alfa-rules";
