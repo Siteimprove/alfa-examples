@@ -3,7 +3,7 @@
   "private": true,
   "name": "end-to-end-testing-puppeteer",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha -t 10000"
   },
   "devDependencies": {
     "@siteimprove/alfa-assert": "^0.62.8",
