@@ -6,7 +6,7 @@
     "build": "tsc --build",
     "watch": "tsc --build --watch",
     "clean": "tsc --build --clean",
-    "test": "yarn workspaces foreach -v -p --exclude 'end-to-end-testing-{cypress,webdriver}' --exclude 'custom-testing-{crawling,scraping,measuring-performance}' --exclude 'unit-testing-angular' run test"
+    "test": "yarn workspaces foreach -v -p --exclude 'end-to-end-testing-{cypress,puppeteer,webdriver}' --exclude 'custom-testing-{crawling,scraping,measuring-performance}' --exclude 'unit-testing-angular' run test"
   },
   "workspaces": [
     "custom-testing/*",
