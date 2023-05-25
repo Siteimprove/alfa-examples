@@ -6,7 +6,7 @@
     "build": "tsc --build",
     "watch": "tsc --build --watch",
     "clean": "tsc --build --clean",
-    "test": "yarn workspaces foreach -v -p --exclude 'end-to-end-testing-{cypress,webdriver}' --exclude 'custom-testing-{crawling,scraping,measuring-performance}' run test"
+    "test": "yarn workspaces foreach -v -p --exclude 'end-to-end-testing-{cypress,puppeteer,webdriver}' --exclude 'custom-testing-{crawling,scraping,measuring-performance}' --exclude 'unit-testing-angular' run test"
   },
   "workspaces": [
     "custom-testing/*",
@@ -14,9 +14,16 @@
     "unit-testing/*"
   ],
   "devDependencies": {
-    "@types/node": "^14.14.22",
+    "@siteimprove/alfa-act": "^0.63.3",
+    "@siteimprove/alfa-assert": "^0.62.8",
+    "@siteimprove/alfa-formatter": "^0.62.8",
+    "@siteimprove/alfa-formatter-earl": "^0.62.8",
+    "@siteimprove/alfa-future": "^0.63.3",
+    "@siteimprove/alfa-hash": "^0.63.3",
+    "@siteimprove/alfa-mapper": "^0.63.3",
+    "@types/node": "^20.2.3",
     "prettier": "^2.2.1",
-    "typescript": "^4.6.3"
+    "typescript": "^5.0.4"
   },
   "packageManager": "yarn@3.3.0"
 }

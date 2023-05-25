@@ -3,6 +3,7 @@
 
 import { Outcome } from "@siteimprove/alfa-act";
 import { Future } from "@siteimprove/alfa-future";
+import { Hashable } from "@siteimprove/alfa-hash";
 import { Iterable } from "@siteimprove/alfa-iterable";
 import { Playwright } from "@siteimprove/alfa-playwright";
 import { Refinement } from "@siteimprove/alfa-refinement";
@@ -80,7 +81,7 @@ describe("conformance.html", () => {
   // A and AA Success Criteria), the test pass.
 
   // Level AA conformance is EAA and WAD requirement
-  function aaFilter(outcome: Outcome<unknown, unknown>): boolean {
+  function aaFilter<T extends Hashable>(outcome: Outcome<unknown, T>): boolean {
     return outcome.rule.hasRequirement(
       and(Criterion.isCriterion, Conformance.isAA())
     );
@@ -95,7 +96,9 @@ describe("conformance.html", () => {
 
   // Other examples of filters, based on conformance:
   // Only keep the outcomes failing a WCAG 2.0 Success Criterion.
-  function wcag20Filter(outcome: Outcome<unknown, unknown>): boolean {
+  function wcag20Filter<T extends Hashable>(
+    outcome: Outcome<unknown, T>
+  ): boolean {
     return outcome.rule.hasRequirement(
       and(Criterion.isCriterion, (criterion) =>
         Iterable.some(criterion.versions, (version) => version === "2.0")
@@ -104,14 +107,18 @@ describe("conformance.html", () => {
   }
 
   // Only keep the outcomes failing a WCAG 2.0 AA Success Criterion (ADA requirement)
-  function wcag20aaFilter(outcome: Outcome<unknown, unknown>): boolean {
+  function wcag20aaFilter<T extends Hashable>(
+    outcome: Outcome<unknown, T>
+  ): boolean {
     return outcome.rule.hasRequirement(
       and(Criterion.isCriterion, Conformance.isAA("2.0"))
     );
   }
 
   // Only keep the outcomes failing a WCAG technique
-  function techniquesFilter(outcome: Outcome<unknown, unknown>): boolean {
+  function techniquesFilter<T extends Hashable>(
+    outcome: Outcome<unknown, T>
+  ): boolean {
     return outcome.rule.hasRequirement(Technique.isTechnique);
   }
 });
@@ -131,7 +138,9 @@ describe("scope.html", () => {
   });
 
   // When filtering to only keep outcomes about components, the test passes.
-  function componentFilter(outcome: Outcome<unknown, unknown>): boolean {
+  function componentFilter<T extends Hashable>(
+    outcome: Outcome<unknown, T>
+  ): boolean {
     return outcome.rule.hasTag((tag) => tag.equals(Scope.Component));
   }
 

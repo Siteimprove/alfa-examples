@@ -5,6 +5,7 @@ import * as act from "@siteimprove/alfa-act";
 import { Color, RGB } from "@siteimprove/alfa-css";
 import { Element, Text } from "@siteimprove/alfa-dom";
 import { Future } from "@siteimprove/alfa-future";
+import { Hashable } from "@siteimprove/alfa-hash";
 import { None, Some } from "@siteimprove/alfa-option";
 import { Playwright } from "@siteimprove/alfa-playwright";
 import { Refinement } from "@siteimprove/alfa-refinement";
@@ -69,7 +70,7 @@ async function teardown(): Promise<void> {
  * of the question (not its subject), and therefore isn't well suited on larger
  * tests where the same question might be asked with different subjects).
  */
-function oracle<I, T, S>(
+function oracle<I, T extends Hashable, S>(
   color: "blue" | "white" = "white"
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (rule, question) => {

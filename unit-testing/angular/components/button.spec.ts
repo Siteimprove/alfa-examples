@@ -33,10 +33,14 @@ beforeEach(() => {
   namedFixture.detectChanges();
 });
 
-it("should not have a name", async () => {
-  await expect(emptyFixture).not.toBeAccessible();
+describe("Empty button", () => {
+  it("should not have a name", async () => {
+    await expect(emptyFixture).not.toBeAccessible();
+  });
 });
 
-it("should have a name", async () => {
-  await expect(namedFixture).toBeAccessible();
+describe("Named button", () => {
+  it("should have a name", async () => {
+    await expect(namedFixture).toBeAccessible();
+  });
 });

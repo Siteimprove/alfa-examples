@@ -8,4 +8,4 @@ This directory demonstrates how Alfa can be used to test:
 
 Note that each example is only running one rule, [SIA-R12](https://alfa.siteimprove.com/rules/sia-r12), which applies to buttons, given that the component tested is a button.
 
-For some reason, the Angular tests seems to not work in Powershell 🤷‍
+The Angular test currently do not work, not sure exactly what the problem is.
