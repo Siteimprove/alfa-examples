@@ -49,7 +49,7 @@ async function setup(): Promise<void> {
 }
 
 async function teardown(): Promise<void> {
-  browser.close();
+  await browser.close();
 }
 
 /**
@@ -96,7 +96,7 @@ function oracle<I, T extends Hashable, S>(
         // * calling `Future.now` is needed because the interview process is
         //   asynchronous (e.g. it can be done "live" in a command line),
         //   therefore the Oracle itself needs to be asynchronous.
-        return Future.now(Some.of([Resolver.color(Color.named(color)) as RGB]));
+        return Future.now(Some.of([Color.named(color).resolve()]));
       }
     }
 
