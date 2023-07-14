@@ -7,11 +7,11 @@
   },
   "devDependencies": {
     "@siteimprove/alfa-act": "^0.65.0",
-    "@siteimprove/alfa-chai": "^0.62.9",
+    "@siteimprove/alfa-chai": "^0.62.10",
     "@siteimprove/alfa-future": "^0.65.0",
     "@siteimprove/alfa-hash": "^0.65.0",
     "@siteimprove/alfa-iterable": "^0.65.0",
-    "@siteimprove/alfa-playwright": "^0.62.9",
+    "@siteimprove/alfa-playwright": "^0.62.10",
     "@siteimprove/alfa-refinement": "^0.65.0",
     "@siteimprove/alfa-rules": "^0.65.0",
     "@siteimprove/alfa-wcag": "^0.65.0",
