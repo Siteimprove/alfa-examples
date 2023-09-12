@@ -23,9 +23,9 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@siteimprove/alfa-assert": "^0.62.11",
-    "@siteimprove/alfa-enzyme": "^0.62.11",
-    "@siteimprove/alfa-jest": "^0.62.11",
+    "@siteimprove/alfa-assert": "^0.63.1",
+    "@siteimprove/alfa-enzyme": "^0.63.1",
+    "@siteimprove/alfa-jest": "^0.63.1",
     "@siteimprove/alfa-rules": "^0.67.0",
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.5",

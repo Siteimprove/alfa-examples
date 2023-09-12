@@ -6,7 +6,7 @@
     "test": "cypress run"
   },
   "devDependencies": {
-    "@siteimprove/alfa-cypress": "^0.62.11",
+    "@siteimprove/alfa-cypress": "^0.63.1",
     "@siteimprove/alfa-rules": "^0.67.0",
     "cypress": "^7.0.1"
   }
