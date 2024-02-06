@@ -87,7 +87,7 @@ Scraper.with(async (scraper) => {
     // seen between R66 and R69: they both need the expensive background color
     // computation which is cached and therefore only "charged" on one of them…
     const startCascade = commonPerformance.mark("cascade").start;
-    Cascade.of(document, device);
+    Cascade.from(document, device);
     commonPerformance.measure("cascade", startCascade);
 
     const startAria = commonPerformance.mark("aria-tree").start;
