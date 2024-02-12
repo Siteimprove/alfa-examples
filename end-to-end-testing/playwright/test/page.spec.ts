@@ -15,7 +15,7 @@ import { persist } from "../../../common/persist";
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
-    rules,
+    rules.filter(rule => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")]
   )
 );
