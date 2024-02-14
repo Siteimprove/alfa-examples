@@ -8,8 +8,8 @@
   "devDependencies": {
     "@siteimprove/alfa-assert": "^0.64.6",
     "@siteimprove/alfa-chai": "^0.64.6",
-    "@siteimprove/alfa-future": "^0.73.0",
-    "@siteimprove/alfa-rules": "^0.73.0",
+    "@siteimprove/alfa-future": "^0.74.0",
+    "@siteimprove/alfa-rules": "^0.74.0",
     "@siteimprove/alfa-webdriver": "^0.64.6",
     "@types/chai": "^4.2.3",
     "@types/mocha": "^5.2.7",
