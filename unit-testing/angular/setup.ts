@@ -1,6 +1,7 @@
 /// <reference types="node" />
 
 import { Angular } from "@siteimprove/alfa-angular";
+import { Future } from "@siteimprove/alfa-future";
 
 import * as alfa from "@siteimprove/alfa-jest";
 
@@ -18,7 +19,7 @@ const R12 = Rules.get("R12").getUnsafe();
 import { persist } from "../../common/persist";
 
 alfa.Jest.createPlugin(
-  (value: Angular.Type) => Angular.toPage(value),
+  (value: Angular.Type) => Future.from(Angular.toPage(value)),
   [R12],
   [persist(() => "outcomes/button.spec.json")]
 );
