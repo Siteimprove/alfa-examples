@@ -47,7 +47,9 @@ Crawler.with(async (crawler) => {
   }
 });
 
-function logStats<I, T extends Hashable, Q extends Question.Metadata>(outcomes: Array<Outcome<I, T, Q>>): void {
+function logStats<I, T extends Hashable, Q extends Question.Metadata>(
+  outcomes: Array<Outcome<I, T, Q>>
+): void {
   console.log(outcomes.filter(Outcome.isPassed).length, "passed outcomes");
 
   console.log(outcomes.filter(Outcome.isFailed).length, "failed outcomes");

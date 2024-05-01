@@ -6,10 +6,10 @@
     "test": "node crawling.js"
   },
   "devDependencies": {
-    "@siteimprove/alfa-act": "^0.74.0",
-    "@siteimprove/alfa-crawler": "^0.64.8",
-    "@siteimprove/alfa-frontier": "^0.64.8",
-    "@siteimprove/alfa-hash": "^0.74.0",
-    "@siteimprove/alfa-rules": "^0.74.0"
+    "@siteimprove/alfa-act": "^0.80.0",
+    "@siteimprove/alfa-crawler": "^0.65.1",
+    "@siteimprove/alfa-frontier": "^0.65.1",
+    "@siteimprove/alfa-hash": "^0.80.0",
+    "@siteimprove/alfa-rules": "^0.80.0"
   }
 }
