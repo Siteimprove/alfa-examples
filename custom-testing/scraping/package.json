@@ -6,9 +6,9 @@
     "test": "node scraping.js"
   },
   "devDependencies": {
-    "@siteimprove/alfa-act": "^0.80.0",
-    "@siteimprove/alfa-hash": "^0.80.0",
-    "@siteimprove/alfa-rules": "^0.80.0",
-    "@siteimprove/alfa-scraper": "^0.65.1"
+    "@siteimprove/alfa-act": "^0.81.0",
+    "@siteimprove/alfa-hash": "^0.81.0",
+    "@siteimprove/alfa-rules": "^0.81.0",
+    "@siteimprove/alfa-scraper": "^0.65.2"
   }
 }
