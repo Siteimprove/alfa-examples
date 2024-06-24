@@ -6,11 +6,11 @@
     "test": "node performance.js"
   },
   "devDependencies": {
-    "@siteimprove/alfa-act": "^0.81.0",
-    "@siteimprove/alfa-aria": "^0.81.0",
-    "@siteimprove/alfa-cascade": "^0.81.0",
-    "@siteimprove/alfa-performance": "^0.81.0",
-    "@siteimprove/alfa-rules": "^0.81.0",
-    "@siteimprove/alfa-scraper": "^0.65.2"
+    "@siteimprove/alfa-act": "^0.84.0",
+    "@siteimprove/alfa-aria": "^0.84.0",
+    "@siteimprove/alfa-cascade": "^0.84.0",
+    "@siteimprove/alfa-performance": "^0.84.0",
+    "@siteimprove/alfa-rules": "^0.84.0",
+    "@siteimprove/alfa-scraper": "^0.66.0"
   }
 }
