@@ -2920,17 +2920,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^17.0.0":
-  version: 17.0.2
-  resolution: "@types/react@npm:17.0.2"
-  dependencies:
-    "@types/prop-types": "*"
-    csstype: ^3.0.2
-  checksum: a5198857165feddcbfc7d33e3322460ac62b8894d702414496a825b0c82272911ec33a42ef7c9d623a59308070eef4dfee6ff834b0674aa3f87eeb644196ee3b
-  languageName: node
-  linkType: hard
-
-"@types/react@npm:^17":
+"@types/react@npm:*, @types/react@npm:^17, @types/react@npm:^17.0.0":
   version: 17.0.80
   resolution: "@types/react@npm:17.0.80"
   dependencies:
@@ -4644,6 +4634,8 @@ __metadata:
     "@siteimprove/alfa-act": ^0.81.0
     "@siteimprove/alfa-assert": ^0.65.2
     "@siteimprove/alfa-formatter": ^0.65.2
+    "@siteimprove/alfa-formatter-earl": ^0.65.2
+    "@siteimprove/alfa-future": ^0.81.0
     "@siteimprove/alfa-hash": ^0.81.0
     "@siteimprove/alfa-mapper": ^0.81.0
   languageName: unknown
@@ -4925,11 +4917,13 @@ __metadata:
   resolution: "custom-testing-answering@workspace:custom-testing/answering"
   dependencies:
     "@siteimprove/alfa-act": ^0.81.0
+    "@siteimprove/alfa-chai": ^0.65.2
     "@siteimprove/alfa-css": ^0.81.0
     "@siteimprove/alfa-dom": ^0.81.0
     "@siteimprove/alfa-future": ^0.81.0
     "@siteimprove/alfa-hash": ^0.81.0
     "@siteimprove/alfa-option": ^0.81.0
+    "@siteimprove/alfa-playwright": ^0.65.2
     "@siteimprove/alfa-refinement": ^0.81.0
     "@siteimprove/alfa-rules": ^0.81.0
     "@siteimprove/alfa-scraper": ^0.65.2
@@ -5518,7 +5512,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"easy-table@npm:1.2.0":
+"easy-table@npm:1.2.0, easy-table@npm:^1.1.1":
   version: 1.2.0
   resolution: "easy-table@npm:1.2.0"
   dependencies:
@@ -5528,19 +5522,6 @@ __metadata:
     wcwidth:
       optional: true
   checksum: 66961b19751a68d2d30ce9b74ef750c374cc3112bbcac3d1ed5a939e43c035ecf6b1954098df2d5b05f1e853ab2b67de893794390dcbf0abe1f157fddeb52174
-  languageName: node
-  linkType: hard
-
-"easy-table@npm:^1.1.1":
-  version: 1.1.1
-  resolution: "easy-table@npm:1.1.1"
-  dependencies:
-    ansi-regex: ^3.0.0
-    wcwidth: ">=1.0.1"
-  dependenciesMeta:
-    wcwidth:
-      optional: true
-  checksum: b31ae1c25d6220e8f1e42430c5147258437c86d1ecfef919c6e73f145d7396f8655e5922c51de7f8cc53e55f25a16e3bb3d28b06ffcc80e889faacbf96b590a9
   languageName: node
   linkType: hard
 
@@ -11650,7 +11631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wcwidth@npm:>=1.0.1, wcwidth@npm:^1.0.1":
+"wcwidth@npm:^1.0.1":
   version: 1.0.1
   resolution: "wcwidth@npm:1.0.1"
   dependencies:
