@@ -18,7 +18,20 @@ const config: KnipConfig = {
     },
     "custom-testing/scraping": { entry: ["scraping.ts"], project },
     "end-to-end-testing/*": { entry, project },
+    "end-to-end-testing/cypress": {
+      cypress: {
+        config: "cypress.json",
+        entry: [...entry, "support.ts"],
+        project,
+      },
+    },
+    "end-to-end-testing/webdriver": {
+      "webdriver-io": { config: ["wdio.conf.ts"], entry, project },
+    },
     "unit-testing/*": { entry, project },
+    "unit-testing/angular": { entry: ["components/*.ts", "setup.ts"], project },
+    "unit-testing/react": { entry: ["components/*.tsx", "setup.ts"], project },
+    "unit-testing/vue": { entry: ["components/*.ts", "setup.ts"], project },
     // "packages/alfa-cascade": {
     //   entry,
     //   project,

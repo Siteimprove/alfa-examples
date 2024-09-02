@@ -5,5 +5,5 @@
     "skipLibCheck": true,
     "types": ["cypress"]
   },
-  "files": ["integration/page.spec.ts", "support.ts"]
+  "files": ["test/page.spec.ts", "support.ts"]
 }
