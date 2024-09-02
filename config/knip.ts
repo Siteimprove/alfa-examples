@@ -4,6 +4,7 @@ const entry = ["test/**/*.spec.ts", "test/**/*.spec.tsx"];
 const project = ["**/*.ts", "**/*.tsx"];
 
 const config: KnipConfig = {
+  ignoreDependencies: ["prettier"],
   workspaces: {
     common: { entry: "persist.ts", project },
     "custom-testing/*": { entry, project },
@@ -23,30 +24,15 @@ const config: KnipConfig = {
     },
     "end-to-end-testing/webdriver": {
       "webdriver-io": { config: ["wdio.conf.ts"], entry, project },
+      ignoreDependencies: [
+        // imported through the config file
+        "chromedriver",
+      ],
     },
     "unit-testing/*": { entry, project },
     "unit-testing/angular": { entry: ["components/*.ts", "setup.ts"], project },
     "unit-testing/react": { entry: ["components/*.tsx", "setup.ts"], project },
     "unit-testing/vue": { entry: ["components/*.ts", "setup.ts"], project },
-    // "packages/alfa-cascade": {
-    //   entry,
-    //   project,
-    //   // For some reason, knip doesn't detect that Bucket is used in the test
-    //   // file and needs to be exported for that.
-    //   ignore: ["src/ancestor-filter.ts"],
-    // },
-    // "packages/alfa-device": { entry: [...entry, "src/native.ts!"], project },
-    // "packages/alfa-dom": {
-    //   entry: [
-    //     ...entry,
-    //     "src/h.ts!",
-    //     "src/jsx.ts!",
-    //     "src/jsx-runtime.ts!",
-    //     "src/native.ts!",
-    //   ],
-    //   project,
-    // },
-    // "packages/alfa-web": { entry: [...entry, "src/native.ts!"], project },
   },
 };
 

@@ -17,7 +17,6 @@
     ]
   },
   "devDependencies": {
-    "@siteimprove/alfa-assert": "^0.65.2",
     "@siteimprove/alfa-enzyme": "^0.65.2",
     "@siteimprove/alfa-jest": "^0.65.2",
     "@siteimprove/alfa-rules": "^0.81.0",
