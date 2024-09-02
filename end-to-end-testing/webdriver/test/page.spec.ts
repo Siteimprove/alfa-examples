@@ -6,7 +6,7 @@ import { WebElement } from "@siteimprove/alfa-webdriver";
 import * as alfa from "@siteimprove/alfa-chai";
 import rules from "@siteimprove/alfa-rules";
 
-import { persist } from "../../../common/persist";
+import { persist } from "common/persist";
 
 chai.use(
   alfa.Chai.createPlugin(

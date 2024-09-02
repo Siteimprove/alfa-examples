@@ -5,11 +5,7 @@ const project = ["**/*.ts", "**/*.tsx"];
 
 const config: KnipConfig = {
   workspaces: {
-    ".": {
-      entry: ["common/*.ts"],
-      project: ["common/**/*.ts"],
-      ignoreDependencies: ["prettier"],
-    },
+    common: { entry: "persist.ts", project },
     "custom-testing/*": { entry, project },
     "custom-testing/crawling": { entry: ["crawling.ts"], project },
     "custom-testing/measuring-performances": {

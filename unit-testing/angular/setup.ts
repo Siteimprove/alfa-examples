@@ -16,7 +16,7 @@ global.TextEncoder = TextEncoder;
 import { Rules } from "@siteimprove/alfa-rules";
 const R12 = Rules.get("R12").getUnsafe();
 
-import { persist } from "../../common/persist";
+import { persist } from "common/persist";
 
 alfa.Jest.createPlugin(
   (value: Angular.Type) => Future.from(Angular.toPage(value)),

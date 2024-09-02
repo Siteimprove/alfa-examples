@@ -2,22 +2,21 @@
 /// <reference types="mocha" />
 
 import * as act from "@siteimprove/alfa-act";
-import { Color, RGB } from "@siteimprove/alfa-css";
+import { Color } from "@siteimprove/alfa-css";
 import { Element, Text } from "@siteimprove/alfa-dom";
 import { Future } from "@siteimprove/alfa-future";
 import { Hashable } from "@siteimprove/alfa-hash";
 import { None, Some } from "@siteimprove/alfa-option";
 import { Playwright } from "@siteimprove/alfa-playwright";
 import { Refinement } from "@siteimprove/alfa-refinement";
-import rules, { Question, Scope } from "@siteimprove/alfa-rules";
-import { Resolver } from "@siteimprove/alfa-style";
+import rules, { Question } from "@siteimprove/alfa-rules";
 
 import * as chai from "chai";
 import * as playwright from "playwright";
 
 import * as alfa from "@siteimprove/alfa-chai";
 
-import { persist } from "../../../common/persist";
+import { persist } from "common/persist";
 
 const { and } = Refinement;
 
@@ -25,7 +24,7 @@ const { and } = Refinement;
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
-    rules.filter(rule => !rule.uri.includes("r111")),
+    rules.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")]
   )
 );

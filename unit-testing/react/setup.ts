@@ -9,7 +9,7 @@ const R12 = Rules.get("R12").getUnsafe();
 import * as enzyme from "enzyme";
 import Adapter from "enzyme-adapter-react-16";
 
-import { persist } from "../../common/persist";
+import { persist } from "common/persist";
 
 enzyme.configure({ adapter: new Adapter() });
 

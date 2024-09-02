@@ -41,6 +41,7 @@
     "@siteimprove/alfa-jest": "^0.65.2",
     "@siteimprove/alfa-rules": "^0.81.0",
     "@types/jest": "^29.5.1",
+    "common": "workspace:^",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "jest-preset-angular": "^13.1.1"

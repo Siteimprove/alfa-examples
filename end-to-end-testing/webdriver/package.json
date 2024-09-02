@@ -19,6 +19,7 @@
     "@wdio/spec-reporter": "^7.1.1",
     "chai": "^4.3.4",
     "chromedriver": "^119.0.1",
+    "common": "workspace:^",
     "mocha": "^8.3.2",
     "ts-node": "^9.1.1",
     "wdio-chromedriver-service": "^7.0.0",
