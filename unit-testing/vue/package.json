@@ -21,6 +21,10 @@
     },
     "verbose": true
   },
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12"

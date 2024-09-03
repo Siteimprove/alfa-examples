@@ -28,6 +28,10 @@
     },
     "verbose": true
   },
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "dependencies": {
     "@angular/core": "^11.0.5",
     "@angular/platform-browser-dynamic": "^8.2.0",
