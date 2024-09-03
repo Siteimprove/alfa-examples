@@ -30,3 +30,4 @@ jobs:
       - run: yarn dedupe --check
       - run: yarn build
       - run: yarn test
+      - run: yarn knip

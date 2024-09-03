@@ -6,22 +6,18 @@
     "build": "tsc --build",
     "watch": "tsc --build --watch",
     "clean": "tsc --build --clean",
+    "knip": "knip -c config/knip.ts",
     "test": "yarn workspaces foreach -v -p --exclude 'end-to-end-testing-{cypress,puppeteer,webdriver}' --exclude 'custom-testing-{crawling,scraping,measuring-performance}' --exclude 'unit-testing-angular' run test"
   },
   "workspaces": [
+    "common",
     "custom-testing/*",
     "end-to-end-testing/*",
     "unit-testing/*"
   ],
   "devDependencies": {
-    "@siteimprove/alfa-act": "^0.81.0",
-    "@siteimprove/alfa-assert": "^0.65.2",
-    "@siteimprove/alfa-formatter": "^0.65.2",
-    "@siteimprove/alfa-formatter-earl": "^0.65.2",
-    "@siteimprove/alfa-future": "^0.81.0",
-    "@siteimprove/alfa-hash": "^0.81.0",
-    "@siteimprove/alfa-mapper": "^0.81.0",
     "@types/node": "^20.2.3",
+    "knip": "^5.29.1",
     "prettier": "^2.2.1",
     "typescript": "^5.0.4"
   },

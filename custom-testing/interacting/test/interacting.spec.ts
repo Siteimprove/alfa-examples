@@ -13,7 +13,7 @@ import * as alfa from "@siteimprove/alfa-chai";
 import { Rules } from "@siteimprove/alfa-rules";
 const R69 = Rules.get("R69").getUnsafe();
 
-import { persist } from "../../../common/persist";
+import { persist } from "common/persist";
 
 chai.use(
   alfa.Chai.createPlugin(

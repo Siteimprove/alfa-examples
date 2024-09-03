@@ -13,8 +13,6 @@ import * as alfa from "@siteimprove/alfa-chai";
 import { Rules } from "@siteimprove/alfa-rules";
 const R69 = Rules.get("R69").getUnsafe();
 
-import { persist } from "../../../common/persist";
-
 // Creating a Chai plugin which only uses R69.
 chai.use(
   alfa.Chai.createPlugin(

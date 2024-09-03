@@ -29,21 +29,18 @@
     "verbose": true
   },
   "dependencies": {
-    "@angular/common": "^8.2.0",
-    "@angular/compiler": "^8.2.0",
     "@angular/core": "^11.0.5",
-    "@angular/platform-browser": "^8.2.0",
     "@angular/platform-browser-dynamic": "^8.2.0",
-    "core-js": "^3.10.1",
     "rxjs": "^6.6.7",
     "zone.js": "^0.11.4"
   },
   "devDependencies": {
     "@siteimprove/alfa-angular": "^0.65.2",
-    "@siteimprove/alfa-assert": "^0.65.2",
+    "@siteimprove/alfa-future": "^0.81.0",
     "@siteimprove/alfa-jest": "^0.65.2",
     "@siteimprove/alfa-rules": "^0.81.0",
     "@types/jest": "^29.5.1",
+    "common": "workspace:^",
     "jest": "^29.5.0",
     "jest-environment-jsdom": "^29.5.0",
     "jest-preset-angular": "^13.1.1"

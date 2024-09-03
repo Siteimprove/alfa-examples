@@ -10,12 +10,12 @@ import { Playwright } from "@siteimprove/alfa-playwright";
 import * as alfa from "@siteimprove/alfa-chai";
 import rules from "@siteimprove/alfa-rules";
 
-import { persist } from "../../../common/persist";
+import { persist } from "common/persist";
 
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
-    rules.filter(rule => !rule.uri.includes("r111")),
+    rules.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")]
   )
 );

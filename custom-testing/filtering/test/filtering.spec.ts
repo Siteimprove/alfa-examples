@@ -16,7 +16,7 @@ import * as alfa from "@siteimprove/alfa-chai";
 
 import rules, { Scope } from "@siteimprove/alfa-rules";
 
-import { persist } from "../../../common/persist";
+import { persist } from "common/persist";
 
 const { and } = Refinement;
 
@@ -24,7 +24,7 @@ const { and } = Refinement;
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
-    rules.filter(rule => !rule.uri.includes("r111")),
+    rules.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/filtering.spec.json")]
   )
 );
