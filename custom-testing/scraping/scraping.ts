@@ -19,7 +19,16 @@ const local = url.pathToFileURL(input).toString();
 const page = process.argv?.[2] ?? local;
 
 Scraper.with(async (scraper) => {
-  for (const input of await scraper.scrape(page)) {
+  const alfaPage = await scraper.scrape(page);
+
+  if (alfaPage.isErr()) {
+    // If the scrape failed, exit with non-0 code.
+    console.error(alfaPage.getErr());
+
+    process.exit(1);
+  }
+
+  for (const input of alfaPage) {
     const outcomes = await Audit.of(input, rules.default)
       .evaluate()
       .map((outcomes) => [...outcomes]);
