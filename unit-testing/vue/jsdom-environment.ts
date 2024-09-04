@@ -1,4 +1,6 @@
 /**
+ * Workaround for the missing `TextEncoder` in JSDOM.
+ *
  * {@link https://github.com/mswjs/mswjs.io/issues/292#issue-1977585807}
  */
 
