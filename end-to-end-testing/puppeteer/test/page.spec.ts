@@ -49,7 +49,7 @@ describe("page.html", () => {
     await browser.close();
   });
 
-  it("should be accessible", (done) => {
-    expect(document).to.be.accessible().then(done, done);
+  it("should be accessible", async () => {
+    await expect(document).to.be.accessible();
   });
 });
