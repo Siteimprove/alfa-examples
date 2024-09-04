@@ -21,7 +21,10 @@ export function persist<I, T extends Hashable, Q extends Question.Metadata, S>(
       const dir = path.dirname(file);
 
       fs.mkdirSync(dir, { recursive: true });
-      fs.writeFileSync(file, format(input, rules, [...outcomes]) + "\n");
+      fs.writeFileSync(
+        file,
+        (await format(input, rules, [...outcomes])) + "\n"
+      );
 
       return `${message}, see the full report at ${file}`;
     });
