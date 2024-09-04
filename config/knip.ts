@@ -32,7 +32,10 @@ const config: KnipConfig = {
     "unit-testing/*": { entry, project },
     "unit-testing/angular": { entry: ["components/*.ts", "setup.ts"], project },
     "unit-testing/react": { entry: ["components/*.tsx", "setup.ts"], project },
-    "unit-testing/vue": { entry: ["components/*.ts", "setup.ts"], project },
+    "unit-testing/vue": {
+      entry: ["components/*.ts", "jsdom-environment.ts", "setup.ts"],
+      project,
+    },
   },
 };
 

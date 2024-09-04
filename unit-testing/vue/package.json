@@ -31,6 +31,7 @@
     "vue-template-compiler": "^2.6.12"
   },
   "devDependencies": {
+    "@jest/environment": "^29.7.0",
     "@siteimprove/alfa-future": "^0.81.0",
     "@siteimprove/alfa-jest": "^0.65.2",
     "@siteimprove/alfa-rules": "^0.81.0",
