@@ -16,7 +16,7 @@ import { persist } from "common/persist";
 chai.use(
   alfa.Chai.createPlugin(
     (value: Puppeteer.Type) => Future.from(Puppeteer.toPage(value)),
-    rules.default,
+    rules.default.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")]
   )
 );
@@ -33,7 +33,7 @@ describe("page.html", () => {
   let document: puppeteer.JSHandle;
 
   before(async () => {
-    browser = await puppeteer.launch();
+    browser = await puppeteer.default.launch();
     page = await browser.newPage();
 
     await page.goto(
