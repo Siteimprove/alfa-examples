@@ -3,12 +3,14 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "esModuleInterop": true,
-    "types": ["jest"]
+    "types": ["jest"],
+    "skipLibCheck": true
   },
-  "files": ["components/button.spec.ts", "components/button.ts", "setup.ts"],
-  "references": [
-    {
-      "path": "../../common"
-    }
-  ]
+  "files": [
+    "components/button.spec.ts",
+    "components/button.ts",
+    "jsdom-environment.ts",
+    "setup.ts"
+  ],
+  "references": [{ "path": "../../common" }]
 }

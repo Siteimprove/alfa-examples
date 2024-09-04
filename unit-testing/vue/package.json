@@ -3,7 +3,7 @@
   "private": true,
   "name": "unit-testing-vue",
   "scripts": {
-    "test": "jest"
+    "test": "yarn node --experimental-vm-modules $(yarn bin jest)"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -12,10 +12,11 @@
     "transformIgnorePatterns": [
       "^.+\\.js$"
     ],
+    "transform": {},
     "moduleFileExtensions": [
       "js"
     ],
-    "testEnvironment": "jsdom",
+    "testEnvironment": "./jsdom-environment.js",
     "testEnvironmentOptions": {
       "url": "http://localhost/"
     },
