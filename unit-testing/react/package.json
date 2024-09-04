@@ -3,7 +3,7 @@
   "private": true,
   "name": "unit-testing-react",
   "scripts": {
-    "test": "jest"
+    "test": "yarn node --experimental-vm-modules $(yarn bin jest)"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -12,6 +12,7 @@
     "transformIgnorePatterns": [
       "^.+\\.js$"
     ],
+    "transform": {},
     "moduleFileExtensions": [
       "js"
     ]

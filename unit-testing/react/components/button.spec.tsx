@@ -1,13 +1,13 @@
 /// <reference types="@siteimprove/alfa-jest" />
 
-import { shallow } from "enzyme";
+import * as enzyme from "enzyme";
 
-import { Button } from "./button";
+import { Button } from "./button.js";
 
 it("should not have a name", async () => {
-  await expect(shallow(<Button></Button>)).not.toBeAccessible();
+  await expect(enzyme.default.shallow(<Button></Button>)).not.toBeAccessible();
 });
 
 it("should have a name", async () => {
-  await expect(shallow(<Button>Hello</Button>)).toBeAccessible();
+  await expect(enzyme.default.shallow(<Button>Hello</Button>)).toBeAccessible();
 });

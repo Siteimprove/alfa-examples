@@ -2,7 +2,7 @@
 
 import { mount } from "@vue/test-utils";
 
-import { EmptyButton, NamedButton } from "./button";
+import { EmptyButton, NamedButton } from "./button.js";
 
 // window.matchMedia is not currently implemented by JSDOM, used by Jest, so
 // we need to mock it.

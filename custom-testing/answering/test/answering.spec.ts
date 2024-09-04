@@ -12,6 +12,8 @@ import { Refinement } from "@siteimprove/alfa-refinement";
 import rules, { Question } from "@siteimprove/alfa-rules";
 
 import * as chai from "chai";
+import * as path from "node:path";
+import * as url from "node:url";
 import * as playwright from "playwright";
 
 import * as alfa from "@siteimprove/alfa-chai";
@@ -24,7 +26,7 @@ const { and } = Refinement;
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
-    rules.filter((rule) => !rule.uri.includes("r111")),
+    rules.default.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")]
   )
 );
@@ -35,9 +37,13 @@ const { expect } = chai;
 let browser: playwright.Browser;
 let page: playwright.Page;
 
+// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 async function load(file: string): Promise<playwright.JSHandle> {
-  const path = `./fixtures/${file}`;
-  await page.goto(`file://${require.resolve(path)}`);
+  const fixture = path.join(__dirname, "fixtures", file);
+  await page.goto(url.pathToFileURL(fixture).href);
 
   return page.evaluateHandle(() => window.document);
 }

@@ -1,12 +1,16 @@
-import * as fs from "fs";
-import * as path from "path";
-import * as url from "url";
+import * as fs from "node:fs";
+import * as path from "node:path";
+import * as url from "node:url";
 
 import { Audit, Outcome, Question } from "@siteimprove/alfa-act";
 import { Hashable } from "@siteimprove/alfa-hash";
 import { Scraper } from "@siteimprove/alfa-scraper";
 
 import rules from "@siteimprove/alfa-rules";
+
+// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const input = path.join(__dirname, "fixtures", "page.html");
 const output = path.join(__dirname, "outcomes", "page.html.json");
@@ -16,7 +20,7 @@ const page = process.argv?.[2] ?? local;
 
 Scraper.with(async (scraper) => {
   for (const input of await scraper.scrape(page)) {
-    const outcomes = await Audit.of(input, rules)
+    const outcomes = await Audit.of(input, rules.default)
       .evaluate()
       .map((outcomes) => [...outcomes]);
 
@@ -44,7 +48,9 @@ Scraper.with(async (scraper) => {
   }
 });
 
-function logStats<I, T extends Hashable, Q extends Question.Metadata>(outcomes: Array<Outcome<I, T, Q>>): void {
+function logStats<I, T extends Hashable, Q extends Question.Metadata>(
+  outcomes: Array<Outcome<I, T, Q>>
+): void {
   console.log(outcomes.filter(Outcome.isPassed).length, "passed outcomes");
 
   console.log(outcomes.filter(Outcome.isFailed).length, "failed outcomes");

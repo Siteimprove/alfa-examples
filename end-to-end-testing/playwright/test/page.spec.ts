@@ -1,6 +1,9 @@
 /// <reference types="node" />
 /// <reference types="mocha" />
 
+import * as path from "node:path";
+import * as url from "node:url";
+
 import * as chai from "chai";
 import * as playwright from "playwright";
 
@@ -12,10 +15,14 @@ import rules from "@siteimprove/alfa-rules";
 
 import { persist } from "common/persist";
 
+// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
-    rules.filter((rule) => !rule.uri.includes("r111")),
+    rules.default.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")]
   )
 );
@@ -31,7 +38,11 @@ describe("page.html", () => {
     browser = await playwright.chromium.launch();
     page = await browser.newPage();
 
-    await page.goto(`file://${require.resolve("../../fixtures/page.html")}`);
+    await page.goto(
+      url.pathToFileURL(
+        path.join(__dirname, "..", "..", "fixtures", "page.html")
+      ).href
+    );
 
     document = await page.evaluateHandle(() => window.document);
   });
