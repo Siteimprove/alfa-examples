@@ -5201,13 +5201,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"devtools-protocol@npm:0.0.854822":
-  version: 0.0.854822
-  resolution: "devtools-protocol@npm:0.0.854822"
-  checksum: 6a49e631967da8f29e4e37c5002d2faf913884dd48b989b3e8ea34ab2ee51f441c5a644dc21a8dade5b388879cf073b7379c79a4b700109f51c58ea7c6abc01a
-  languageName: node
-  linkType: hard
-
 "devtools-protocol@npm:0.0.969999":
   version: 0.0.969999
   resolution: "devtools-protocol@npm:0.0.969999"
@@ -5469,7 +5462,7 @@ __metadata:
     chai: ^4.3.4
     common: "workspace:^"
     mocha: ^8.3.2
-    puppeteer: ^8.0.0
+    puppeteer: ^19.9.1
   languageName: unknown
   linkType: soft
 
@@ -5962,7 +5955,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"extract-zip@npm:2.0.1, extract-zip@npm:^2.0.0, extract-zip@npm:^2.0.1":
+"extract-zip@npm:2.0.1, extract-zip@npm:^2.0.1":
   version: 2.0.1
   resolution: "extract-zip@npm:2.0.1"
   dependencies:
@@ -8792,7 +8785,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.7, node-fetch@npm:^2.6.1":
+"node-fetch@npm:2.6.7":
   version: 2.6.7
   resolution: "node-fetch@npm:2.6.7"
   dependencies:
@@ -9467,7 +9460,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"progress@npm:2.0.3, progress@npm:^2.0.1":
+"progress@npm:2.0.3":
   version: 2.0.3
   resolution: "progress@npm:2.0.3"
   checksum: f67403fe7b34912148d9252cb7481266a354bd99ce82c835f79070643bb3c6583d10dbcfda4d41e04bbc1d8437e9af0fb1e1f2135727878f5308682a579429b7
@@ -9637,26 +9630,6 @@ __metadata:
     proxy-from-env: 1.1.0
     puppeteer-core: 19.11.1
   checksum: fd2b8ff106b21e5ea5b5552bc6f98e8b9b4c5b6fdb50d012268e21c1061d98f9f942cb606913376bc0cf29e80b81e0413ecbbfa8d642cb688fa96095d45c189e
-  languageName: node
-  linkType: hard
-
-"puppeteer@npm:^8.0.0":
-  version: 8.0.0
-  resolution: "puppeteer@npm:8.0.0"
-  dependencies:
-    debug: ^4.1.0
-    devtools-protocol: 0.0.854822
-    extract-zip: ^2.0.0
-    https-proxy-agent: ^5.0.0
-    node-fetch: ^2.6.1
-    pkg-dir: ^4.2.0
-    progress: ^2.0.1
-    proxy-from-env: ^1.1.0
-    rimraf: ^3.0.2
-    tar-fs: ^2.0.0
-    unbzip2-stream: ^1.3.3
-    ws: ^7.2.3
-  checksum: ee5fb8269dab61abc4f7cccd5d1eb283534f279be27c12825678170aa2effcb93263b11f8432ad08c034d29424ca0b71af3d6cf60ebce3b38b110ab722f11ecb
   languageName: node
   linkType: hard
 
@@ -10751,7 +10724,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tar-fs@npm:2.1.1, tar-fs@npm:^2.0.0":
+"tar-fs@npm:2.1.1":
   version: 2.1.1
   resolution: "tar-fs@npm:2.1.1"
   dependencies:
@@ -11057,7 +11030,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unbzip2-stream@npm:1.4.3, unbzip2-stream@npm:^1.3.3":
+"unbzip2-stream@npm:1.4.3":
   version: 1.4.3
   resolution: "unbzip2-stream@npm:1.4.3"
   dependencies:
@@ -11624,21 +11597,6 @@ __metadata:
     utf-8-validate:
       optional: true
   checksum: 76f2f90e40344bf18fd544194e7067812fb1372b2a37865678d8f12afe4b478ff2ebc0c7c0aff82cd5e6b66fc43d889eec0f1865c2365d8f7a66d92da7744a77
-  languageName: node
-  linkType: hard
-
-"ws@npm:^7.2.3":
-  version: 7.5.0
-  resolution: "ws@npm:7.5.0"
-  peerDependencies:
-    bufferutil: ^4.0.1
-    utf-8-validate: ^5.0.2
-  peerDependenciesMeta:
-    bufferutil:
-      optional: true
-    utf-8-validate:
-      optional: true
-  checksum: 1918eef52c78c57c920a6ffc1da0be2d2e3a3ab0f54e8db2e7e8534dae2e50a184fd460da143a16dd90bd9d3e15468468331f9e4617723f52c1a2232a698ec15
   languageName: node
   linkType: hard
 
