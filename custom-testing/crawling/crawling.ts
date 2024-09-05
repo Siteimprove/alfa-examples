@@ -25,7 +25,7 @@ const frontier = Frontier.of(scope, [scope, ...seed]);
 Crawler.with(async (crawler) => {
   for await (const result of crawler.crawl(frontier)) {
     for (const input of result) {
-      const outcomes = await Audit.of(input, rules.default)
+      const outcomes = await Audit.of(input, rules)
         .evaluate()
         .map((outcomes) => [...outcomes]);
 

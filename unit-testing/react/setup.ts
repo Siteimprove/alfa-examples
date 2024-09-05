@@ -11,7 +11,7 @@ import Adapter from "enzyme-adapter-react-16";
 
 import { persist } from "common/persist";
 
-enzyme.default.configure({ adapter: new Adapter() });
+enzyme.configure({ adapter: new Adapter() });
 
 alfa.Jest.createPlugin(
   (value: Enzyme.Type) => Enzyme.toPage(value),
