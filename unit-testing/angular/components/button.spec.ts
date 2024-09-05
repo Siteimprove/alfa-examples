@@ -1,7 +1,7 @@
 /// <reference types="@siteimprove/alfa-jest" />
 
 import { ComponentFixture, TestBed } from "@angular/core/testing";
-import { EmptyButtonComponent, NamedButtonComponent } from "./button";
+import { EmptyButtonComponent, NamedButtonComponent } from "./button.js";
 
 let emptyFixture: ComponentFixture<EmptyButtonComponent>;
 let namedFixture: ComponentFixture<NamedButtonComponent>;

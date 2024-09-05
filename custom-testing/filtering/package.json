@@ -5,6 +5,10 @@
   "scripts": {
     "test": "mocha --timeout 10000"
   },
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "devDependencies": {
     "@siteimprove/alfa-act": "^0.81.0",
     "@siteimprove/alfa-chai": "^0.65.2",

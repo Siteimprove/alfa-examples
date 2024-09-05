@@ -5,6 +5,10 @@
   "scripts": {
     "test": "cypress run"
   },
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "devDependencies": {
     "@siteimprove/alfa-cypress": "^0.65.2",
     "@siteimprove/alfa-rules": "^0.81.0",

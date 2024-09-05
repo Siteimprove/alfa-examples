@@ -5,6 +5,10 @@
   "scripts": {
     "test": "node performance.js"
   },
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "devDependencies": {
     "@siteimprove/alfa-act": "^0.81.0",
     "@siteimprove/alfa-aria": "^0.81.0",

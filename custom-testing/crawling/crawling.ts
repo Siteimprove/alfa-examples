@@ -1,5 +1,6 @@
-import * as fs from "fs";
-import * as path from "path";
+import * as fs from "node:fs";
+import * as url from "node:url";
+import * as path from "node:path";
 
 import { Audit, Outcome, Question } from "@siteimprove/alfa-act";
 import { Crawler } from "@siteimprove/alfa-crawler";
@@ -15,12 +16,16 @@ if (!scope) {
   process.exit(1);
 }
 
+// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 const frontier = Frontier.of(scope, [scope, ...seed]);
 
 Crawler.with(async (crawler) => {
   for await (const result of crawler.crawl(frontier)) {
     for (const input of result) {
-      const outcomes = await Audit.of(input, rules)
+      const outcomes = await Audit.of(input, rules.default)
         .evaluate()
         .map((outcomes) => [...outcomes]);
 

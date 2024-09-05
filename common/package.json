@@ -2,6 +2,10 @@
   "$schema": "http://json.schemastore.org/package",
   "private": true,
   "name": "common",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "exports": {
     "./persist": "./persist.js",
     "./persist.js": "./persist.js"

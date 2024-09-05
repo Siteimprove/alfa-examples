@@ -1,6 +1,6 @@
-import * as fs from "fs";
-import * as path from "path";
-import * as url from "url";
+import * as fs from "node:fs";
+import * as path from "node:path";
+import * as url from "node:url";
 
 import { Audit, Rule } from "@siteimprove/alfa-act";
 import * as aria from "@siteimprove/alfa-aria";
@@ -8,9 +8,14 @@ import { Cascade } from "@siteimprove/alfa-cascade";
 import { Performance } from "@siteimprove/alfa-performance";
 import { Scraper } from "@siteimprove/alfa-scraper";
 
-import rules, { Flattened } from "@siteimprove/alfa-rules";
+import rules from "@siteimprove/alfa-rules";
+import type { Flattened } from "@siteimprove/alfa-rules";
 
 const { isMeasure } = Performance.Measure;
+
+// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // We'll record the rules' performance in a duration object with this shape:
 interface Durations {
@@ -96,7 +101,7 @@ Scraper.with(async (scraper) => {
 
     // The Performance object with its callback listener is passed to the Audit
     // evaluation.
-    await Audit.of(page, rules).evaluate(rulesPerformance);
+    await Audit.of(page, rules.default).evaluate(rulesPerformance);
 
     // Closing the total duration measurement.
     commonPerformance.measure("total", start);

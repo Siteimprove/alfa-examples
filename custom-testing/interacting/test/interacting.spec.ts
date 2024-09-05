@@ -5,6 +5,8 @@ import { Future } from "@siteimprove/alfa-future";
 import { Playwright } from "@siteimprove/alfa-playwright";
 
 import * as chai from "chai";
+import * as path from "node:path";
+import * as url from "node:url";
 import * as playwright from "playwright";
 
 import * as alfa from "@siteimprove/alfa-chai";
@@ -25,6 +27,10 @@ chai.use(
 
 const { expect } = chai;
 
+// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
+const __filename = url.fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
 describe("Interacting with a page", () => {
   let browser: playwright.Browser;
   let page: playwright.Page;
@@ -34,7 +40,9 @@ describe("Interacting with a page", () => {
     browser = await playwright.chromium.launch();
     page = await browser.newPage();
 
-    await page.goto(`file://${require.resolve("./fixtures/page.html")}`);
+    await page.goto(
+      url.pathToFileURL(path.join(__dirname, "fixtures", "page.html")).href
+    );
 
     document = await page.evaluateHandle(() => window.document);
   });

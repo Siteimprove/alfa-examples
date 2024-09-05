@@ -3,7 +3,7 @@
   "private": true,
   "name": "unit-testing-vue",
   "scripts": {
-    "test": "jest"
+    "test": "yarn node --experimental-vm-modules $(yarn bin jest)"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -12,20 +12,26 @@
     "transformIgnorePatterns": [
       "^.+\\.js$"
     ],
+    "transform": {},
     "moduleFileExtensions": [
       "js"
     ],
-    "testEnvironment": "jsdom",
+    "testEnvironment": "./jsdom-environment.js",
     "testEnvironmentOptions": {
       "url": "http://localhost/"
     },
     "verbose": true
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
   },
   "dependencies": {
     "vue": "^2.6.12",
     "vue-template-compiler": "^2.6.12"
   },
   "devDependencies": {
+    "@jest/environment": "^29.7.0",
     "@siteimprove/alfa-future": "^0.81.0",
     "@siteimprove/alfa-jest": "^0.65.2",
     "@siteimprove/alfa-rules": "^0.81.0",

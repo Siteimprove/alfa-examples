@@ -2,6 +2,10 @@
   "$schema": "http://json.schemastore.org/package",
   "private": true,
   "name": "custom-testing-scraping",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
   "scripts": {
     "test": "node scraping.js"
   },
