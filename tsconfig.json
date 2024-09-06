@@ -10,10 +10,7 @@
     "sourceMap": true,
     "strict": true,
     "target": "es2022",
-    "types": ["node"],
-    "verbatimModuleSyntax": true,
-    "//": "Puppeteer is heavy in ambient const enums which verbatimModuleSyntax doesn't like. Given that this is only tests/examples, we don't really care about typechecking the libraries.",
-    "skipLibCheck": true
+    "types": ["node"]
   },
   "files": [],
   "references": [
