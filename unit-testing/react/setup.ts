@@ -11,10 +11,6 @@ import Adapter from "enzyme-adapter-react-16";
 
 import { persist } from "common/persist";
 
-enzyme.configure({ adapter: new Adapter() });
+enzyme.default.configure({ adapter: new Adapter() });
 
-alfa.Jest.createPlugin(
-  (value: Enzyme.Type) => Enzyme.toPage(value),
-  [R12],
-  [persist(() => "outcomes/button.spec.json")]
-);
+alfa.Jest.createPlugin((value: Enzyme.Type) => Enzyme.toPage(value), [R12], []);
