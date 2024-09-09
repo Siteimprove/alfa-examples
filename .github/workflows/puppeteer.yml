@@ -18,7 +18,7 @@ on:
       - "*"
 jobs:
   build:
-    name: Build
+    name: Build (puppeteer)
     runs-on: ubuntu-latest
     strategy:
       matrix:
