@@ -39,9 +39,9 @@
     "zone.js": "^0.11.4"
   },
   "devDependencies": {
-    "@siteimprove/alfa-angular": "^0.70.1",
+    "@siteimprove/alfa-angular": "^0.71.1",
     "@siteimprove/alfa-future": "^0.90.1",
-    "@siteimprove/alfa-jest": "^0.70.1",
+    "@siteimprove/alfa-jest": "^0.71.1",
     "@siteimprove/alfa-rules": "^0.90.1",
     "@types/jest": "^29.5.1",
     "common": "workspace:^",

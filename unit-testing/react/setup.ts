@@ -13,4 +13,8 @@ import { persist } from "common/persist";
 
 enzyme.default.configure({ adapter: new Adapter() });
 
-alfa.Jest.createPlugin((value: Enzyme.Type) => Enzyme.toPage(value), [R12], []);
+alfa.Jest.createPlugin(
+  (value: Enzyme.Type) => Enzyme.toPage(value),
+  [R12],
+  [persist(() => "outcomes/button.spec.json")]
+);

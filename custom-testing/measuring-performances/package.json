@@ -15,6 +15,6 @@
     "@siteimprove/alfa-cascade": "^0.90.1",
     "@siteimprove/alfa-performance": "^0.90.1",
     "@siteimprove/alfa-rules": "^0.90.1",
-    "@siteimprove/alfa-scraper": "^0.70.1"
+    "@siteimprove/alfa-scraper": "^0.71.1"
   }
 }

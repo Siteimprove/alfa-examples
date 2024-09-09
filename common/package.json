@@ -12,13 +12,13 @@
   },
   "devDependencies": {
     "@siteimprove/alfa-act": "^0.90.1",
-    "@siteimprove/alfa-assert": "^0.70.1",
-    "@siteimprove/alfa-formatter": "^0.70.1",
+    "@siteimprove/alfa-assert": "^0.71.1",
+    "@siteimprove/alfa-formatter": "^0.71.1",
     "@siteimprove/alfa-hash": "^0.90.1",
     "@siteimprove/alfa-mapper": "^0.90.1"
   },
   "dependencies": {
-    "@siteimprove/alfa-formatter-earl": "^0.70.1",
+    "@siteimprove/alfa-formatter-earl": "^0.71.1",
     "@siteimprove/alfa-future": "^0.90.1"
   }
 }
