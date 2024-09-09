@@ -2,12 +2,8 @@
   "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "types": ["mocha"]
+    "types": ["mocha", "node"]
   },
   "files": ["test/page.spec.ts"],
-  "references": [
-    {
-      "path": "../../common"
-    }
-  ]
+  "references": [{ "path": "../../common" }]
 }

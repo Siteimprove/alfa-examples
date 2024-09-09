@@ -101,7 +101,7 @@ Scraper.with(async (scraper) => {
 
     // The Performance object with its callback listener is passed to the Audit
     // evaluation.
-    await Audit.of(page, rules.default).evaluate(rulesPerformance);
+    await Audit.of(page, rules).evaluate(rulesPerformance);
 
     // Closing the total duration measurement.
     commonPerformance.measure("total", start);

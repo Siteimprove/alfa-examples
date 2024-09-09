@@ -7,7 +7,7 @@
     "watch": "tsc --build --watch",
     "clean": "tsc --build --clean",
     "knip": "knip -c config/knip.ts",
-    "test": "yarn workspaces foreach -v -p --exclude 'end-to-end-testing-{cypress,puppeteer,webdriver}' --exclude 'custom-testing-{crawling,measuring-performance}' --exclude 'unit-testing-angular' run test"
+    "test": "yarn workspaces foreach -v -p --exclude 'end-to-end-testing-{puppeteer,webdriver}' --exclude 'custom-testing-{crawling,measuring-performance}' --exclude 'unit-testing-angular' run test"
   },
   "workspaces": [
     "common",
@@ -20,6 +20,14 @@
     "knip": "^5.29.1",
     "prettier": "^2.2.1",
     "typescript": "^5.0.4"
+  },
+  "//": [
+    "Somehow, https://github.com/enzymejs/enzyme/blob/master/packages/enzyme/package.json correctly pins cheerio",
+    "but once installed it is replaced with ^1.0.0-rc.3 which resolves to 1.0.0 whose internal organisation has",
+    "chanrged. This results in non-working enzyme installation."
+  ],
+  "resolutions": {
+    "enzyme/cheerio": "=1.0.0-rc.3"
   },
   "packageManager": "yarn@3.3.0"
 }

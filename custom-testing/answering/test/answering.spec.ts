@@ -26,7 +26,7 @@ const { and } = Refinement;
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
-    rules.default.filter((rule) => !rule.uri.includes("r111")),
+    rules.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")]
   )
 );
@@ -116,8 +116,8 @@ function oracle<I, T extends Hashable, S>(
  * page.
  */
 describe("page.html", () => {
-  beforeEach(setup);
-  afterEach(teardown);
+  before(setup);
+  after(teardown);
 
   // By default, only Failed outcomes are considered
   it("should not have any Failed outcome", async () => {

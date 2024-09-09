@@ -13,7 +13,7 @@ import * as path from "path";
 
 export function persist<I, T extends Hashable, Q extends Question.Metadata, S>(
   output: Mapper<I, string>,
-  format: Formatter<I, T, Q, S> = earl.default()
+  format: Formatter<I, T, Q, S> = earl()
 ): Handler<I, T, Q, S> {
   return (input, rules, outcomes, message) =>
     Future.from(async () => {

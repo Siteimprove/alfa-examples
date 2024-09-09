@@ -1,5 +1,9 @@
-import type { FunctionComponent } from "react";
+import React, { type FunctionComponent } from "react";
 
-export const Button: FunctionComponent = ({ children }) => (
+interface MyProps {
+  children?: React.ReactNode;
+}
+
+export const Button: FunctionComponent<MyProps> = ({ children }) => (
   <button className="btn">{children}</button>
 );

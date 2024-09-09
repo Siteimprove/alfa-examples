@@ -29,7 +29,7 @@ Scraper.with(async (scraper) => {
   }
 
   for (const input of alfaPage) {
-    const outcomes = await Audit.of(input, rules.default)
+    const outcomes = await Audit.of(input, rules)
       .evaluate()
       .map((outcomes) => [...outcomes]);
 

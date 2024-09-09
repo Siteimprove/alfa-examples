@@ -62,7 +62,7 @@ const myRule = Rule.Atomic.of<Page, Element>({
 });
 
 // adding myRule to the default ruleset
-const allRules = rules.default.append(myRule);
+const allRules = rules.append(myRule);
 
 // Creating a Chai plugin which runs all rules (default and custom).
 chai.use(
