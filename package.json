@@ -7,17 +7,22 @@
     "watch": "tsc --build --watch",
     "clean": "tsc --build --clean",
     "knip": "knip -c config/knip.ts",
-    "test": "yarn workspaces foreach -v -p --exclude 'end-to-end-testing-{puppeteer,webdriver}' --exclude 'custom-testing-{crawling,measuring-performance}' --exclude 'unit-testing-angular' run test"
+    "test": "yarn workspaces foreach -v -p --exclude 'end-to-end-testing-{puppeteer,webdriver}' --exclude 'custom-testing-{crawling,measuring-performance}' --exclude 'unit-testing-angular' --exclude 'code-checker-*' run test",
+    "code-checker:comment": "echo 'First start the server with `yarn code-checker:start`, next run the tests with `yarn code-checker:test`. The tests are failing since the pages are purposefully not accessible; do not run them in blocking CI flows.'",
+    "code-checker:start": "yarn workspace code-checker-demo-site run dev",
+    "code-checker:test": "yarn workspaces foreach -v -p --include 'code-checker-*' --exclude 'code-checker-demo-site' run test"
   },
   "workspaces": [
     "common",
+    "accessibility-code-checker/*",
     "custom-testing/*",
     "end-to-end-testing/*",
     "unit-testing/*"
   ],
   "devDependencies": {
-    "@types/node": "^20.2.3",
+    "@types/node": "^22.5.4",
     "knip": "^5.29.1",
+    "playwright": "^1.47.0",
     "prettier": "^2.2.1",
     "typescript": "^5.0.4"
   },

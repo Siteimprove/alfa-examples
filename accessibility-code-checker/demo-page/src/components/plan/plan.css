@@ -1,0 +1,13 @@
+.plan {
+  border: var(--color--medium-grey) 1px solid;
+  padding: var(--size--regular) 0;
+  text-align: left;
+}
+
+.plan li {
+  color: var(--color--dark-grey); /* This is to provoke an a11y issue */
+}
+
+.plan h2 {
+  color: var(--color--light-blue);
+}

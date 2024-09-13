@@ -1,0 +1,138 @@
+html {
+  --size--small: 10px;
+  --size--regular: 20px;
+  --size--large: 40px;
+  --size--x-large: 60px;
+  --size--xx-large: 100px;
+  --content--width: 1140px;
+
+  --color--dark: #010c1c;
+  --color--light-blue: #1e70ea;
+  --color--blue: #07295a;
+  --color--dark-blue: #02132d;
+  --color--dark-grey: #717c90;
+  --color--grey: #b7bfcb;
+  --color--medium-grey: #dbe0e9;
+  --color--light-grey: #f1f5fd;
+  --color--white: #ffffff;
+
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color--dark-grey);
+  background-color: var(--color--white);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color--blue);
+  text-transform: capitalize;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1 {
+  font-size: clamp(32px, 4.167vw, 60px);
+  margin: 0;
+  line-height: normal;
+}
+
+h2 {
+  font-size: clamp(24px, 2.5vw, 36px);
+  margin: 0;
+}
+
+h3 {
+  font-size: clamp(22px, 1.667vw, 24px);
+  margin: 0;
+}
+
+input,
+textarea {
+  padding: var(--size--regular);
+  border: 1px solid var(--color--light-grey);
+  color: var(--color--dark-grey);
+}
+
+.invert,
+.invert h1,
+.invert h2,
+.invert h3,
+.invert h4 {
+  color: var(--color--white);
+  background-color: var(--color--light-blue);
+}
+
+a {
+  font-weight: 500;
+  color: var(--color--light-blue);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--color--dark);
+}
+
+.highlight {
+  color: var(--color--light-blue);
+}
+
+.section-title {
+  color: var(--color--light-blue);
+  text-transform: uppercase;
+  margin-top: 0;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.rounded-corners {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 50px;
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+}
+
+.img-rounded-corners {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 50px;
+}
+
+.subtle {
+  color: var(--color--grey);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: start center;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+hr {
+  border: none;
+  height: 1px;
+  background-color: var(--color--grey);
+}

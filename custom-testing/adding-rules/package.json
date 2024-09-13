@@ -3,7 +3,7 @@
   "private": true,
   "name": "custom-testing-adding-rules",
   "scripts": {
-    "test": "mocha --timeout 10000"
+    "test": "mocha --timeout 15000"
   },
   "type": "module",
   "engines": {

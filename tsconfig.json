@@ -14,6 +14,7 @@
   },
   "files": [],
   "references": [
+    { "path": "accessibility-code-checker" },
     { "path": "custom-testing" },
     { "path": "end-to-end-testing" },
     { "path": "unit-testing" }

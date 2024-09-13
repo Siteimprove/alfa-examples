@@ -1,0 +1,23 @@
+.layout {
+  height: 100%;
+  width: 100%;
+}
+
+.layout.none {
+  padding: 0 var(--size--large);
+}
+
+.layout.regular {
+  padding: var(--size--large);
+}
+
+.layout.large {
+  padding: var(--size--xx-large) var(--size--large);
+}
+
+.layout-container {
+  width: 100%;
+  height: 100%;
+  max-width: var(--content--width);
+  margin: 0 auto;
+}
