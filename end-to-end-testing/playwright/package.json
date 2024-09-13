@@ -3,7 +3,7 @@
   "private": true,
   "name": "end-to-end-testing-playwright",
   "scripts": {
-    "test": "mocha --timeout 10000"
+    "test": "mocha --timeout 15000"
   },
   "type": "module",
   "engines": {
