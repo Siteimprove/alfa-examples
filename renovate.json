@@ -13,12 +13,14 @@
         "@types/node",
         "chai",
         "cypress",
+        "eslint",
         "knip",
         "mocha",
         "playwright",
         "prettier",
         "puppeteer",
-        "typescript"
+        "typescript",
+        "vite"
       ],
       "enabled": false
     }

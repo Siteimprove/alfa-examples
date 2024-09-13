@@ -7,7 +7,7 @@ interface ButtonProps {
   secondary?: boolean;
   icon?: string;
 }
-export const Button: React.FC<ButtonProps> = ({
+const Button: React.FC<ButtonProps> = ({
   onClick,
   text,
   noBorder,
