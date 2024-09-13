@@ -20,7 +20,7 @@
     "unit-testing/*"
   ],
   "devDependencies": {
-    "@types/node": "^20.2.3",
+    "@types/node": "^22.5.4",
     "knip": "^5.29.1",
     "prettier": "^2.2.1",
     "typescript": "^5.0.4"

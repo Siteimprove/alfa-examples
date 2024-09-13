@@ -1798,7 +1798,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@siteimprove/alfa-examples@workspace:."
   dependencies:
-    "@types/node": ^20.2.3
+    "@types/node": ^22.5.4
     knip: ^5.29.1
     prettier: ^2.2.1
     typescript: ^5.0.4
@@ -3051,7 +3051,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.2.0":
+"@types/node@npm:*, @types/node@npm:^22.2.0, @types/node@npm:^22.5.4":
   version: 22.5.4
   resolution: "@types/node@npm:22.5.4"
   dependencies:
@@ -3064,13 +3064,6 @@ __metadata:
   version: 18.18.6
   resolution: "@types/node@npm:18.18.6"
   checksum: a847639b8455fd3dfa6dbc2917274c82c9db789f1d41aaf69f94ac6c9e54c3c1dd29be6e1e1ccd7c17e54db3d78d7011bc4e70544c6447ceca253dccc0a187e1
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^20.2.3":
-  version: 20.2.3
-  resolution: "@types/node@npm:20.2.3"
-  checksum: 576065e8fc1fa45798c8f59a6bf809169582d04abc2e25fab1a048ffc734975b9992ae31be0d960cf705a21fb37112f7fcde11aa322beddf7491e73d5a5a988c
   languageName: node
   linkType: hard
 
