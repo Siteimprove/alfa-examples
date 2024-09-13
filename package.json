@@ -22,6 +22,7 @@
   "devDependencies": {
     "@types/node": "^22.5.4",
     "knip": "^5.29.1",
+    "playwright": "^1.47.0",
     "prettier": "^2.2.1",
     "typescript": "^5.0.4"
   },

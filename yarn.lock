@@ -1827,6 +1827,7 @@ __metadata:
   dependencies:
     "@types/node": ^22.5.4
     knip: ^5.29.1
+    playwright: ^1.47.0
     prettier: ^2.2.1
     typescript: ^5.0.4
   languageName: unknown
@@ -10875,7 +10876,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright@npm:1.47.0, playwright@npm:^1.10.0, playwright@npm:^1.23.0":
+"playwright@npm:1.47.0, playwright@npm:^1.10.0, playwright@npm:^1.23.0, playwright@npm:^1.47.0":
   version: 1.47.0
   resolution: "playwright@npm:1.47.0"
   dependencies:
