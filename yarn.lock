@@ -1022,6 +1022,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kwsites/file-exists@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@kwsites/file-exists@npm:1.1.1"
+  dependencies:
+    debug: ^4.1.1
+  checksum: 4ff945de7293285133aeae759caddc71e73c4a44a12fac710fdd4f574cce2671a3f89d8165fdb03d383cfc97f3f96f677d8de3c95133da3d0e12a123a23109fe
+  languageName: node
+  linkType: hard
+
+"@kwsites/promise-deferred@npm:^1.1.1":
+  version: 1.1.1
+  resolution: "@kwsites/promise-deferred@npm:1.1.1"
+  checksum: 07455477a0123d9a38afb503739eeff2c5424afa8d3dbdcc7f9502f13604488a4b1d9742fc7288832a52a6422cf1e1c0a1d51f69a39052f14d27c9a0420b6629
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1070,6 +1086,17 @@ __metadata:
   version: 0.11.0
   resolution: "@pkgjs/parseargs@npm:0.11.0"
   checksum: 6ad6a00fc4f2f2cfc6bff76fb1d88b8ee20bc0601e18ebb01b6d4be583733a860239a521a7fbca73b612e66705078809483549d2b18f370eb346c5155c8e4a0f
+  languageName: node
+  linkType: hard
+
+"@playwright/test@npm:^1.47.0":
+  version: 1.47.0
+  resolution: "@playwright/test@npm:1.47.0"
+  dependencies:
+    playwright: 1.47.0
+  bin:
+    playwright: cli.js
+  checksum: 4f5a921c57d2577c64b0bc03d4b97937a6f853eee6afb58f2fc8fb140147b7f33800afe490c9ba3af515d5feb104f65319663931ec1ee75e10f001c1d69b138c
   languageName: node
   linkType: hard
 
@@ -2166,7 +2193,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@siteimprove/alfa-playwright@npm:^0.73.0":
+"@siteimprove/alfa-playwright@npm:^0.73.0, @siteimprove/alfa-playwright@npm:^0.73.1":
   version: 0.73.1
   resolution: "@siteimprove/alfa-playwright@npm:0.73.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40Siteimprove%2Falfa-playwright%2F0.73.1%2F397e572c9d6144ad0215fa9969ce1801034ffaa6"
   dependencies:
@@ -2578,6 +2605,59 @@ __metadata:
     "@siteimprove/alfa-refinement": ^0.92.0
     "@siteimprove/alfa-sequence": ^0.92.0
   checksum: cf39ba0dbb780c5c143c84d0287f10031ad889e76aef46f10674e8e24496bd81cfb2ddc28f2d08f8f54669ace6130ec184af99430fa004be5bb3e570e44a2d34
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-test-utils@npm:^0.73.1":
+  version: 0.73.1
+  resolution: "@siteimprove/alfa-test-utils@npm:0.73.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40siteimprove%2Falfa-test-utils%2F0.73.1%2Fa8fb165912f582604a09398412c62bf001ceca80"
+  dependencies:
+    "@siteimprove/alfa-act": ^0.92.0
+    "@siteimprove/alfa-aria": ^0.92.0
+    "@siteimprove/alfa-array": ^0.92.0
+    "@siteimprove/alfa-cascade": ^0.92.0
+    "@siteimprove/alfa-css": ^0.92.0
+    "@siteimprove/alfa-dom": ^0.92.0
+    "@siteimprove/alfa-iterable": ^0.92.0
+    "@siteimprove/alfa-json": ^0.92.0
+    "@siteimprove/alfa-map": ^0.92.0
+    "@siteimprove/alfa-performance": ^0.92.0
+    "@siteimprove/alfa-predicate": ^0.92.0
+    "@siteimprove/alfa-refinement": ^0.92.0
+    "@siteimprove/alfa-rules": ^0.92.0
+    "@siteimprove/alfa-selector": ^0.92.0
+    "@siteimprove/alfa-sequence": ^0.92.0
+    "@siteimprove/alfa-wcag": ^0.92.0
+    "@siteimprove/alfa-web": ^0.92.0
+    axios: ^1.7.4
+    chalk: ^5.3.0
+    simple-git: ^3.25.0
+  peerDependencies:
+    "@siteimprove/alfa-act": ^0.92.0
+    "@siteimprove/alfa-aria": ^0.92.0
+    "@siteimprove/alfa-array": ^0.92.0
+    "@siteimprove/alfa-cascade": ^0.92.0
+    "@siteimprove/alfa-css": ^0.92.0
+    "@siteimprove/alfa-device": ^0.92.0
+    "@siteimprove/alfa-dom": ^0.92.0
+    "@siteimprove/alfa-http": ^0.92.0
+    "@siteimprove/alfa-iterable": ^0.92.0
+    "@siteimprove/alfa-json": ^0.92.0
+    "@siteimprove/alfa-map": ^0.92.0
+    "@siteimprove/alfa-option": ^0.92.0
+    "@siteimprove/alfa-performance": ^0.92.0
+    "@siteimprove/alfa-predicate": ^0.92.0
+    "@siteimprove/alfa-record": ^0.92.0
+    "@siteimprove/alfa-refinement": ^0.92.0
+    "@siteimprove/alfa-result": ^0.92.0
+    "@siteimprove/alfa-rules": ^0.92.0
+    "@siteimprove/alfa-selector": ^0.92.0
+    "@siteimprove/alfa-sequence": ^0.92.0
+    "@siteimprove/alfa-test": ^0.92.0
+    "@siteimprove/alfa-url": ^0.92.0
+    "@siteimprove/alfa-wcag": ^0.92.0
+    "@siteimprove/alfa-web": ^0.92.0
+  checksum: 5b8f7fb926c82dba7afb2992251dc024488279ae77e744b4832a7e79592eaaa8225894997fc07e6a0f4d2a823695e0ca243e84bbce8c014220df5e12ae7a446e
   languageName: node
   linkType: hard
 
@@ -4182,14 +4262,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"axios@npm:^1.6.0":
-  version: 1.6.1
-  resolution: "axios@npm:1.6.1"
+"axios@npm:^1.6.0, axios@npm:^1.7.4":
+  version: 1.7.7
+  resolution: "axios@npm:1.7.7"
   dependencies:
-    follow-redirects: ^1.15.0
+    follow-redirects: ^1.15.6
     form-data: ^4.0.0
     proxy-from-env: ^1.1.0
-  checksum: 573f03f59b7487d54551b16f5e155d1d130ad4864ed32d1da93d522b78a57123b34e3bde37f822a65ee297e79f1db840f9ad6514addff50d3cbf5caeed39e8dc
+  checksum: 882d4fe0ec694a07c7f5c1f68205eb6dc5a62aecdb632cc7a4a3d0985188ce3030e0b277e1a8260ac3f194d314ae342117660a151fabffdc5081ca0b5a8b47fe
   languageName: node
   linkType: hard
 
@@ -4725,7 +4805,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^5.1.2":
+"chalk@npm:^5.1.2, chalk@npm:^5.3.0":
   version: 5.3.0
   resolution: "chalk@npm:5.3.0"
   checksum: 623922e077b7d1e9dedaea6f8b9e9352921f8ae3afe739132e0e00c275971bdd331268183b2628cf4ab1727c45ea1f28d7e24ac23ce1db1eb653c414ca8a5a80
@@ -5043,6 +5123,16 @@ __metadata:
     react-router-dom: ^6.24.1
     typescript: ^5.2.2
     vite: ^5.2.0
+  languageName: unknown
+  linkType: soft
+
+"code-checker-playwright@workspace:accessibility-code-checker/playwright":
+  version: 0.0.0-use.local
+  resolution: "code-checker-playwright@workspace:accessibility-code-checker/playwright"
+  dependencies:
+    "@playwright/test": ^1.47.0
+    "@siteimprove/alfa-playwright": ^0.73.1
+    "@siteimprove/alfa-test-utils": ^0.73.1
   languageName: unknown
   linkType: soft
 
@@ -7115,13 +7205,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.15.0":
-  version: 1.15.3
-  resolution: "follow-redirects@npm:1.15.3"
+"follow-redirects@npm:^1.15.6":
+  version: 1.15.9
+  resolution: "follow-redirects@npm:1.15.9"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 584da22ec5420c837bd096559ebfb8fe69d82512d5585004e36a3b4a6ef6d5905780e0c74508c7b72f907d1fa2b7bd339e613859e9c304d0dc96af2027fd0231
+  checksum: 859e2bacc7a54506f2bf9aacb10d165df78c8c1b0ceb8023f966621b233717dab56e8d08baadc3ad3b9db58af290413d585c999694b7c146aaf2616340c3d2a6
   languageName: node
   linkType: hard
 
@@ -7254,6 +7344,25 @@ __metadata:
   dependencies:
     node-gyp: latest
   checksum: 11e6ea6fea15e42461fc55b4b0e4a0a3c654faa567f1877dbd353f39156f69def97a69936d1746619d656c4b93de2238bf731f6085a03a50cabf287c9d024317
+  conditions: os=darwin
+  languageName: node
+  linkType: hard
+
+"fsevents@npm:2.3.2":
+  version: 2.3.2
+  resolution: "fsevents@npm:2.3.2"
+  dependencies:
+    node-gyp: latest
+  checksum: 97ade64e75091afee5265e6956cb72ba34db7819b4c3e94c431d4be2b19b8bb7a2d4116da417950c3425f17c8fe693d25e20212cac583ac1521ad066b77ae31f
+  conditions: os=darwin
+  languageName: node
+  linkType: hard
+
+"fsevents@patch:fsevents@2.3.2#~builtin<compat/fsevents>":
+  version: 2.3.2
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  dependencies:
+    node-gyp: latest
   conditions: os=darwin
   languageName: node
   linkType: hard
@@ -10757,21 +10866,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"playwright-core@npm:1.34.0":
-  version: 1.34.0
-  resolution: "playwright-core@npm:1.34.0"
-  checksum: 1821ab254b3c756e52c144c26cae7250dd5a1c779277cdd583bd289501d45cceaea40a8185ebf7eaa56b8291e4a042e3eef65f511da2306349c275794c9a582d
+"playwright-core@npm:1.47.0":
+  version: 1.47.0
+  resolution: "playwright-core@npm:1.47.0"
+  bin:
+    playwright-core: cli.js
+  checksum: 64c6adae3ba76cd9f05e6569b1350a6e6990fd8236bb17d1f241b49bea68592a4f4390adb38863d2ee8ef5124e9cb77ff50b9076f8ef3a0890b2a37f87fb842a
   languageName: node
   linkType: hard
 
-"playwright@npm:^1.10.0, playwright@npm:^1.23.0":
-  version: 1.34.0
-  resolution: "playwright@npm:1.34.0"
+"playwright@npm:1.47.0, playwright@npm:^1.10.0, playwright@npm:^1.23.0":
+  version: 1.47.0
+  resolution: "playwright@npm:1.47.0"
   dependencies:
-    playwright-core: 1.34.0
+    fsevents: 2.3.2
+    playwright-core: 1.47.0
+  dependenciesMeta:
+    fsevents:
+      optional: true
   bin:
     playwright: cli.js
-  checksum: 5e5586e7c4e42f206526fe4306e35c68b7af353d6e3701c9e1045940aa3a916ac50b0b7c27a8eaeb3831ddc4f1146a367f98a5b6b841f977e9770b925e81877f
+  checksum: e055fee751035f306a636267d0e080f08d4a523a6c1e3ebb01c91c18838c29bb9165ec3e63eb706798886fa2715f272dec908a7e2e1abcd7a55984688dbac2db
   languageName: node
   linkType: hard
 
@@ -11870,6 +11985,17 @@ __metadata:
   version: 4.1.0
   resolution: "signal-exit@npm:4.1.0"
   checksum: 64c757b498cb8629ffa5f75485340594d2f8189e9b08700e69199069c8e3070fb3e255f7ab873c05dc0b3cec412aea7402e10a5990cb6a050bd33ba062a6c549
+  languageName: node
+  linkType: hard
+
+"simple-git@npm:^3.25.0":
+  version: 3.26.0
+  resolution: "simple-git@npm:3.26.0"
+  dependencies:
+    "@kwsites/file-exists": ^1.1.1
+    "@kwsites/promise-deferred": ^1.1.1
+    debug: ^4.3.5
+  checksum: b15a144df56690d7aa6c4e261148f177c0677f479565b1828c628f3de4beba1ab1cedc813d47fc358985841a8782c2e1dad9ecabe2152ef1e90d273475a0f7f7
   languageName: node
   linkType: hard
 

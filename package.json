@@ -10,7 +10,7 @@
     "test": "yarn workspaces foreach -v -p --exclude 'end-to-end-testing-{puppeteer,webdriver}' --exclude 'custom-testing-{crawling,measuring-performance}' --exclude 'unit-testing-angular' --exclude 'code-checker-*' run test",
     "code-checker:comment": "echo 'First start the server with `yarn code-checker:start`, next run the tests with `yarn code-checker:test`. The tests are failing since the pages are purposefully not accessible; do not run them in blocking CI flows.'",
     "code-checker:start": "yarn workspace code-checker-demo-site run dev",
-    "code-checker:test": "yarn workspaces foreach -v -p --include 'code-checker-{}' run test"
+    "code-checker:test": "yarn workspaces foreach -v -p --include 'code-checker-*' --exclude 'code-checker-demo-site' run test"
   },
   "workspaces": [
     "common",
