@@ -1,0 +1,35 @@
+# This workflow demonstrates the use of Siteimprove Accessibility Code Checker in a CI/CD pipeline.
+# It is intended to fail since the tested page is purposely inaccessible. This demonstrates how the
+# failures are shown both in the console and in the Page Report in Siteimprove Intelligence Platform.
+# See https://alfa.siteimprove.com/code-checker
+name: Accessibility Code Checker
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Accessibility Code Checker
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+      - uses: actions/cache@v4
+        with:
+          path: .yarn/cache
+          key: yarn-${{ hashFiles('yarn.lock') }}
+      - run: >
+          yarn config set
+          npmScopes.siteimprove.npmAuthToken
+          ${{ secrets.GITHUB_TOKEN }}
+      - run: yarn install --immutable
+      - run: yarn dedupe --check
+      - run: yarn build
+      - run: yarn code-checker:start
+      - run: yarn code-checker:test

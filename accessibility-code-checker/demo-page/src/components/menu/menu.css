@@ -1,0 +1,27 @@
+.menu {
+  border-top: var(--color--light-grey) 1px solid;
+  text-transform: uppercase;
+}
+
+.menu-content {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--size--regular);
+}
+
+.menu-content .menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--size--regular) 0;
+  margin: 0 var(--size--regular);
+  border-top: var(--color--white) 2px solid;
+}
+
+.menu-content .menu-item:first-child {
+  margin-left: 0;
+}
+
+.menu-content .menu-item:hover {
+  border-top: var(--color--light-blue) 2px solid;
+}

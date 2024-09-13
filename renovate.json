@@ -10,11 +10,15 @@
         "@siteimprove/alfa",
         "@types/chai",
         "@types/mocha",
+        "@types/node",
         "chai",
         "cypress",
+        "knip",
         "mocha",
         "playwright",
-        "puppeteer"
+        "prettier",
+        "puppeteer",
+        "typescript"
       ],
       "enabled": false
     }

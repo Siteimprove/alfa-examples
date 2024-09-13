@@ -1,0 +1,32 @@
+.pricing-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size--x-large);
+}
+
+.pricing-description {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing-description > * {
+  flex: 1 0 50%;
+  @media screen and (max-width: 900px) {
+    flex: 1 0 100%;
+  }
+  text-align: left;
+}
+
+.pricing-plans {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--size--regular);
+}
+
+.pricing-plans > * {
+  flex: 0 0 30%;
+  @media screen and (max-width: 900px) {
+    flex: 1 0 100%;
+  }
+}

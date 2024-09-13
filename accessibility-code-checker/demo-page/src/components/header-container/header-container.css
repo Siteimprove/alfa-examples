@@ -1,0 +1,12 @@
+.header-container-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--content--width);
+}
+
+.header-container-search {
+  display: flex;
+  align-items: center;
+  gap: var(--size--small);
+}

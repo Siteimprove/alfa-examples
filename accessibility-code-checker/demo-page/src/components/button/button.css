@@ -1,0 +1,43 @@
+.button {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 20px;
+  padding-top: 14px;
+  padding-right: 40px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+  font-family: "Helvetica";
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  border-width: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--color--white);
+  background-color: var(--color--light-blue);
+}
+
+.button.button:hover {
+  background-color: var(--color--blue);
+}
+
+.button.secondary {
+  background-color: var(--color--white);
+  color: var(--color--light-blue);
+}
+
+.button.button.secondary:hover {
+  background-color: var(--color--blue);
+  color: var(--color--white);
+}
+
+.button:focus,
+.button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.button.no-border {
+  border: none;
+  padding: calc(var(--size--regular) + 1px) calc(var(--size--large) + 1px);
+}
