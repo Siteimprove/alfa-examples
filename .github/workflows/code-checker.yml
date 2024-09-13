@@ -36,3 +36,6 @@ jobs:
       - run: yarn build
       - run: yarn code-checker:start &
       - run: yarn code-checker:test
+        env:
+          SI_USER_EMAIL: ${{ secrets.SI_USER_EMAIL }}
+          SI_API_KEY: ${{ secrets.SI_API_KEY }}
