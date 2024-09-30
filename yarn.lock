@@ -2998,10 +2998,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/chai@npm:^4.1.7, @types/chai@npm:^4.2.3":
+"@types/chai@npm:^4.1.7":
   version: 4.2.15
   resolution: "@types/chai@npm:4.2.15"
   checksum: 10/7ecd6423e81d207471d6adc7e4544e8df75ac1d98eea909d8136deb8f5c676788dfabaf38de971626fef692715e4adb94b9e1b50f6a21793c0aad18748621605
+  languageName: node
+  linkType: hard
+
+"@types/chai@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "@types/chai@npm:5.0.0"
+  checksum: 10/a6c03aa6b6d59ad40ddb48d07807690efb874628c15b9d89c17d97045a9305a487933398c1e5b5f94087b1a6a9a67a7c828eb9b635104526fd25bb5f9d4c4175
   languageName: node
   linkType: hard
 
@@ -5653,7 +5660,7 @@ __metadata:
     "@siteimprove/alfa-result": "npm:^0.92.0"
     "@siteimprove/alfa-rules": "npm:^0.92.0"
     "@siteimprove/alfa-web": "npm:^0.92.0"
-    "@types/chai": "npm:^4.2.3"
+    "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
     common: "workspace:^"
@@ -5676,7 +5683,7 @@ __metadata:
     "@siteimprove/alfa-playwright": "npm:^0.73.0"
     "@siteimprove/alfa-refinement": "npm:^0.92.0"
     "@siteimprove/alfa-rules": "npm:^0.92.0"
-    "@types/chai": "npm:^4.2.3"
+    "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
     common: "workspace:^"
@@ -5710,7 +5717,7 @@ __metadata:
     "@siteimprove/alfa-refinement": "npm:^0.92.0"
     "@siteimprove/alfa-rules": "npm:^0.92.0"
     "@siteimprove/alfa-wcag": "npm:^0.92.0"
-    "@types/chai": "npm:^4.2.3"
+    "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
     common: "workspace:^"
@@ -5727,7 +5734,7 @@ __metadata:
     "@siteimprove/alfa-future": "npm:^0.92.0"
     "@siteimprove/alfa-playwright": "npm:^0.73.0"
     "@siteimprove/alfa-rules": "npm:^0.92.0"
-    "@types/chai": "npm:^4.2.3"
+    "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
     common: "workspace:^"
@@ -5757,7 +5764,7 @@ __metadata:
     "@siteimprove/alfa-future": "npm:^0.92.0"
     "@siteimprove/alfa-playwright": "npm:^0.73.0"
     "@siteimprove/alfa-rules": "npm:^0.92.0"
-    "@types/chai": "npm:^4.2.3"
+    "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
     mocha: "npm:^10.0.0"
@@ -6466,7 +6473,7 @@ __metadata:
     "@siteimprove/alfa-future": "npm:^0.92.0"
     "@siteimprove/alfa-playwright": "npm:^0.73.0"
     "@siteimprove/alfa-rules": "npm:^0.92.0"
-    "@types/chai": "npm:^4.2.3"
+    "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
     common: "workspace:^"
@@ -6483,7 +6490,7 @@ __metadata:
     "@siteimprove/alfa-future": "npm:^0.92.0"
     "@siteimprove/alfa-puppeteer": "npm:^0.73.0"
     "@siteimprove/alfa-rules": "npm:^0.92.0"
-    "@types/chai": "npm:^4.2.3"
+    "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
     common: "workspace:^"
@@ -6500,7 +6507,7 @@ __metadata:
     "@siteimprove/alfa-future": "npm:^0.92.0"
     "@siteimprove/alfa-rules": "npm:^0.92.0"
     "@siteimprove/alfa-webdriver": "npm:^0.73.0"
-    "@types/chai": "npm:^4.2.3"
+    "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     "@wdio/cli": "npm:^5.14.4"
     "@wdio/mocha-framework": "npm:^7.1.1"
