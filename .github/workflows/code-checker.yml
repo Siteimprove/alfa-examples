@@ -1,7 +1,10 @@
 # This workflow demonstrates the use of Siteimprove Accessibility Code Checker in a CI/CD pipeline.
+
 # It is intended to fail since the tested page is purposely inaccessible. This demonstrates how the
 # failures are shown both in the console and in the Page Report in Siteimprove Intelligence Platform.
+
 # See https://alfa.siteimprove.com/code-checker
+
 name: Accessibility Code Checker
 on:
   push:
@@ -9,10 +12,9 @@ on:
       - main
   workflow_dispatch:
 
-
 jobs:
   build:
-    name: Accessibility Code Checker
+    name: Accessibility Code Checker (this workflow *should* fail!)
     runs-on: ubuntu-latest
     strategy:
       matrix:

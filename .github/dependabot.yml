@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: "daily"
     labels:
-      - "dependencies"
+      - "Dependencies"
     # https://github.com/dependabot/dependabot-core/issues/1297
     open-pull-requests-limit: 0
 
