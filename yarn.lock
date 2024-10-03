@@ -4260,13 +4260,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async@npm:0.9.x":
-  version: 0.9.2
-  resolution: "async@npm:0.9.2"
-  checksum: 10/69b95732694464bc43da32ac26e39e5a193008a528a1d689b687bbc82355496c0270bbd9885ee8c3d0eeff794e2ac4ce93499a7bcbde5e010697d93d45254b61
-  languageName: node
-  linkType: hard
-
 "async@npm:^2.6.3":
   version: 2.6.3
   resolution: "async@npm:2.6.3"
@@ -4276,7 +4269,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"async@npm:^3.2.0, async@npm:^3.2.4":
+"async@npm:^3.2.0, async@npm:^3.2.3, async@npm:^3.2.4":
   version: 3.2.6
   resolution: "async@npm:3.2.6"
   checksum: 10/cb6e0561a3c01c4b56a799cc8bab6ea5fef45f069ab32500b6e19508db270ef2dffa55e5aed5865c5526e9907b1f8be61b27530823b411ffafb5e1538c86c368
@@ -4857,7 +4850,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^4.0.0, chalk@npm:^4.1.0, chalk@npm:^4.1.2":
+"chalk@npm:^4.0.0, chalk@npm:^4.0.2, chalk@npm:^4.1.0, chalk@npm:^4.1.2":
   version: 4.1.2
   resolution: "chalk@npm:4.1.2"
   dependencies:
@@ -6382,13 +6375,13 @@ __metadata:
   linkType: hard
 
 "ejs@npm:^3.0.1":
-  version: 3.1.6
-  resolution: "ejs@npm:3.1.6"
+  version: 3.1.10
+  resolution: "ejs@npm:3.1.10"
   dependencies:
-    jake: "npm:^10.6.1"
+    jake: "npm:^10.8.5"
   bin:
-    ejs: ./bin/cli.js
-  checksum: 10/f3882b57655b53fd9044cb7acb585c04004da9a3c90ef96c69660ee31ca9572e7a0df0cf794bbc72c674c2b9ba396bbc4ae130fe0c8c65fb0ca53b0a488c2300
+    ejs: bin/cli.js
+  checksum: 10/a9cb7d7cd13b7b1cd0be5c4788e44dd10d92f7285d2f65b942f33e127230c054f99a42db4d99f766d8dbc6c57e94799593ee66a14efd7c8dd70c4812bf6aa384
   languageName: node
   linkType: hard
 
@@ -7251,12 +7244,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"filelist@npm:^1.0.1":
-  version: 1.0.2
-  resolution: "filelist@npm:1.0.2"
+"filelist@npm:^1.0.4":
+  version: 1.0.4
+  resolution: "filelist@npm:1.0.4"
   dependencies:
-    minimatch: "npm:^3.0.4"
-  checksum: 10/1de9ff4fa86c7db7574ca6ed9466d8ffb49476855cae46adbe64fac4b9abecf2d6bcc8a7ff0c02b431e094a6a48c271aeaf1f43e451d93bf9a5610a457a7af89
+    minimatch: "npm:^5.0.1"
+  checksum: 10/4b436fa944b1508b95cffdfc8176ae6947b92825483639ef1b9a89b27d82f3f8aa22b21eed471993f92709b431670d4e015b39c087d435a61e1bb04564cf51de
   languageName: node
   linkType: hard
 
@@ -8617,17 +8610,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jake@npm:^10.6.1":
-  version: 10.8.2
-  resolution: "jake@npm:10.8.2"
+"jake@npm:^10.8.5":
+  version: 10.9.2
+  resolution: "jake@npm:10.9.2"
   dependencies:
-    async: "npm:0.9.x"
-    chalk: "npm:^2.4.2"
-    filelist: "npm:^1.0.1"
-    minimatch: "npm:^3.0.4"
+    async: "npm:^3.2.3"
+    chalk: "npm:^4.0.2"
+    filelist: "npm:^1.0.4"
+    minimatch: "npm:^3.1.2"
   bin:
-    jake: ./bin/cli.js
-  checksum: 10/7a64df80609e843802acd7a9e6f93fc3f530cd7f3e3b5b1b4754a6328e8df17d68fd56b1c1edb6af361c396b2060d9254dbf684123282c591ee39564f7fa5be6
+    jake: bin/cli.js
+  checksum: 10/3be324708f99f031e0aec49ef8fd872eb4583cbe8a29a0c875f554f6ac638ee4ea5aa759bb63723fd54f77ca6d7db851eaa78353301734ed3700db9cb109a0cd
   languageName: node
   linkType: hard
 
