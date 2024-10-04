@@ -5,7 +5,7 @@
 
 # See https://alfa.siteimprove.com/code-checker
 
-name: Accessibility Code Checker
+name: Accessibility Code Checker (this workflow *should* fail!)
 on:
   push:
     branches:
