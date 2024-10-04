@@ -19,6 +19,7 @@ class MyJSDOMEnvironment extends JSDOMEnvironment.default {
 
     // here, you have access to regular Node globals, which you can add to the test environment
     this.global.TextEncoder = TextEncoder;
+    this.global.TextDecoder = TextDecoder;
 
     // @ts-ignore
     this.global.crypto = crypto;
