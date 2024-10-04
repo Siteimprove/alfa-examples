@@ -4685,18 +4685,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cacheable-request@npm:^7.0.1":
-  version: 7.0.1
-  resolution: "cacheable-request@npm:7.0.1"
+"cacheable-request@npm:^7.0.2":
+  version: 7.0.4
+  resolution: "cacheable-request@npm:7.0.4"
   dependencies:
     clone-response: "npm:^1.0.2"
     get-stream: "npm:^5.1.0"
     http-cache-semantics: "npm:^4.0.0"
     keyv: "npm:^4.0.0"
     lowercase-keys: "npm:^2.0.0"
-    normalize-url: "npm:^4.1.0"
+    normalize-url: "npm:^6.0.1"
     responselike: "npm:^2.0.0"
-  checksum: 10/682a51337af56c1c789b1b6e9983678ab1db77664c4f97d79eee1f34741e4aa03b1de7317862a077fb1c04ac8331e1165bdc719a5373c773272f6c37d61554a8
+  checksum: 10/0f4f2001260ecca78b9f64fc8245e6b5a5dcde24ea53006daab71f5e0e1338095aa1512ec099c4f9895a9e5acfac9da423cb7c079e131485891e9214aca46c41
   languageName: node
   linkType: hard
 
@@ -7734,21 +7734,21 @@ __metadata:
   linkType: hard
 
 "got@npm:^11.0.2, got@npm:^11.8.1":
-  version: 11.8.2
-  resolution: "got@npm:11.8.2"
+  version: 11.8.6
+  resolution: "got@npm:11.8.6"
   dependencies:
     "@sindresorhus/is": "npm:^4.0.0"
     "@szmarczak/http-timer": "npm:^4.0.5"
     "@types/cacheable-request": "npm:^6.0.1"
     "@types/responselike": "npm:^1.0.0"
     cacheable-lookup: "npm:^5.0.3"
-    cacheable-request: "npm:^7.0.1"
+    cacheable-request: "npm:^7.0.2"
     decompress-response: "npm:^6.0.0"
     http2-wrapper: "npm:^1.0.0-beta.5.2"
     lowercase-keys: "npm:^2.0.0"
     p-cancelable: "npm:^2.0.0"
     responselike: "npm:^2.0.0"
-  checksum: 10/be4e8062971b75f8e39b900870d43d98d7afc3cbbaa9f12393f0b3d0b50261e96d705268682ff1c1d38f4b48e0bec12a63aa0f8f9a5600727ea0d52408d38d4f
+  checksum: 10/a30c74029d81bd5fe50dea1a0c970595d792c568e188ff8be254b5bc11e6158d1b014570772d4a30d0a97723e7dd34e7c8cc1a2f23018f60aece3070a7a5c2a5
   languageName: node
   linkType: hard
 
@@ -10509,10 +10509,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"normalize-url@npm:^4.1.0":
-  version: 4.5.0
-  resolution: "normalize-url@npm:4.5.0"
-  checksum: 10/c70ee8988049cd1c83fd850073e0419f564e4e853561a7fa1f3bf6d1a4025d616093bc60945f09a3073457d6a57347796b70583db401fbad476f6b4f38a6f62f
+"normalize-url@npm:^6.0.1":
+  version: 6.1.0
+  resolution: "normalize-url@npm:6.1.0"
+  checksum: 10/5ae699402c9d5ffa330adc348fcd6fc6e6a155ab7c811b96e30b7ecab60ceef821d8f86443869671dda71bbc47f4b9625739c82ad247e883e9aefe875bfb8659
   languageName: node
   linkType: hard
 
