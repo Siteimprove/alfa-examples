@@ -4,14 +4,13 @@ import { Logging, SIP } from "@siteimprove/alfa-test-utils/report";
 import { defineConfig } from "cypress";
 
 export default defineConfig({
-  fixturesFolder: "fixtures",
-  screenshotsFolder: "screenshots",
-  videosFolder: "videos",
+  screenshotOnRunFailure: false,
 
   e2e: {
     setupNodeEvents(on, config) {
       // implement node event listeners here
       on("task", {
+        // Upload audit to Siteimprove Intelligence Platform and log results
         async report(audit: Audit.JSON): Promise<null> {
           const pageReportUrl = await SIP.upload(audit, {
             userName: process.env.SI_USER_EMAIL,
@@ -20,11 +19,6 @@ export default defineConfig({
 
           Logging.fromAudit(audit, pageReportUrl).print();
 
-          return null;
-        },
-
-        log(message: string): null {
-          console.log(message);
           return null;
         },
       });
