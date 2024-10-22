@@ -5187,8 +5187,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "code-checker-cypress@workspace:accessibility-code-checker/cypress"
   dependencies:
-    "@siteimprove/alfa-cypress": "npm:^0.73.2"
-    "@siteimprove/alfa-test-utils": "npm:^0.73.2"
+    "@siteimprove/alfa-cypress": "npm:^0.74.0"
+    "@siteimprove/alfa-test-utils": "npm:^0.74.0"
     cypress: "npm:^13.15.0"
   languageName: unknown
   linkType: soft
