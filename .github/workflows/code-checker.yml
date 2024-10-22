@@ -41,3 +41,6 @@ jobs:
         env:
           SI_USER_EMAIL: ${{ secrets.SI_USER_EMAIL }}
           SI_API_KEY: ${{ secrets.SI_API_KEY }}
+          # https://docs.cypress.io/guides/guides/environment-variables#Option-3-CYPRESS_
+          CYPRESS_SI_USER_EMAIL: ${{ secrets.SI_USER_EMAIL }}
+          CYPRESS_SI_API_KEY: ${{ secrets.SI_API_KEY }}

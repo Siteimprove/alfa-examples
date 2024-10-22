@@ -5180,6 +5180,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"code-checker-cypress@workspace:accessibility-code-checker/cypress":
+  version: 0.0.0-use.local
+  resolution: "code-checker-cypress@workspace:accessibility-code-checker/cypress"
+  dependencies:
+    "@siteimprove/alfa-cypress": "npm:^0.73.2"
+    "@siteimprove/alfa-test-utils": "npm:^0.73.2"
+    cypress: "npm:^13.15.0"
+  languageName: unknown
+  linkType: soft
+
 "code-checker-demo-site@workspace:accessibility-code-checker/demo-page":
   version: 0.0.0-use.local
   resolution: "code-checker-demo-site@workspace:accessibility-code-checker/demo-page"
@@ -5752,7 +5762,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"cypress@npm:^13.14.2, cypress@npm:^13.3.1":
+"cypress@npm:^13.14.2, cypress@npm:^13.15.0, cypress@npm:^13.3.1":
   version: 13.15.0
   resolution: "cypress@npm:13.15.0"
   dependencies:
