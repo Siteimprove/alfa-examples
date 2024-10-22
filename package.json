@@ -29,7 +29,7 @@
   "//": [
     "Somehow, https://github.com/enzymejs/enzyme/blob/master/packages/enzyme/package.json correctly pins cheerio",
     "but once installed it is replaced with ^1.0.0-rc.3 which resolves to 1.0.0 whose internal organisation has",
-    "chanrged. This results in non-working enzyme installation."
+    "changed. This results in non-working enzyme installation."
   ],
   "resolutions": {
     "enzyme/cheerio": "=1.0.0-rc.3"
