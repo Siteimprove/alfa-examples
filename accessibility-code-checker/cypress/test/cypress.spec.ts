@@ -26,7 +26,7 @@ it("should be accessible", () => {
       return alfaResult;
     });
 
-  // Fail the test if any rule is failed
+  // Fail the test if any rule is failing
   // Note: this happens in a separate chain to avoid interfering with the
   // reporting.
   audit.then(async (alfaResult) => {
