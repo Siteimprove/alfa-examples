@@ -12,6 +12,11 @@ test("is page accessible", async ({ page }) => {
   // Get the document handle from the page
   const document = await page.evaluateHandle(() => window.document);
 
+  /*
+   * Usual Playwright instructions can live here.
+   * For example, navigating through the page, opening menus or modals, etc.
+   */
+
   // Scrape the page
   const alfaPage = await Playwright.toPage(document);
 
