@@ -11,6 +11,11 @@ it("should be accessible", () => {
   // TODO: Adapt with what is present in your own page
   cy.get(".testimonials-top").should("exist");
 
+  /*
+   * Usual Cypress instructions can live here.
+   * For example, navigating through the page, opening menus or modals, etc.
+   */
+
   const audit = cy
     // Get the document from the page
     .document()
