@@ -6,10 +6,10 @@ This repository contains examples of how to use [Alfa][] for various kinds of ac
 
 ## Building
 
-To build the project, a recent version of [Node.js](https://nodejs.org/en/) is required in addition to the [Yarn](https://yarnpkg.com/) package manager.    ```
+To build the project, a recent version of [Node.js](https://nodejs.org/en/) is required in addition to the [Yarn](https://yarnpkg.com/) package manager. ```
 
-Install dependencies:  
-  
+Install dependencies:
+
 ```sh
 yarn install
 ```
@@ -30,9 +30,10 @@ yarn watch
 
 This repository contains examples of using Alfa:
 
-- for individual [component testing](unit-testing) with various component frameworks;
-- for [page-wide testing](end-to-end-testing) with various browser automations;
-- for [custom testing](custom-testing) of some common scenarios.
+- integrating [Siteimprove Accessibility Code Checker](accessibility-code-checker) with various browser automations;
+- individual [component testing](unit-testing) with various component frameworks;
+- [page-wide testing](end-to-end-testing) with various browser automations;
+- [custom testing](custom-testing) of some common scenarios.
 
 ## License
 
