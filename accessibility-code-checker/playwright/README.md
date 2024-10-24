@@ -8,4 +8,4 @@ See [the generic instructions](../README.md#setup) for setting up the project.
 
 ## Playwright
 
-All the code for checking the page reside in the [test/selenium.spec.ts](./test/playwright.spec.ts) file.
+All the code for checking the page reside in the [test/playwright.spec.ts](./test/playwright.spec.ts) file.
