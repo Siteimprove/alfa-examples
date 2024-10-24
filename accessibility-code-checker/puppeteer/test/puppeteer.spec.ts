@@ -22,7 +22,7 @@ test("Page should be accessible", async (t) => {
   const document = await page.evaluateHandle(() => window.document);
 
   /*
-   * Usual Selenium instructions can live here.
+   * Usual Puppeteer instructions can live here.
    * For example, navigating through the page, opening menus or modals, etc.
    */
 
