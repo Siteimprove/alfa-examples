@@ -15,6 +15,7 @@ export default defineConfig({
           const pageReportUrl = await SIP.upload(audit, {
             userName: process.env.SI_USER_EMAIL,
             apiKey: process.env.SI_API_KEY,
+            testName: (git) => `${git.BranchName} – Cypress integration`,
           });
 
           Logging.fromAudit(audit, pageReportUrl).print();

@@ -6,6 +6,8 @@ const project = ["**/*.ts", "**/*.tsx"];
 const config: KnipConfig = {
   ignoreDependencies: ["prettier"],
   workspaces: {
+    "accessibility-code-checker/*": { entry, project },
+    "accessibility-code-checker/demo-page": { entry: "src/main.tsx", project },
     common: { entry: "persist.ts", project },
     "custom-testing/*": { entry, project },
     "custom-testing/crawling": { entry: ["crawling.ts"], project },
