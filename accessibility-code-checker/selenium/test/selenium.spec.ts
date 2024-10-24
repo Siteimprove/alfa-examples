@@ -1,24 +1,38 @@
-import { test, expect } from "@playwright/test";
-
-import { Playwright } from "@siteimprove/alfa-playwright";
+import { Selenium } from "@siteimprove/alfa-selenium";
 import { Audit, Logging, SIP } from "@siteimprove/alfa-test-utils";
 
-test("is page accessible", async ({ page }) => {
+import { test } from "@siteimprove/alfa-test";
+
+import { Browser, Builder, WebDriver } from "selenium-webdriver";
+import chrome from "selenium-webdriver/chrome.js";
+
+let driver: WebDriver | undefined;
+
+const options = new chrome.Options();
+options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+
+test("Page should be accessible", async (t) => {
+  // Create a browser instance
+  driver = await new Builder()
+    .forBrowser(Browser.CHROME)
+    .setChromeOptions(options)
+    .build();
+
   // Navigate to the local web page
   // This suppose that the server is already started. See the demo-site folder.
   // TODO: Replace with your own page
-  await page.goto("http://localhost:5173");
-
-  // Get the document handle from the page
-  const document = await page.evaluateHandle(() => window.document);
+  await driver.get("http://localhost:5173");
 
   /*
-   * Usual Playwright instructions can live here.
+   * Usual Selenium instructions can live here.
    * For example, navigating through the page, opening menus or modals, etc.
    */
 
   // Scrape the page
-  const alfaPage = await Playwright.toPage(document);
+  const alfaPage = await Selenium.toPage(driver);
+
+  // Close the driver
+  await driver.close();
 
   // Run the audit
   const alfaResult = await Audit.run(alfaPage);
@@ -31,7 +45,7 @@ test("is page accessible", async ({ page }) => {
   const url = await SIP.upload(alfaResult, {
     userName,
     apiKey,
-    testName: (git) => `${git.BranchName} – Playwright integration`,
+    testName: (git) => `{git.BranchName} – Selenium integration`,
   });
 
   // Log the result to the console
@@ -43,8 +57,9 @@ test("is page accessible", async ({ page }) => {
   );
 
   // Fail the test if any rule failed.
-  expect(
+  t.equal(
     failingRules.size,
+    0,
     `The page has ${failingRules.size} failing rules`,
-  ).toBe(0);
+  );
 });

@@ -414,6 +414,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@bazel/runfiles@npm:^5.8.1":
+  version: 5.8.1
+  resolution: "@bazel/runfiles@npm:5.8.1"
+  checksum: 10/fe463dbc7e82e6aa216bdb1ab18bfa6cdeb0e5b74018d9a25d5869604f784ef31f5c95ed24741891cb436251af4b8ad5f4c83c0b0b8248b13590cfcc40a94d27
+  languageName: node
+  linkType: hard
+
 "@bcoe/v8-coverage@npm:^0.2.3":
   version: 0.2.3
   resolution: "@bcoe/v8-coverage@npm:0.2.3"
@@ -2513,6 +2520,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-selenium@npm:^0.74.2":
+  version: 0.74.2
+  resolution: "@siteimprove/alfa-selenium@npm:0.74.2"
+  dependencies:
+    "@siteimprove/alfa-device": "npm:^0.93.8"
+    "@siteimprove/alfa-dom": "npm:^0.93.8"
+    "@siteimprove/alfa-http": "npm:^0.93.8"
+    "@siteimprove/alfa-web": "npm:^0.93.8"
+    selenium-webdriver: "npm:^4.24.0"
+  peerDependencies:
+    "@siteimprove/alfa-device": ^0.93.8
+    "@siteimprove/alfa-dom": ^0.93.8
+    "@siteimprove/alfa-http": ^0.93.8
+    "@siteimprove/alfa-web": ^0.93.8
+    selenium-webdriver: ^4.24.0
+  checksum: 10/60abfc32398c9018a0c5a3537ae6c438e9d8bac72e46d10fed812718a939eaf7fc22cdb0fff5157b349520b6edb81be2458e48ff089569e6adb5697bb3a0806f
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-sequence@npm:^0.93.8":
   version: 0.93.8
   resolution: "@siteimprove/alfa-sequence@npm:0.93.8"
@@ -2690,6 +2716,16 @@ __metadata:
     "@siteimprove/alfa-wcag": ^0.93.8
     "@siteimprove/alfa-web": ^0.93.8
   checksum: 10/a656a6993b8f74eded2ca17fff21d05734ebe3bd5dcad96eac5c3cb32cd30baf7df248df6f6e40acac4d84c87dd411ad89b789a26aac74c4768fbe97ef4ef297
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-test@npm:^0.93.8":
+  version: 0.93.8
+  resolution: "@siteimprove/alfa-test@npm:0.93.8"
+  dependencies:
+    "@types/node": "npm:^20.5.9"
+    chalk: "npm:^5.3.0"
+  checksum: 10/b5720ece79d1f05fc43b4c58142464132b200d98fd6032d6858027501bd2633134c4e03efbb2e842f2c2bdaa75fafcc527bac1559eb16d9ef9071dd4abfe23b0
   languageName: node
   linkType: hard
 
@@ -3187,6 +3223,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/node@npm:^20.5.9":
+  version: 20.17.0
+  resolution: "@types/node@npm:20.17.0"
+  dependencies:
+    undici-types: "npm:~6.19.2"
+  checksum: 10/3b39bb883aeaa558f5779f12bda765db96b56282dd7e55d611915cf6b76d30c355ba099403afd11ccabb6a5bf7fe882ff8ae0af68eda0157669f943b51dc5551
+  languageName: node
+  linkType: hard
+
 "@types/prettier@npm:^2.1.5":
   version: 2.3.0
   resolution: "@types/prettier@npm:2.3.0"
@@ -3257,6 +3302,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/selenium-webdriver@npm:^4":
+  version: 4.1.26
+  resolution: "@types/selenium-webdriver@npm:4.1.26"
+  dependencies:
+    "@types/node": "npm:*"
+    "@types/ws": "npm:*"
+  checksum: 10/540b9dfee2400ce8450ed9090bf90a214132e812f71c3f18f0f0d3e82377c8d6811a2d17ebd2ca15357f5ffe8ea80bdb51719aa7293ca2b278ba23c57728ca18
+  languageName: node
+  linkType: hard
+
 "@types/sinonjs__fake-timers@npm:8.1.1":
   version: 8.1.1
   resolution: "@types/sinonjs__fake-timers@npm:8.1.1"
@@ -3306,7 +3361,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/ws@npm:^8.5.3":
+"@types/ws@npm:*, @types/ws@npm:^8.5.3":
   version: 8.5.12
   resolution: "@types/ws@npm:8.5.12"
   dependencies:
@@ -5216,6 +5271,18 @@ __metadata:
     "@playwright/test": "npm:^1.47.0"
     "@siteimprove/alfa-playwright": "npm:^0.74.2"
     "@siteimprove/alfa-test-utils": "npm:^0.74.2"
+  languageName: unknown
+  linkType: soft
+
+"code-checker-selenium@workspace:accessibility-code-checker/selenium":
+  version: 0.0.0-use.local
+  resolution: "code-checker-selenium@workspace:accessibility-code-checker/selenium"
+  dependencies:
+    "@siteimprove/alfa-selenium": "npm:^0.74.2"
+    "@siteimprove/alfa-test": "npm:^0.93.8"
+    "@siteimprove/alfa-test-utils": "npm:^0.74.2"
+    "@types/selenium-webdriver": "npm:^4"
+    selenium-webdriver: "npm:^4.25.0"
   languageName: unknown
   linkType: soft
 
@@ -12084,6 +12151,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"selenium-webdriver@npm:^4.24.0, selenium-webdriver@npm:^4.25.0":
+  version: 4.25.0
+  resolution: "selenium-webdriver@npm:4.25.0"
+  dependencies:
+    "@bazel/runfiles": "npm:^5.8.1"
+    jszip: "npm:^3.10.1"
+    tmp: "npm:^0.2.3"
+    ws: "npm:^8.18.0"
+  checksum: 10/24a6b62a70b22f8370fd08f9704549d335a454c3b7a74422bc6ae762650543411473b8bf9a343c870432573232c2b3d4ef93243bc8590c7ebf53239506373673
+  languageName: node
+  linkType: hard
+
 "semver@npm:2 || 3 || 4 || 5, semver@npm:^5.7.0, semver@npm:^5.7.1":
   version: 5.7.2
   resolution: "semver@npm:5.7.2"
@@ -12861,7 +12940,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tmp@npm:~0.2.3":
+"tmp@npm:^0.2.3, tmp@npm:~0.2.3":
   version: 0.2.3
   resolution: "tmp@npm:0.2.3"
   checksum: 10/7b13696787f159c9754793a83aa79a24f1522d47b87462ddb57c18ee93ff26c74cbb2b8d9138f571d2e0e765c728fb2739863a672b280528512c6d83d511c6fa
