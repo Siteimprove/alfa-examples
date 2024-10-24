@@ -34,8 +34,11 @@ $ yarn code-checker:test
 > **Note:** these tests are expected to fail since the demo page is intentionally inaccessible.
 
 This will run the Accessibility Code Checker for all the existing integrations, namely:
-* [Cypress](./cypress)
-* [Playwright](./playwright)
+
+- [Cypress](./cypress)
+- [Playwright](./playwright)
+- [Puppeteer](./puppeteer)
+- [Selenium](./selenium)
 
 If you which to only run for one of them, run, e.g.:
 
@@ -49,4 +52,4 @@ If no credentials are provided, a summary of the results will be logged in the c
 
 ## Experimenting
 
-Each workspace in this directory contains one full example of integration. Among other, you can change the page URL to try the Accessibility Code Checker on a different page. 
+Each workspace in this directory contains one full example of integration. Among other, you can change the page URL to try the Accessibility Code Checker on a different page.

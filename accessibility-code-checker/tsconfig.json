@@ -5,6 +5,7 @@
   "references": [
     { "path": "cypress" },
     { "path": "playwright" },
+    { "path": "puppeteer" },
     { "path": "selenium" }
   ]
 }

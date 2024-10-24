@@ -1,27 +1,25 @@
-import { Selenium } from "@siteimprove/alfa-selenium";
+import { Puppeteer } from "@siteimprove/alfa-puppeteer";
 import { Audit, Logging, SIP } from "@siteimprove/alfa-test-utils";
 
 import { test } from "@siteimprove/alfa-test";
 
-import { Browser, Builder, WebDriver } from "selenium-webdriver";
-import chrome from "selenium-webdriver/chrome.js";
-
-let driver: WebDriver | undefined;
-
-const options = new chrome.Options();
-options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+import puppeteer from "puppeteer";
 
 test("Page should be accessible", async (t) => {
   // Create a browser instance
-  driver = await new Builder()
-    .forBrowser(Browser.CHROME)
-    .setChromeOptions(options)
-    .build();
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ["--no-sandbox", "--disable-dev-shm-usage"],
+  });
 
   // Navigate to the local web page
   // This suppose that the server is already started. See the demo-site folder.
   // TODO: Replace with your own page
-  await driver.get("http://localhost:5173");
+  const page = await browser.newPage();
+  await page.goto("http://localhost:5173");
+
+  // Get the document handle from the page
+  const document = await page.evaluateHandle(() => window.document);
 
   /*
    * Usual Selenium instructions can live here.
@@ -29,10 +27,10 @@ test("Page should be accessible", async (t) => {
    */
 
   // Scrape the page
-  const alfaPage = await Selenium.toPage(driver);
+  const alfaPage = await Puppeteer.toPage(document);
 
-  // Close the driver
-  await driver.close();
+  // Close the browser
+  await browser.close();
 
   // Run the audit
   const alfaResult = await Audit.run(alfaPage);
@@ -45,7 +43,7 @@ test("Page should be accessible", async (t) => {
   const url = await SIP.upload(alfaResult, {
     userName,
     apiKey,
-    testName: (git) => `${git.BranchName} – Selenium integration`,
+    testName: (git) => `${git.BranchName} – Puppeteer integration`,
   });
 
   // Log the result to the console

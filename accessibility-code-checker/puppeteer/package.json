@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json.schemastore.org/package",
+  "name": "code-checker-puppeteer",
+  "description": "Demo of using Puppeteer with the Accessibility Code Checker",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "test": "node test/puppeteer.spec.js"
+  },
+  "devDependencies": {
+    "@siteimprove/alfa-test": "^0.93.8",
+    "@siteimprove/alfa-test-utils": "^0.74.2"
+  },
+  "dependencies": {
+    "@siteimprove/alfa-puppeteer": "^0.74.2",
+    "puppeteer": "^23.6.0"
+  }
+}
