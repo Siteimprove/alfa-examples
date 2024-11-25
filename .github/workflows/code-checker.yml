@@ -5,6 +5,9 @@
 
 # See https://alfa.siteimprove.com/code-checker
 
+# Note that even if the code checker step by itself fails, the full workflow doesn't.
+# This reduces noise, and ensure that other problems in the workflow will still be reported.
+
 name: Accessibility Code Checker (this workflow *should* fail!)
 on:
   push:
@@ -19,7 +22,7 @@ on:
 
 jobs:
   build:
-    name: Accessibility Code Checker (this workflow *should* fail!)
+    name: Accessibility Code Checker
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -46,3 +49,6 @@ jobs:
         env:
           SI_USER_EMAIL: ${{ secrets.SI_USER_EMAIL }}
           SI_API_KEY: ${{ secrets.SI_API_KEY }}
+      - name: Expect failure of previous step
+        if: ${{ failure() }}
+        run: echo "Code Checker failed as expected"
