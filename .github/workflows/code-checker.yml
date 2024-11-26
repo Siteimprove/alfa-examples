@@ -56,6 +56,3 @@ jobs:
         env:
           SI_USER_EMAIL: ${{ secrets.SI_USER_EMAIL }}
           SI_API_KEY: ${{ secrets.SI_API_KEY }}
-      - name: Expect failure of previous step
-        if: ${{ failure() }}
-        run: echo "Code Checker failed as expected"
