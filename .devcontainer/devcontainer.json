@@ -12,7 +12,7 @@
         "forwardPorts": [5173],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "yarn install && yarn build && yarn playwright install && sudo yarn playwright install-deps",
+	"postCreateCommand": "yarn install && yarn build && yarn playwright install && sudo yarn playwright install-deps"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
