@@ -45,10 +45,14 @@ jobs:
       - run: yarn dedupe --check
       - run: yarn build
       - run: yarn code-checker:start &
-      - run: yarn code-checker:test
+      - run: |
+          status=0
+          yarn code-checker:test || status=$?
+          if [ ${status} -ne 0 ]; then
+            echo "Code Checker failed with exit code ${status}, as expected"
+            exit 0
+          fi
+          exit ${status}
         env:
           SI_USER_EMAIL: ${{ secrets.SI_USER_EMAIL }}
           SI_API_KEY: ${{ secrets.SI_API_KEY }}
-      - name: Expect failure of previous step
-        if: ${{ failure() }}
-        run: echo "Code Checker failed as expected"
