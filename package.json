@@ -14,7 +14,7 @@
     "code-checker:cypress": "yarn workspace code-checker-cypress run test",
     "code-checker:playwright": "yarn workspace code-checker-playwright run test",
     "code-checker:puppeteer": "yarn workspace code-checker-puppeteer run test",
-    "code-checker:selenium": "yarn workspace code-checker-selenium run test",
+    "code-checker:selenium": "yarn workspace code-checker-selenium run test"
   },
   "workspaces": [
     "common",
