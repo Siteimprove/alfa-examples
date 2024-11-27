@@ -9,15 +9,10 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-    "forwardPorts": [5173],
+        "forwardPorts": [5173],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": {
-		"install": "yarn install",
-		"playwright setup": "yarn playwright install",
-		"playwright missing deps": "sudo yarn playwright install-deps",
-		"build": "yarn build"
-	}
+	"postCreateCommand": "yarn install && yarn build && yarn playwright install && sudo yarn playwright install-deps",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
