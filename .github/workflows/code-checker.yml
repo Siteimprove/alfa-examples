@@ -8,7 +8,7 @@
 # Note that even if the code checker step by itself fails, the full workflow doesn't.
 # This reduces noise, and ensure that other problems in the workflow will still be reported.
 
-name: Accessibility Code Checker (this workflow *should* fail!)
+name: Accessibility Code Checker
 on:
   push:
     branches:
