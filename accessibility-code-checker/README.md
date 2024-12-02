@@ -43,7 +43,7 @@ This will run the Accessibility Code Checker for all the existing integrations, 
 If you which to only run for one of them, run, e.g.:
 
 ```bash
-$ yarn workspace code-checker-playwright test
+$ yarn workspace code-checker:playwright
 ```
 
 The examples are reading credentials for the Siteimprove Intelligence Platform from the environment variables `SI_USER_EMAIL` and `SI_API_KEY`. See [the associated documentation](https://alfa.siteimprove.com/code-checker/getting-started/reporting#sip) for how to create an API key for the Siteimprove Intelligence Platform.
