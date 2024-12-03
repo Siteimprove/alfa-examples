@@ -9,7 +9,7 @@
     "test": "node test/puppeteer.spec.js"
   },
   "devDependencies": {
-    "@siteimprove/alfa-test": "^0.93.8",
+    "@siteimprove/alfa-test": "^0.95.0",
     "@siteimprove/alfa-test-utils": "^0.74.2"
   },
   "dependencies": {

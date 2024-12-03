@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@siteimprove/alfa-cypress": "^0.74.2",
-    "@siteimprove/alfa-rules": "^0.93.8",
+    "@siteimprove/alfa-rules": "^0.95.0",
     "cypress": "^13.3.1"
   }
 }
