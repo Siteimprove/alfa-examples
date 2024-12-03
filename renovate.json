@@ -1,28 +1,31 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["config:base", "github>siteimprove/alfa//config/alfa-renovate"],
+  "extends": [
+    "config:recommended",
+    "github>siteimprove/alfa//config/alfa-renovate"
+  ],
   "packageRules": [
     {
       "description": "We currently ignore all other deps due to long time without update.",
       "groupName": "Ignored deps",
-      "matchPackagePatterns": ["*"],
-      "excludePackagePrefixes": [
-        "@siteimprove/alfa",
-        "@types/chai",
-        "@types/mocha",
-        "@types/node",
-        "chai",
-        "cypress",
-        "eslint",
-        "knip",
-        "mocha",
-        "playwright",
-        "prettier",
-        "puppeteer",
-        "typescript",
-        "vite"
-      ],
-      "enabled": false
+      "enabled": false,
+      "matchPackageNames": [
+        "*",
+        "!@siteimprove/alfa{/,}**",
+        "!@types/chai{/,}**",
+        "!@types/mocha{/,}**",
+        "!@types/node{/,}**",
+        "!chai{/,}**",
+        "!cypress{/,}**",
+        "!eslint{/,}**",
+        "!knip{/,}**",
+        "!mocha{/,}**",
+        "!playwright{/,}**",
+        "!prettier{/,}**",
+        "!puppeteer{/,}**",
+        "!typescript{/,}**",
+        "!vite{/,}**"
+      ]
     }
   ]
 }
