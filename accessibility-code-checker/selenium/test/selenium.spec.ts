@@ -25,7 +25,7 @@ test("Page should be accessible", async (t) => {
     .build();
 
   // Navigate to the local web page
-  // This suppose that the server is already started. See the demo-site folder.
+  // This supposes that the server is already running. See the demo-site folder.
   // TODO: Replace with your own page
   await driver.get("http://localhost:5173");
 
@@ -71,7 +71,7 @@ test("Page should be accessible", async (t) => {
     apiKey,
     siteID,
     // optional options
-    commitInformation: gitInformation.getOr(undefined),
+    commitInformation: gitInformation,
     testName,
     // pageTitle,
     pageURL,

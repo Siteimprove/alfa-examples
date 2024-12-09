@@ -22,8 +22,8 @@
     "node": ">=20.0.0"
   },
   "devDependencies": {
-    "@siteimprove/alfa-enzyme": "^0.75.0",
-    "@siteimprove/alfa-jest": "^0.75.0",
+    "@siteimprove/alfa-enzyme": "^0.76.0",
+    "@siteimprove/alfa-jest": "^0.76.0",
     "@siteimprove/alfa-rules": "^0.96.0",
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.5",

@@ -58,7 +58,7 @@ test("is page accessible", async ({ page }) => {
     apiKey,
     siteID,
     // optional options
-    commitInformation: gitInformation.getOr(undefined),
+    commitInformation: gitInformation,
     testName,
     // pageTitle,
     pageURL,

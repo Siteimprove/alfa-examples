@@ -3,7 +3,7 @@ import { Audit } from "@siteimprove/alfa-test-utils";
 
 it("should be accessible", () => {
   // Navigate to the local web page
-  // This suppose that the server is already started. See the demo-site folder.
+  // This supposes that the server is already running. See the demo-site folder.
   // TODO: Replace with your own page
   cy.visit("http://localhost:5173");
 

@@ -15,7 +15,7 @@ $ yarn build
 
 ### From a Codespace
 
-Codespaces in this repository are pre-installed and built, so you can skip the above steps. Credentials for the Siteimprove Intelligence Platform are read from the environment variables `SI_USER_EMAIL` and `SI_API_KEY`. Use `exort SI_USER_EMAIL=...` and `export SI_API=...` to set them within the Codespace for the full experience. 
+Codespaces in this repository are pre-installed and built, so you can skip the above steps. Credentials for the Siteimprove Intelligence Platform are read from the environment variables `SI_USER_EMAIL` and `SI_API_KEY`. Use `export SI_USER_EMAIL=...` and `export SI_API=...` to set them within the Codespace for the full experience. 
 
 ## Starting the server
 

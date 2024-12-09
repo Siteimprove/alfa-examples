@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.47.0",
-    "@siteimprove/alfa-playwright": "^0.75.0",
-    "@siteimprove/alfa-test-utils": "^0.75.0"
+    "@siteimprove/alfa-playwright": "^0.76.0",
+    "@siteimprove/alfa-test-utils": "^0.76.0"
   }
 }
