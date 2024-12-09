@@ -1,5 +1,5 @@
 import { Cypress as AlfaCypress } from "@siteimprove/alfa-cypress";
-import { Audit } from "@siteimprove/alfa-test-utils/audit";
+import { Audit } from "@siteimprove/alfa-test-utils";
 
 it("should be accessible", () => {
   // Navigate to the local web page

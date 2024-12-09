@@ -3,10 +3,7 @@
   "extends": "../tsconfig.json",
   "compilerOptions": {
     "skipLibCheck": true,
-    "types": ["cypress"]
+    "types": ["cypress"],
+    "moduleResolution": "Bundler"
   },
-  "include": [
-    "test-utils/**/*.ts",
-    "test-utils/**/*.tsx"
-  ]
 }
