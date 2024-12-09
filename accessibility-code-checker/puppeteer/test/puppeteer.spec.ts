@@ -1,7 +1,7 @@
 import { Puppeteer } from "@siteimprove/alfa-puppeteer";
 import { Audit, Logging, SIP } from "@siteimprove/alfa-test-utils";
 
-import { test } from "@siteimprove/alfa-test";
+import { test } from "@siteimprove/alfa-test-deprecated";
 
 import puppeteer from "puppeteer";
 

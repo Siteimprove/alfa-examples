@@ -1,7 +1,7 @@
 import { Selenium } from "@siteimprove/alfa-selenium";
 import { Audit, Logging, SIP } from "@siteimprove/alfa-test-utils";
 
-import { test } from "@siteimprove/alfa-test";
+import { test } from "@siteimprove/alfa-test-deprecated";
 
 import { Browser, Builder, WebDriver } from "selenium-webdriver";
 import chrome from "selenium-webdriver/chrome.js";

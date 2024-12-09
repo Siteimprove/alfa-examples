@@ -9,11 +9,11 @@
     "test": "node test/puppeteer.spec.js"
   },
   "devDependencies": {
-    "@siteimprove/alfa-test": "^0.93.8",
-    "@siteimprove/alfa-test-utils": "^0.74.2"
+    "@siteimprove/alfa-test-deprecated": "^0.96.0",
+    "@siteimprove/alfa-test-utils": "^0.75.0"
   },
   "dependencies": {
-    "@siteimprove/alfa-puppeteer": "^0.74.2",
+    "@siteimprove/alfa-puppeteer": "^0.75.0",
     "puppeteer": "^23.6.0"
   }
 }
