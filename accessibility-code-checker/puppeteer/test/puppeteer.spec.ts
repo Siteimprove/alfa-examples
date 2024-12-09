@@ -56,7 +56,7 @@ test("Page should be accessible", async (t) => {
     `On branch ${commit.BranchName} – Puppeteer integration`;
 
   // (optional) Provide a page title, this defaults to the first <title> element.
-  const pageTitle = "My page title";
+  // const pageTitle = "My page title";
 
   // (optional) Provide a page URL, this defaults to the page URL upon scraping.
   // This is useful to overwrite localhost URLs.
