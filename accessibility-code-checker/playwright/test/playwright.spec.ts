@@ -29,7 +29,7 @@ test("is page accessible", async ({ page }) => {
   // Run the audit
   const alfaResult = await Audit.run(alfaPage);
 
-  // (mandatory) Setup credentials from environment variables.
+  // (mandatory) Setup credentials (e.g., from environment variables).
   const userName = process.env.SI_USER_EMAIL;
   const apiKey = process.env.SI_API_KEY;
 
