@@ -1,7 +1,13 @@
 import { Selenium } from "@siteimprove/alfa-selenium";
-import { Audit, Logging, SIP } from "@siteimprove/alfa-test-utils";
+import {
+  Audit,
+  type CommitInformation,
+  Logging,
+  SIP,
+} from "@siteimprove/alfa-test-utils";
 
-import { test } from "@siteimprove/alfa-test";
+import { test } from "@siteimprove/alfa-test-deprecated";
+import { getCommitInformation } from "@siteimprove/alfa-test-utils/git";
 
 import { Browser, Builder, WebDriver } from "selenium-webdriver";
 import chrome from "selenium-webdriver/chrome.js";
@@ -19,7 +25,7 @@ test("Page should be accessible", async (t) => {
     .build();
 
   // Navigate to the local web page
-  // This suppose that the server is already started. See the demo-site folder.
+  // This supposes that the server is already running. See the demo-site folder.
   // TODO: Replace with your own page
   await driver.get("http://localhost:5173");
 
@@ -37,19 +43,51 @@ test("Page should be accessible", async (t) => {
   // Run the audit
   const alfaResult = await Audit.run(alfaPage);
 
-  // Setup credentials from environment variables.
+  // (mandatory) Setup credentials (e.g., from environment variables).
   const userName = process.env.SI_USER_EMAIL;
   const apiKey = process.env.SI_API_KEY;
 
+  // (mandatory) Setup site ID; TODO: replace with your own.
+  const siteID = "6255777";
+
+  // (recommended) Fetch information about the latest commit
+  const gitInformation = await getCommitInformation();
+
+  // (optional) Name the test, this can be built from the commit information.
+  const testName = (commit: CommitInformation) =>
+    `On branch ${commit.BranchName} – Selenium integration`;
+
+  // (optional) Provide a page title, this defaults to the first <title> element.
+  // const pageTitle = "My page title";
+
+  // (optional) Provide a page URL, this defaults to the page URL upon scraping.
+  // This is useful to overwrite localhost URLs.
+  const pageURL = "https://demo.siteimprovedemo.com/";
+
   // Upload the result to Siteimprove Intelligence Platform, if credentials are provided
   const url = await SIP.upload(alfaResult, {
+    // mandatory options
     userName,
     apiKey,
-    testName: (git) => `${git.BranchName} – Selenium integration`,
+    siteID,
+    // optional options
+    commitInformation: gitInformation,
+    testName,
+    // pageTitle,
+    pageURL,
   });
 
   // Log the result to the console
   Logging.fromAudit(alfaResult, url).print();
+
+  // If the upload failed, show the reason.
+  if (url.isErr()) {
+    console.warn(`\n${url.getErr()}\n`);
+  }
+  // If the git information couldn't be retrieved, show the reason.
+  if (gitInformation.isErr()) {
+    console.warn(`\n${gitInformation.getErr()}\n`);
+  }
 
   // Check if some rule was failing.
   const failingRules = alfaResult.resultAggregates.filter(

@@ -2,7 +2,7 @@
 
 These workspaces demonstrate how to use Siteimprove's Accessibility Code Checker with various browser automations.
 
-You can clone this repository to have a working setup on your local computer from which you can easily experiment.
+You can clone this repository to have a working setup on your local computer from which you can easily experiment. Alternatively, you can also run it as a Codespace from this Github repository (from the Code / Codespaces menu).
 
 ## Setup
 
@@ -12,6 +12,10 @@ From [the top-level of the repository](..), install dependencies and build the p
 $ yarn install
 $ yarn build
 ```
+
+### From a Codespace
+
+Codespaces in this repository are pre-installed and built, so you can skip the above steps. Credentials for the Siteimprove Intelligence Platform are read from the environment variables `SI_USER_EMAIL` and `SI_API_KEY`. Use `export SI_USER_EMAIL=...` and `export SI_API=...` to set them within the Codespace for the full experience. 
 
 ## Starting the server
 
