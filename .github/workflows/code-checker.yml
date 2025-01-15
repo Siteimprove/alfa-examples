@@ -14,11 +14,11 @@ on:
     branches:
       - main
   workflow_dispatch:
-    schedule:
-      # Run weekly, on Monday morning at 05:00 UTC.
-      # Problems are reported to the latest editor of the script,
-      # currently https://github.com/Jym77
-      - cron: '0 5 * * 1'
+  schedule:
+    # Run weekly, on Monday morning at 05:00 UTC.
+    # Problems are reported to the latest editor of the script,
+    # currently https://github.com/Jym77
+    - cron: '0 5 * * 1'
 
 jobs:
   build:
