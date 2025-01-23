@@ -28,6 +28,12 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+      - name: Disable AppArmor on ubuntu
+# Security on Ubuntu ⩾ 23 causes problem with Chrome, this is copied from
+# https://github.com/puppeteer/puppeteer/blob/main/.github/workflows/ci.yml
+# where they probably know what they do.
+#       if: ${{ matrix.os == 'ubuntu-latest' }}
+        run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
       - uses: actions/cache@v4
         with:
           path: .yarn/cache
