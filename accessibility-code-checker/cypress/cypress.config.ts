@@ -52,15 +52,6 @@ export default defineConfig({
 
           Logging.fromAudit(audit, url).print();
 
-          // If the upload failed, show the reason.
-          if (url.isErr()) {
-            console.warn(`\n${url.getErr()}\n`);
-          }
-          // If the git information couldn't be retrieved, show the reason.
-          if (gitInformation.isErr()) {
-            console.warn(`\n${gitInformation.getErr()}\n`);
-          }
-
           return null;
         },
       });

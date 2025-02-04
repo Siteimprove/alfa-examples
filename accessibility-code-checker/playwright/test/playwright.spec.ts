@@ -67,15 +67,6 @@ test("is page accessible", async ({ page }) => {
   // Log the result to the console
   Logging.fromAudit(alfaResult, url).print();
 
-  // If the upload failed, show the reason.
-  if (url.isErr()) {
-    console.warn(`\n${url.getErr()}\n`);
-  }
-  // If the git information couldn't be retrieved, show the reason.
-  if (gitInformation.isErr()) {
-    console.warn(`\n${gitInformation.getErr()}\n`);
-  }
-
   // Check if some rule was failing.
   const failingRules = alfaResult.resultAggregates.filter(
     (aggregate) => aggregate.failed > 0,
