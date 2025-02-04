@@ -48,7 +48,7 @@ test("Page should be accessible", async (t) => {
   const apiKey = process.env.SI_API_KEY;
 
   // (mandatory) Setup site ID; TODO: replace with your own.
-  const siteID = "6255777";
+  const siteID = 900788;
 
   // (recommended) Fetch information about the latest commit
   const gitInformation = await getCommitInformation();
@@ -79,15 +79,6 @@ test("Page should be accessible", async (t) => {
 
   // Log the result to the console
   Logging.fromAudit(alfaResult, url).print();
-
-  // If the upload failed, show the reason.
-  if (url.isErr()) {
-    console.warn(`\n${url.getErr()}\n`);
-  }
-  // If the git information couldn't be retrieved, show the reason.
-  if (gitInformation.isErr()) {
-    console.warn(`\n${gitInformation.getErr()}\n`);
-  }
 
   // Check if some rule was failing.
   const failingRules = alfaResult.resultAggregates.filter(

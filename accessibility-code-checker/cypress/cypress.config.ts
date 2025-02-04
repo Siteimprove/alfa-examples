@@ -22,7 +22,7 @@ export default defineConfig({
           const apiKey = process.env.SI_API_KEY;
 
           // (mandatory) Setup site ID; TODO: replace with your own.
-          const siteID = "6255777";
+          const siteID = 900788;
 
           // (recommended) Fetch information about the latest commit
           const gitInformation = await getCommitInformation();
@@ -51,15 +51,6 @@ export default defineConfig({
           });
 
           Logging.fromAudit(audit, url).print();
-
-          // If the upload failed, show the reason.
-          if (url.isErr()) {
-            console.warn(`\n${url.getErr()}\n`);
-          }
-          // If the git information couldn't be retrieved, show the reason.
-          if (gitInformation.isErr()) {
-            console.warn(`\n${gitInformation.getErr()}\n`);
-          }
 
           return null;
         },
