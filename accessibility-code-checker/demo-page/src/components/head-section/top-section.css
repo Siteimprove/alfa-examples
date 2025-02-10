@@ -4,6 +4,7 @@
 }
 
 .top-section p,
+.top-section label, /* this is used during demo */
 .top-section h1,
 .top-section h3 {
   color: var(--color--white);
