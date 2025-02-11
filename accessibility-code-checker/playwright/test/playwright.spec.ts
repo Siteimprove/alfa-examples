@@ -34,7 +34,7 @@ test("is page accessible", async ({ page }) => {
   const apiKey = process.env.SI_API_KEY;
 
   // (mandatory) Setup site ID; TODO: replace with your own.
-  const siteID = 900788;
+  const siteID = 16788956729;
 
   // (recommended) Fetch information about the latest commit
   const gitInformation = await getCommitInformation();
