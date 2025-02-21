@@ -10,10 +10,10 @@
   },
   "devDependencies": {
     "@siteimprove/alfa-test-deprecated": "^0.98.0",
-    "@siteimprove/alfa-test-utils": "^0.77.1"
+    "@siteimprove/alfa-test-utils": "^0.77.3"
   },
   "dependencies": {
-    "@siteimprove/alfa-puppeteer": "^0.77.1",
+    "@siteimprove/alfa-puppeteer": "^0.77.3",
     "puppeteer": "^24.0.0"
   }
 }

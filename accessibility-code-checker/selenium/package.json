@@ -9,9 +9,9 @@
     "test": "node test/selenium.spec.js"
   },
   "devDependencies": {
-    "@siteimprove/alfa-selenium": "^0.77.1",
+    "@siteimprove/alfa-selenium": "^0.77.3",
     "@siteimprove/alfa-test-deprecated": "^0.98.0",
-    "@siteimprove/alfa-test-utils": "^0.77.1",
+    "@siteimprove/alfa-test-utils": "^0.77.3",
     "@types/selenium-webdriver": "^4",
     "selenium-webdriver": "^4.25.0"
   }
