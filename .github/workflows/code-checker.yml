@@ -45,7 +45,8 @@ jobs:
       - run: yarn dedupe --check
       - run: yarn build
       - run: yarn code-checker:start &
-      - run: |
+      - name: Run Accessibility Code Checker
+        run: |
           status=0
           yarn code-checker:test || status=$?
           if [ ${status} -ne 0 ]; then
