@@ -1,5 +1,5 @@
 import { Layout } from "../layout/layout";
-import aboutUsImg from "../../assets/img/about-us.webp";
+// import aboutUsImg from "../../assets/img/about-us.webp";
 import signature from "../../assets/img/signature.webp";
 import "./about-us.css";
 
@@ -9,7 +9,8 @@ export const AboutUs: React.FC = () => {
       <div className="about-us-content">
         <div className="about-us-content-left">
           <a href="www.siteimprove.com">
-            <img src={aboutUsImg} className="img-rounded-corners" />
+            <span className="about-us-img"></span>
+            {/* <img src={aboutUsImg} className="img-rounded-corners" /> */}
           </a>
         </div>
         <div className="about-us-content-right">
