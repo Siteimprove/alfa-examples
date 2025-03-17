@@ -1345,6 +1345,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-act@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-act@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-applicative": "npm:^0.100.0"
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-earl": "npm:^0.100.0"
+    "@siteimprove/alfa-either": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-list": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-monad": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-performance": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-record": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+    "@siteimprove/alfa-sarif": "npm:^0.100.0"
+    "@siteimprove/alfa-sequence": "npm:^0.100.0"
+    "@siteimprove/alfa-string": "npm:^0.100.0"
+    "@siteimprove/alfa-thunk": "npm:^0.100.0"
+    "@siteimprove/alfa-trilean": "npm:^0.100.0"
+    "@siteimprove/alfa-tuple": "npm:^0.100.0"
+  checksum: 10/27da08807d95cec6bd05816170344301b1904edeeba748a994fa58226ec01a4a47099c5cf2e89a5d7d89f4fdef5c6b2c745d9d062b38189aedd2e808fcb6c997
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-act@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-act@npm:0.99.0"
@@ -1375,6 +1408,18 @@ __metadata:
     "@siteimprove/alfa-trilean": "npm:^0.99.0"
     "@siteimprove/alfa-tuple": "npm:^0.99.0"
   checksum: 10/6e5102a18709cc31819101f59dec8483a176a2b1c3efba7f70bdb4558109a4d50f7b3be26469a0d70deabda09d544edac59ba34b488d3e8906690086c636223b
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-affine@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-affine@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-math": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+  checksum: 10/92306d37ccd5d3ebbad590922dd7e625c85458cf214a94e18814c007edec7474739674005eacd5cce4a0abbb5bd9f4dafae2cc5f49565e58bd31702637339b13
   languageName: node
   linkType: hard
 
@@ -1410,6 +1455,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-applicative@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-applicative@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+  checksum: 10/6b14f367536621bc1ec04fd74490a8c082fcf9137ca11b3e6e27a792aae11485f8450d898d05cde5ffaac0f9f4601f188dd5ebd61db7a2ff79b738bd3b0b457f
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-applicative@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-applicative@npm:0.99.0"
@@ -1417,6 +1472,38 @@ __metadata:
     "@siteimprove/alfa-functor": "npm:^0.99.0"
     "@siteimprove/alfa-mapper": "npm:^0.99.0"
   checksum: 10/c7bf6fd933463462549909fb6a8853f365b1b92708a735424443806b2ae96ead07680366a5c3cd68f8ecc7d56b1772fb0174cb3e897ec741dc9fd6c132b30ae5
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-aria@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-aria@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-cache": "npm:^0.100.0"
+    "@siteimprove/alfa-device": "npm:^0.100.0"
+    "@siteimprove/alfa-dom": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-flags": "npm:^0.100.0"
+    "@siteimprove/alfa-graph": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-selective": "npm:^0.100.0"
+    "@siteimprove/alfa-selector": "npm:^0.100.0"
+    "@siteimprove/alfa-sequence": "npm:^0.100.0"
+    "@siteimprove/alfa-set": "npm:^0.100.0"
+    "@siteimprove/alfa-string": "npm:^0.100.0"
+    "@siteimprove/alfa-style": "npm:^0.100.0"
+    "@siteimprove/alfa-table": "npm:^0.100.0"
+    "@siteimprove/alfa-thunk": "npm:^0.100.0"
+    "@siteimprove/alfa-tree": "npm:^0.100.0"
+  checksum: 10/f5de334ba16fc0eb116cd7a7296939b675d42647e3af38f607f5baccb89fde3af6b6f72a30829b829e0783b8af7039a3c41a125bfa3b4f524c19fd61cbcdbad5
   languageName: node
   linkType: hard
 
@@ -1449,6 +1536,26 @@ __metadata:
     "@siteimprove/alfa-thunk": "npm:^0.99.0"
     "@siteimprove/alfa-tree": "npm:^0.99.0"
   checksum: 10/5b9b4b566723ea847d624112f197e782d9627805b27a86c55b86fa22583545645a0982ea2c09389f428d3b2370f04ea97e0375970a9ab2779dedde95c6a58b6a
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-array@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-array@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-clone": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/f18622b68402b672a44384df07b8d7290c91444aaeb0e6f79ad77deeffd85708e12137a56d36d189403b0774ff389aef220aed70fb757274d88812fdd37917f3
   languageName: node
   linkType: hard
 
@@ -1497,10 +1604,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-bits@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-bits@npm:0.100.0"
+  checksum: 10/656665c7db757cf90b059c7a4552d5d90c5c2c6f0971e966e8082c5108528832696d362a6efb2869eb80b2647e1b9da2943d7b59d4d130eedb03fd90526a26d3
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-bits@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-bits@npm:0.99.0"
   checksum: 10/4e2d9c7411ecbd0db06fc5367f4220c3e08d2ce4512362cc312338374e4de694d1bd7ded6e0c5de74bed9ae23c2cf18c27638c1bcece843d5c0e75fd5a187cc3
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-branched@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-branched@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-collection": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-list": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/37878293fd84b95a184ae59d75b1a9525b6dcfde32d1e7cb143b5671c71cebe11ffa2df66100243d6e5c591e640011eabf0c973a4389c92ed4f274ddd31870d6
   languageName: node
   linkType: hard
 
@@ -1524,6 +1658,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-cache@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-cache@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+  checksum: 10/c8991ed481dfcfb7233ea2ee63f9f57db58485c6b4003e65ef05304f3cc4e4d10f7821d6126cc36a23b66707a706b66bba23741a3e8d997aef7c159cf715ebf2
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-cache@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-cache@npm:0.99.0"
@@ -1535,12 +1680,44 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-callback@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-callback@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+  checksum: 10/6282b2ab7416f3bbcb19fcf6ac69e1c6284cde973cecc441482d1e5d586cfe6d887c456d68c4a7cd3b5b5218b7dbcb2179b1831f07db255c9ee2330af02ee3d0
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-callback@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-callback@npm:0.99.0"
   dependencies:
     "@siteimprove/alfa-mapper": "npm:^0.99.0"
   checksum: 10/3a4525118658714f44d3be68ad5ee69f24c6ad875c700463d4fe58acda249938d94405c3e098578454091f70cbbcfeee97d0e72c70066a3f477ad43e28199017
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-cascade@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-cascade@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-cache": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-css": "npm:^0.100.0"
+    "@siteimprove/alfa-css-feature": "npm:^0.100.0"
+    "@siteimprove/alfa-device": "npm:^0.100.0"
+    "@siteimprove/alfa-dom": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-selective": "npm:^0.100.0"
+    "@siteimprove/alfa-selector": "npm:^0.100.0"
+  checksum: 10/37013f54c164bff85c02201375bb02bc8aabf7cbae70ff2f17eab0e9c06bdba94ab1f2d7bebf76de43e9cc193539120c580fac74caae8c6732a7c654d0277c3b
   languageName: node
   linkType: hard
 
@@ -1606,10 +1783,41 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-clone@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-clone@npm:0.100.0"
+  checksum: 10/8aff217bcd9f3896d70b19253c5cc14c59f82e09ed8e0cf3d9d94c36b88e4f7e4a1f4de8a5e0c8c1bd18474b13f07fc5ab2ab5835441ba7ee6b9d5ab5f815a95
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-clone@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-clone@npm:0.99.0"
   checksum: 10/c8dfaaf6ebb6a507ac2ebdbfa86134a1b4cd2a776ba874b005d0307987dd1fe9c16c117cc107e54c30e699d9002372d6c78dcb64a8902c5e9abae868ec0ff031
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-collection@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-collection@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-applicative": "npm:^0.100.0"
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-foldable": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-monad": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/3dd08870098b208bcd61daa2179cd8884dfd1d51ec52f03cc6b4895b1609057386ae8aa54da7a7c7c003ae0408e728d3d39710bc5001afa291bfb0ad156383dd
   languageName: node
   linkType: hard
 
@@ -1637,12 +1845,31 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-comparable@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-comparable@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/6013d608a20f4f07fc113c186b61433f05d003b99174e1f01be8237c20950abe72edd5b63f2364190b5dbf4f72260b0f06489f114fa900223ac4d5f221e0cebd
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-comparable@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-comparable@npm:0.99.0"
   dependencies:
     "@siteimprove/alfa-refinement": "npm:^0.99.0"
   checksum: 10/e32c6225b47c343909e744f5b98d111ca07fc1221b760b19ece88183da5c1503afd485065a2a1df5bdea3adfd0119cbe0f576863e25cdf287a5e48f19505deee
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-continuation@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-continuation@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+  checksum: 10/6f5e9f5944596f967308dd23f23713741bd9143245684e34d1bd1e4bed4f32a415170794e9162b05630fd32465a73872c78751b371447415ad5967b5c3bc0f49
   languageName: node
   linkType: hard
 
@@ -1677,6 +1904,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-css-feature@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-css-feature@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-css": "npm:^0.100.0"
+    "@siteimprove/alfa-device": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-parser": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+    "@siteimprove/alfa-slice": "npm:^0.100.0"
+  checksum: 10/a92c2e5229d3997abf5f6239f541868c0eda51883539db9666af903bc52956f9d70d35c81c29236440c95e9d80620b755ce9b930ee2d91ec3b6ba7c85c065e07
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-css-feature@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-css-feature@npm:0.99.0"
@@ -1696,6 +1945,33 @@ __metadata:
     "@siteimprove/alfa-result": "npm:^0.99.0"
     "@siteimprove/alfa-slice": "npm:^0.99.0"
   checksum: 10/c5669974614560984f6455edcc11afe5e84ebe51179ff9b0017d6f0912a88b2a037e7bd91524dcc220211d63ab2cde467f428a538503b0e066b821bbc3861a19
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-css@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-css@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-flags": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-math": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-parser": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-record": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+    "@siteimprove/alfa-selective": "npm:^0.100.0"
+    "@siteimprove/alfa-slice": "npm:^0.100.0"
+    "@siteimprove/alfa-string": "npm:^0.100.0"
+    "@siteimprove/alfa-thunk": "npm:^0.100.0"
+  checksum: 10/1c0581223b99720ae5e1ac4cdc3628077861b3c01388cc3fbf563d473081cb6df55aca78ac89de8593ffa39e9776276738b9775552bffaf751ecaa6f33500678
   languageName: node
   linkType: hard
 
@@ -1755,6 +2031,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-device@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-device@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+  checksum: 10/58a63d49ffb72a514006ebf2178369f8c9a16010c526c22447821396d412dafb1457a36f20168f2bdc8f830494bccae78680d14ff895c5645f6d0be5b3004608
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-device@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-device@npm:0.99.0"
@@ -1765,6 +2054,40 @@ __metadata:
     "@siteimprove/alfa-json": "npm:^0.99.0"
     "@siteimprove/alfa-map": "npm:^0.99.0"
   checksum: 10/752747cb5f0c01c081d6f78132c6c6434249b8db6eaabe2aff2a589e06ba25d9399d8a094a4db40f152160735351b4c37307ea635e1c6b243b2b87146e9589f9
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-dom@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-dom@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-cache": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-css": "npm:^0.100.0"
+    "@siteimprove/alfa-css-feature": "npm:^0.100.0"
+    "@siteimprove/alfa-device": "npm:^0.100.0"
+    "@siteimprove/alfa-earl": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-flags": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-lazy": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-parser": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-rectangle": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+    "@siteimprove/alfa-sarif": "npm:^0.100.0"
+    "@siteimprove/alfa-selective": "npm:^0.100.0"
+    "@siteimprove/alfa-sequence": "npm:^0.100.0"
+    "@siteimprove/alfa-slice": "npm:^0.100.0"
+    "@siteimprove/alfa-string": "npm:^0.100.0"
+    "@siteimprove/alfa-trampoline": "npm:^0.100.0"
+    "@siteimprove/alfa-tree": "npm:^0.100.0"
+  checksum: 10/bc6088d9286ab23449d102e0cb849677a717dbfe69ef5286997c23bc363620de7ce092900019553ca2d5fc9cb069c123543c3d0c9d9f640fe9254039e0ee23ba
   languageName: node
   linkType: hard
 
@@ -1802,6 +2125,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-earl@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-earl@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-json-ld": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/266fda3b3ba8d2cee2ac2677337ffb0d7f373c40bf041c1045f27140b984b8459f1085154c1d6cf5f6571c97fd6ddc32721bc14a46472fc92ac45340be9e480e
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-earl@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-earl@npm:0.99.0"
@@ -1810,6 +2144,25 @@ __metadata:
     "@siteimprove/alfa-option": "npm:^0.99.0"
     "@siteimprove/alfa-refinement": "npm:^0.99.0"
   checksum: 10/678f40695dfb64147c8e08b37a59d5bf32c779b014216950397c5574d60a1b47690650cf872b7cf0dff432c47a8c6cfcf85a30de18aa2e9f7cae81cb7c231d76
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-either@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-either@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-applicative": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-foldable": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-monad": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+  checksum: 10/e201f492a764dc72b2341ef2363509fdba3614c3515ea321c866c81fa7f952d6174f1c757a5f819e0ee42dfe43963d4047bbc1fad125d10cfc8b78c5d5f905cb
   languageName: node
   linkType: hard
 
@@ -1832,6 +2185,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-emitter@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-emitter@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-continuation": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+  checksum: 10/b81fbc6c852a07f5b4816229638eb2dda405d28c88a612816405d53b7fec4080527228eba7f860dd7df4697674a0df89116575b3771c8d8220dc9553314ac78d
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-emitter@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-emitter@npm:0.99.0"
@@ -1841,6 +2206,13 @@ __metadata:
     "@siteimprove/alfa-functor": "npm:^0.99.0"
     "@siteimprove/alfa-mapper": "npm:^0.99.0"
   checksum: 10/d085ba051b6d0b90f756beb44ec3a01ecec621c17d8c98bf85094d857950115a1bbbc46db8a001e8ada0c14bc85c19feadb93afb89ca4d5e6b9357d1319f214e
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-encoding@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-encoding@npm:0.100.0"
+  checksum: 10/ef8947027f4c4600ea20e3866ee9896dbd9d0e7248f14ce662ede4e5eb69582569ceed405d2d5453d7fb3e112b97d8d4452671e884b2473ce879c4003f8af0e6
   languageName: node
   linkType: hard
 
@@ -1865,6 +2237,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-equatable@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-equatable@npm:0.100.0"
+  checksum: 10/06cc4321e1223a4dd800a689b5728543523a0ec277a1fc469db16729f630382e9df3e06d2477739ca68685b62bc3621b6460be960892618e380801516dfd3148
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-equatable@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-equatable@npm:0.99.0"
@@ -1884,6 +2263,18 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@siteimprove/alfa-flags@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-flags@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+  checksum: 10/2c1fdf99d0418a79cecb32d5a268f8644ca8d69635c6abd7b235dbf56ec70a4d6d040c74dc9ea8b93be36494ff5ea6f04358c0f6e44137927d655cb53f42c691
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-flags@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-flags@npm:0.99.0"
@@ -1895,12 +2286,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-fnv@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-fnv@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+  checksum: 10/25a539a6c1232a37c60a29810a90d689276bfa1d8b77267966c68da39c4516b798c143577b3f2ae7dcb3e536fd0b1c913eb8318a14b09ee048fca2b81cf68e11
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-fnv@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-fnv@npm:0.99.0"
   dependencies:
     "@siteimprove/alfa-hash": "npm:^0.99.0"
   checksum: 10/f1b61102830b66a4f641aab861b0288814d60033f1f070661b3d709c6c72acf436b48f85a35cfd3702047c0460556468077239153814aaf33f26de3a46495544
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-foldable@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-foldable@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+  checksum: 10/7df7ad8c8b752cee5399618b5d614b61bf56b90e00223ab53b6b8b222882a432cba5a8af7a4e87f9e3dea118e94af316c1356508cd8c84b78bc73042449181ce
   languageName: node
   linkType: hard
 
@@ -1970,12 +2379,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-functor@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-functor@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+  checksum: 10/63360b96a5af67d2e002c66401ea43522e5109653757e697089d0ed9f9789d496f6c0a03a1add6f349e27623b9da81bd8354a2a4050a9357c70fb3d3a3e90a83
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-functor@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-functor@npm:0.99.0"
   dependencies:
     "@siteimprove/alfa-mapper": "npm:^0.99.0"
   checksum: 10/71079fe473405dad05d044482f6f511b7ac87265fc2bd11d065f1c809666b5e8c9f60a4cbab0589161b8acd4bc318a638bd2aeb7279633de8675935b208d977a
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-future@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-future@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-applicative": "npm:^0.100.0"
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-continuation": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-monad": "npm:^0.100.0"
+    "@siteimprove/alfa-thenable": "npm:^0.100.0"
+    "@siteimprove/alfa-thunk": "npm:^0.100.0"
+  checksum: 10/d79f91361d09f2bfad9c87449597d3b24c0329843c90b7e155c37142231818d2022730b7b109969ee9c8191471b8ffecacee1e563d397892db060b9379b43535
   languageName: node
   linkType: hard
 
@@ -1997,6 +2433,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-graph@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-graph@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+    "@siteimprove/alfa-sequence": "npm:^0.100.0"
+    "@siteimprove/alfa-set": "npm:^0.100.0"
+  checksum: 10/433f8a6063be26f05e72891cdedea9352c7115b9aa57e8f31f408f9f31eb01ec66205c84e585742057833e79c2988c221ca268f27f687a07f5a87540b92f69ea
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-graph@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-graph@npm:0.99.0"
@@ -2012,6 +2463,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-hash@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-hash@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-encoding": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/0ba603012a77cfe8c78f08e16d8f978e0908191ffd2f9730d1a9a8ca16856068f6e2f7cf53488e9ee7d25406c01be9b913e8b5fc0cd74899cf890379ffa1b365
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-hash@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-hash@npm:0.99.0"
@@ -2021,6 +2484,24 @@ __metadata:
     "@siteimprove/alfa-json": "npm:^0.99.0"
     "@siteimprove/alfa-refinement": "npm:^0.99.0"
   checksum: 10/4f7a1c5910fe920a90b329ff2b6c0552428fa228cc5762d4ce7b23fe313f3e13afe0e816ea36a8c88f03b478db862fc4bdff69658946ddea74728473599d2857
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-http@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-http@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-earl": "npm:^0.100.0"
+    "@siteimprove/alfa-encoding": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+    "@siteimprove/alfa-url": "npm:^0.100.0"
+  checksum: 10/35269cf179b1b43466e049098549da93784657f9e6f061a295be40584dbe528f36adbbdbb5007f269b5ff4c24a41ed2668e55a128aa36af18780358c84f48f86
   languageName: node
   linkType: hard
 
@@ -2042,6 +2523,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-iana@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-iana@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+    "@siteimprove/alfa-slice": "npm:^0.100.0"
+  checksum: 10/4096349fdcac195d1d35deea49bf59fefb8d726c3f6e57d669aba804b9405a8585a3ac8efa4b6fc9a8fa6b9c42822fb4f5c5db3fa02886b3cfdf30dfb3b68f2c
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-iana@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-iana@npm:0.99.0"
@@ -2052,6 +2546,24 @@ __metadata:
     "@siteimprove/alfa-result": "npm:^0.99.0"
     "@siteimprove/alfa-slice": "npm:^0.99.0"
   checksum: 10/16d239c483ed4f26c0ae4036985feac64a100277876866caa5836d95aa61ceca0b63e07d28d3f81544a8c55434b3996bdc1ab47c4370809a4b92f6c37dbaa5bc
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-iterable@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-iterable@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/bc5aed54257d9043013397dc0dd0b589c653268d5f6d90c95472a3248e2eb7e41502b06139244e35d526d2b404796a1c03c2d4596a5083c6e28992c06b1ac1f0
   languageName: node
   linkType: hard
 
@@ -2093,6 +2605,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-json-ld@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-json-ld@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+  checksum: 10/2abdaa0b5a7c48aeaf05531bd009fc03e0bd3fe72dc7eefe942714e0184c464e522aafb9680eabd923f939072cb8c64ebd58cc4739e4864f508039e7d6e123f6
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-json-ld@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-json-ld@npm:0.99.0"
@@ -2102,12 +2623,37 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-json@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-json@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/a28ac8c534cadb42ed886ca68ce17a16aca3119b20e1708a2abe0f801c653311e1ca9174ee4b5e91555141d2cff772b6c103e59a6d704c6fa90b9b7580590437
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-json@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-json@npm:0.99.0"
   dependencies:
     "@siteimprove/alfa-refinement": "npm:^0.99.0"
   checksum: 10/d699cdb188eaad08967583ccc53ed0ec81eeedb71b23291585232e984f930031148f8adb1c9152bd44f5bdfe074083867b8b59d1b291f7ed4ee7b4b4c22d2b11
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-lazy@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-lazy@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-applicative": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-monad": "npm:^0.100.0"
+    "@siteimprove/alfa-thunk": "npm:^0.100.0"
+    "@siteimprove/alfa-trampoline": "npm:^0.100.0"
+  checksum: 10/7ef129bac66c10a7424785f26d36fdc0f837e2f87541a57f35b6e7620a94ef62f9c175e362a3dc49abb1e157ea65359b010046cff9d1b51ab9e207e9506249b8
   languageName: node
   linkType: hard
 
@@ -2124,6 +2670,31 @@ __metadata:
     "@siteimprove/alfa-thunk": "npm:^0.99.0"
     "@siteimprove/alfa-trampoline": "npm:^0.99.0"
   checksum: 10/28dc4ea2bbe4251ab673aa214b1fbf73936dda5b8c4d0e4d5ad18e953ffaca6a20178b43f3e2874d6dcba0a766fe7b5dfe7bdb1bd033469af61d4f143192547b
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-list@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-list@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-bits": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-collection": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-set": "npm:^0.100.0"
+  checksum: 10/e0c45cf0373312bc7471a697eed2b8daae00bba3acc1d8a989ab93f69ef90eefafaa0a6e56c9680b3c4a3b3c4bfce4394dd6433be6c9e66a76bf5f5ddcdef17c
   languageName: node
   linkType: hard
 
@@ -2152,6 +2723,29 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-map@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-map@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-bits": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-collection": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-fnv": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/c934c7f029a1dfa11eb4d47e56293970214cd6cf6bb458eea30bfa39fea10f8498dbf7039a407c8460c405c40e8ba57e834868d1285807bee6edf8df4e9ff3e9
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-map@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-map@npm:0.99.0"
@@ -2175,6 +2769,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-mapper@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-mapper@npm:0.100.0"
+  checksum: 10/0c9b80094cf14d63580983ce834ef84a78a6be523133cc46f5789b7f6ca03c86b5f369cde66e220f19887540a4d9d10d397b3d1daec46b7acce06e40f506adfa
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-mapper@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-mapper@npm:0.99.0"
@@ -2182,10 +2783,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-math@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-math@npm:0.100.0"
+  checksum: 10/d97ab4b5cd2711b7d782e8dc5d00a4f813346725a1cd1228a5b90906864302ef34b03b2495d17dd53d986f8a7964a7f093b6055cd116c96200a105b3adb8e0c6
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-math@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-math@npm:0.99.0"
   checksum: 10/d2733df58f2af561ca96d6ed86e3c86976fc7691549bbb4a3597b65939bea54ff1414425663267720cf0104d1f2118d0ee017ff53b98498c2e7fba83f37a7259
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-monad@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-monad@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-applicative": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+  checksum: 10/bbde8f52dce7ccf73e455d4d7f44b62d52554893c77b1ba22d5c8a08e280d6c837acf82338c41fc1dbe5e737483d48bd49df96f247585cdb44291884c368e82d
   languageName: node
   linkType: hard
 
@@ -2197,6 +2816,26 @@ __metadata:
     "@siteimprove/alfa-functor": "npm:^0.99.0"
     "@siteimprove/alfa-mapper": "npm:^0.99.0"
   checksum: 10/0656f164a96c6dd42fb0a6d5f00bb5991b4d8525711ddde22924345456af23a4efb1be0db3793fe25c63fdc76abd2bf68b7e2ed106a3ea03c38f48d95d170bed
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-option@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-option@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-foldable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-monad": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-thunk": "npm:^0.100.0"
+  checksum: 10/a95dc00f92ceb98ab11041ddff4aab83a191acc6f18fecb0502ea9737799b3e77485cbd2d0f743478c3078fd40ab3bd3ec5fac932f6c46ca09f38cb082f030e9
   languageName: node
   linkType: hard
 
@@ -2220,6 +2859,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-parser@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-parser@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+  checksum: 10/e07b5fde2ac9317d82c1e7ba802e225ac0657179c79edc138d25e44741579baca7a07274258c71f0aa95148b9e65a5895c5929d9c08c32369579fb42aa3abc05
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-parser@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-parser@npm:0.99.0"
@@ -2232,6 +2886,18 @@ __metadata:
     "@siteimprove/alfa-refinement": "npm:^0.99.0"
     "@siteimprove/alfa-result": "npm:^0.99.0"
   checksum: 10/86f36df5fcae4fff7e3838559a954a733a4ede359eb04eb3188fb1cddc346d438d87d4710b2b7e776915727bf4af4f551cfd1e87760c4884e013e9167480cbf6
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-performance@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-performance@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-emitter": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-thunk": "npm:^0.100.0"
+  checksum: 10/6d8c0333498d1751230fa9a1aba2d52a9b99139e616c80f74d866f741deeb025d00e526f28fce2b75453abb2d9c74a23bc117ed943cead516fcec68de6d4fef3
   languageName: node
   linkType: hard
 
@@ -2265,6 +2931,17 @@ __metadata:
     "@siteimprove/alfa-web": ^0.99.0
     playwright: ^1.47.0
   checksum: 10/86e1776d4adc9c3aeacff8f847c1b89f3e6831fb1927a94d6d3c4695c10709e31149da7c9df8f5c97c1e9e191d2de929028c35fe86a50cf66f376a262357eb5c
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-predicate@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-predicate@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+  checksum: 10/55f64e9b60dfa41eb27a124f9472de3f18acf27bca3b1686495d26b105d73d7ad60809364dc89d40f2b82427a67c4f99db4d1d3d7909fe5a4ac271d653ae4af6
   languageName: node
   linkType: hard
 
@@ -2336,6 +3013,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-record@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-record@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-foldable": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-list": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+  checksum: 10/5f1f6622733f47404156374a0736a7d333c287c7a109d37b16715aaf6d2ab9aa9ac76c6509ab517b1353603f153d957dcd0a87a7dbb6e282ba93be66cd291d91
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-record@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-record@npm:0.99.0"
@@ -2352,6 +3045,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-rectangle@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-rectangle@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+  checksum: 10/774db2ad65488be15c15c071cfd1dca6bd472c41ab9b359d33b6a6fe9fa838f396dadcb56e7d6b099afbaa3ddbbb2c6309830e18d96876ecf58d1cf4df4264ba
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-rectangle@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-rectangle@npm:0.99.0"
@@ -2363,10 +3067,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-reducer@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-reducer@npm:0.100.0"
+  checksum: 10/6b2177e3503414dd9fb3d12fe44ed4454fdcc1359ab0e4f79a286b1d17c62bf67f4c562a1f714ee4a8d1eab41adf4d43feecca39267de28ff0ebde82f4cc7266
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-reducer@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-reducer@npm:0.99.0"
   checksum: 10/2c614631d8702b1aad8d48385ecb691ec4d41660d38051988e5fcab65c179699a7ef576ca320117c58eec5bd52030ddaf0d837d98a5d69fa619a8fd9ad743638
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-refinement@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-refinement@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+  checksum: 10/f7aa20504ede7481d8767149fd6ce067152523850a567a4e5557b426721f7da69b28b84608a019a703454451829554d6c35449ed928805c85092413709242067
   languageName: node
   linkType: hard
 
@@ -2378,6 +3100,26 @@ __metadata:
     "@siteimprove/alfa-mapper": "npm:^0.99.0"
     "@siteimprove/alfa-predicate": "npm:^0.99.0"
   checksum: 10/947ef88e68cd411a121622ef8f04f17b7e2d1472831c793a28612f6faa63803f27937c02a7d1455d83792835b4af2b883eca1502e50845952d8654fa0406a9a5
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-result@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-result@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-foldable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-monad": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-thunk": "npm:^0.100.0"
+  checksum: 10/35a7218f93593d352acbdde3753dc233ef1b1e16b20f2e1a252af6585945f72e3af7986e1bf44572687be6261e03ef3d07a92ba23326987fdba248c60fae6e4a
   languageName: node
   linkType: hard
 
@@ -2401,6 +3143,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-rng@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-rng@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+  checksum: 10/c28cfedddf8fb62c15edcf827e30f289d48d90254f5b5530eff4a147c749f4466ace05c5192689061ddf5004566fdbc0dc4208c41e413ec350ee3bdaeb61fca7
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-rng@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-rng@npm:0.99.0"
@@ -2408,6 +3160,53 @@ __metadata:
     "@siteimprove/alfa-functor": "npm:^0.99.0"
     "@siteimprove/alfa-mapper": "npm:^0.99.0"
   checksum: 10/c9a7059c651d9b90a7c092f424b74e4dcc7ef1eac07360db83ca1dcba5a30d5d38bf2e9cff8204aa86e04f68dec91afdfa548da1b43d1c7f73b13a4bde131a93
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-rules@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-rules@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-act": "npm:^0.100.0"
+    "@siteimprove/alfa-affine": "npm:^0.100.0"
+    "@siteimprove/alfa-aria": "npm:^0.100.0"
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-cache": "npm:^0.100.0"
+    "@siteimprove/alfa-cascade": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-css": "npm:^0.100.0"
+    "@siteimprove/alfa-css-feature": "npm:^0.100.0"
+    "@siteimprove/alfa-device": "npm:^0.100.0"
+    "@siteimprove/alfa-dom": "npm:^0.100.0"
+    "@siteimprove/alfa-earl": "npm:^0.100.0"
+    "@siteimprove/alfa-either": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iana": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-list": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+    "@siteimprove/alfa-math": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-record": "npm:^0.100.0"
+    "@siteimprove/alfa-rectangle": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+    "@siteimprove/alfa-sarif": "npm:^0.100.0"
+    "@siteimprove/alfa-selector": "npm:^0.100.0"
+    "@siteimprove/alfa-sequence": "npm:^0.100.0"
+    "@siteimprove/alfa-set": "npm:^0.100.0"
+    "@siteimprove/alfa-string": "npm:^0.100.0"
+    "@siteimprove/alfa-style": "npm:^0.100.0"
+    "@siteimprove/alfa-table": "npm:^0.100.0"
+    "@siteimprove/alfa-thunk": "npm:^0.100.0"
+    "@siteimprove/alfa-trilean": "npm:^0.100.0"
+    "@siteimprove/alfa-url": "npm:^0.100.0"
+    "@siteimprove/alfa-wcag": "npm:^0.100.0"
+    "@siteimprove/alfa-web": "npm:^0.100.0"
+  checksum: 10/186184eb8377c271a9da337c65a01f35e87b5caac8e7729fa9e83e798d5fdb784962b59d7158ce8139d636b0eedb8093771d1a08344865fe64b2edf36e26a071
   languageName: node
   linkType: hard
 
@@ -2455,6 +3254,17 @@ __metadata:
     "@siteimprove/alfa-wcag": "npm:^0.99.0"
     "@siteimprove/alfa-web": "npm:^0.99.0"
   checksum: 10/5f284aaa3ca5116a4b23600640857a88e8556e9b30ad6ec1f614f56e2a19fc38ed240b7317c3f1d7e2064782eb350a15574c39191943c4549d6f65165fa023b3
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-sarif@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-sarif@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@types/sarif": "npm:^2.1.4"
+  checksum: 10/9dc660e2928cf69f0e0f25b3b85eebb81af6bde8617d58adf720fd14ea48f0b7f61051342f491821046d6c447772d56267bed4d2d9511760ed5b121838657d06
   languageName: node
   linkType: hard
 
@@ -2508,6 +3318,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-selective@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-selective@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-applicative": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-either": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-monad": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/6887f1d4646d107dfb0d796f612af6545c2148b3788ee3e0ad830dc4b81e9e19f74c1a2ed680f5e9f3df2e9083ee398793d52f0cd87ed58896d87871dd0ba107
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-selective@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-selective@npm:0.99.0"
@@ -2524,6 +3353,31 @@ __metadata:
     "@siteimprove/alfa-predicate": "npm:^0.99.0"
     "@siteimprove/alfa-refinement": "npm:^0.99.0"
   checksum: 10/ff5afc0d565b92b7da38429c4453e4bf23d345cf695ce70cc3aaf6c222ee60226faca3e3ea7c7cb491229d5f202eb18bebeabc7b22e28b5b8544389479e61442
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-selector@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-selector@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-cache": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-css": "npm:^0.100.0"
+    "@siteimprove/alfa-dom": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-parser": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-sequence": "npm:^0.100.0"
+    "@siteimprove/alfa-slice": "npm:^0.100.0"
+    "@siteimprove/alfa-thunk": "npm:^0.100.0"
+  checksum: 10/b2c39f1172fc483e515b71bc56ab5eb84026de96ccbc134c32922a27ee7d453cd301b75ffe3ae48efd383ff07e821d6a9664baab4da16b252a746464872a8b1c
   languageName: node
   linkType: hard
 
@@ -2572,6 +3426,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-sequence@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-sequence@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-collection": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-lazy": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-set": "npm:^0.100.0"
+  checksum: 10/b9ea1273c4b6d67b4614de19ab12cbe9345b490786445df913d5c6927196e862d8880aaa7e0090d7b31a6286494b7faa4119ec951e8df1ab4090bfc45d96b5b0
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-sequence@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-sequence@npm:0.99.0"
@@ -2596,6 +3474,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-set@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-set@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-collection": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/ff5d929569bd17dda34ced522b51417fb7fd3099a710cbaa8906c229ead26e8c2c1c2546f1528c8b30fb3948e6e6804921625304e88a15a91a183e487703fe80
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-set@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-set@npm:0.99.0"
@@ -2613,6 +3511,27 @@ __metadata:
     "@siteimprove/alfa-reducer": "npm:^0.99.0"
     "@siteimprove/alfa-refinement": "npm:^0.99.0"
   checksum: 10/92266de81239beabec3ad758ac0e90ae498c83a2e0cdd84c8cb4617eff219a38591b86d6e4ccf98d2bf42bcf96ead292bdcfb37cca1690c279b0ba4f9c52161a
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-slice@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-slice@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-collection": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/03dbefd16af84f2ffde4a1f3a630c611e54aad78fcfe4fa9e8e2bb69a6056909180e31d31ee91c06ef16c2f123fae88c9c3a72551727464d63afb524932edd26
   languageName: node
   linkType: hard
 
@@ -2637,6 +3556,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-string@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-string@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+  checksum: 10/acc69ebf3e98f1e1c79908f2bdac1fdfa2e28a0ce1edaf7d479871aed6d5c6b567ff41c4c3c8e2c7658d2e07cc83ab7cc7d6c7541ff1dd6b74c29e5d465a803a
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-string@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-string@npm:0.99.0"
@@ -2644,6 +3573,43 @@ __metadata:
     "@siteimprove/alfa-callback": "npm:^0.99.0"
     "@siteimprove/alfa-predicate": "npm:^0.99.0"
   checksum: 10/9022437616c9a25cb6e01f6dc303cb39e0e0d7aa28d136756ccdff53c62d5da1638f68d5644fe2ade0cbd5a25547e5f4b84437a29ef5503bc997f730745e670c
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-style@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-style@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-applicative": "npm:^0.100.0"
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-cache": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-cascade": "npm:^0.100.0"
+    "@siteimprove/alfa-css": "npm:^0.100.0"
+    "@siteimprove/alfa-device": "npm:^0.100.0"
+    "@siteimprove/alfa-dom": "npm:^0.100.0"
+    "@siteimprove/alfa-either": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-map": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-math": "npm:^0.100.0"
+    "@siteimprove/alfa-monad": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-parser": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-rectangle": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+    "@siteimprove/alfa-selective": "npm:^0.100.0"
+    "@siteimprove/alfa-selector": "npm:^0.100.0"
+    "@siteimprove/alfa-set": "npm:^0.100.0"
+    "@siteimprove/alfa-slice": "npm:^0.100.0"
+    "@siteimprove/alfa-string": "npm:^0.100.0"
+    "@siteimprove/alfa-trilean": "npm:^0.100.0"
+  checksum: 10/7bb7da09399f7c572ef200981fff2664864f175253594dd4734e452b15b31b42446ef851c25a3381b4edf2e173ebcb7ea68dfb8891f1a29b54d72cffdab7af29
   languageName: node
   linkType: hard
 
@@ -2682,6 +3648,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-table@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-table@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-cache": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-dom": "npm:^0.100.0"
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-math": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-sequence": "npm:^0.100.0"
+  checksum: 10/69773e67e3007f1a188af989513785f7a7a0b882cb74f24cdb094b2e4428a50731add6b875a19710e9ce206be5c3c9ccefa739f8fe60cedbb9bcaf48fd78bfbf
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-table@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-table@npm:0.99.0"
@@ -2701,13 +3686,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@siteimprove/alfa-test-deprecated@npm:^0.99.0":
-  version: 0.99.0
-  resolution: "@siteimprove/alfa-test-deprecated@npm:0.99.0"
+"@siteimprove/alfa-test-deprecated@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-test-deprecated@npm:0.100.0"
   dependencies:
     "@types/node": "npm:^22.0.0"
     chalk: "npm:^5.4.1"
-  checksum: 10/0a041124dd01883dcfeb6d541f2e279f4a21e93f8c56d02e8dcf35640297f1103ba519b18e8343331c94d5b2b62888fea9295d53273bce037e882676df183c17
+  checksum: 10/4ece2ac2fd23ba495178bd9ad85b133b88a9094d7444c22f6a44e989fcba20c8a05e10087ba9b6d90c94bc62567519b70b58e705c06041c5a83e12f60bfc6120
   languageName: node
   linkType: hard
 
@@ -2766,6 +3751,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-thenable@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-thenable@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-continuation": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/4b893a9b7fef354a01f4a4b8ec5b2bed90cf2924842248167212227be8d8ba47b9405de429260d69c482f31ade29c906db73adf91fe6856b8c776cf5e3df0644
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-thenable@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-thenable@npm:0.99.0"
@@ -2776,6 +3774,16 @@ __metadata:
     "@siteimprove/alfa-mapper": "npm:^0.99.0"
     "@siteimprove/alfa-refinement": "npm:^0.99.0"
   checksum: 10/2ba371c1e78a686f47cff1af3196efdd7ce1cc42f2be0e77002d825b6b42d6321999d66542947f5eb0daf9ab5efb7fd2c6f6f5bc900ad2b81d0bfb30b15845ce
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-thunk@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-thunk@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+  checksum: 10/d8d57b542e43ac7345d19b98d970a97d161fd34694c7aee7cd6a521b9e4ca6830e122d81ae85f3977e10cf6515aeaaabea06f890286046ac67bdfd328338e7de
   languageName: node
   linkType: hard
 
@@ -2793,6 +3801,24 @@ __metadata:
   version: 0.99.0
   resolution: "@siteimprove/alfa-time@npm:0.99.0"
   checksum: 10/6c6da3660f693497f0ca3d379b2e2aa712428d6c28cfb967081a6a52043e5a3f2a598de97938ea6a2792cef03bc8ae7bf3b0313a993aea573dca3821b8d77155
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-trampoline@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-trampoline@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-applicative": "npm:^0.100.0"
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-foldable": "npm:^0.100.0"
+    "@siteimprove/alfa-functor": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-monad": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-thunk": "npm:^0.100.0"
+  checksum: 10/b77e6858f53102e6f9f8d80a4ec7d917be32561803b828e9265710982c907c156559d0079082fdfb267314ed3406485c39f0f2db4c99905ee9e77b20da12024e
   languageName: node
   linkType: hard
 
@@ -2814,6 +3840,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-tree@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-tree@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-flags": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-lazy": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-rng": "npm:^0.100.0"
+    "@siteimprove/alfa-sequence": "npm:^0.100.0"
+  checksum: 10/b29ceaf9579202aac5c9899660e26a909fe6a601f7f22039b083a359834d191a209d936d2ce475c91b0abeb28f19fce127242fd4dd47af151206826315154fd8
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-tree@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-tree@npm:0.99.0"
@@ -2832,6 +3876,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-trilean@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-trilean@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+  checksum: 10/b907a1a8b426affa6bbb04a5757c73a552a356ac11ea6c3d29cfcf0a4880144ebf0223770a00e8b22c35631093332d0d06a47aff6307577c54b991356f89786d
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-trilean@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-trilean@npm:0.99.0"
@@ -2839,6 +3893,23 @@ __metadata:
     "@siteimprove/alfa-iterable": "npm:^0.99.0"
     "@siteimprove/alfa-mapper": "npm:^0.99.0"
   checksum: 10/4d03e566abfe0403a4a5c2ba75dd810357a044d50cac72a9d4ba390bc67cdfede9bb7cced6c3a3081dbdc1060f0216095e9e7e97a4118240073d42961a87edf8
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-tuple@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-tuple@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-array": "npm:^0.100.0"
+    "@siteimprove/alfa-callback": "npm:^0.100.0"
+    "@siteimprove/alfa-comparable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-reducer": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/bab7db62014450e9604ac18c1fea632f72b3927166402923926452a76b7b1c9eeed83fdead1b2df0a45e50dcb79de40d761519f117c97f1346607bd70d3dda86
   languageName: node
   linkType: hard
 
@@ -2856,6 +3927,21 @@ __metadata:
     "@siteimprove/alfa-reducer": "npm:^0.99.0"
     "@siteimprove/alfa-refinement": "npm:^0.99.0"
   checksum: 10/e94d8d3cbba22ba7c0ffc525a3882b8d4c46ff98878131d3930495a1a12b23d2dba29dd38bb1c9768488f5dd08a6a1225a616284ada21d6213e5cd9216d68d70
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-url@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-url@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-equatable": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+    "@siteimprove/alfa-sequence": "npm:^0.100.0"
+  checksum: 10/76260125bed5871e278c29fd03a064bec94e4a9e0d3453b0ba4245cb1b5d4aa7a5b515686f21e34b7c4c1d76d6022369434c82066d685d4c49c50a2297f6ee58
   languageName: node
   linkType: hard
 
@@ -2894,6 +3980,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@siteimprove/alfa-wcag@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-wcag@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-act": "npm:^0.100.0"
+    "@siteimprove/alfa-branched": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
+    "@siteimprove/alfa-predicate": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+  checksum: 10/eb9f08e66626f680e246bb9644dcb9974154cfc34e0a079f52a9d5097445d2a32df50182effad2839cb700b2ea98dfa380cbb4e0813d1e02708cd504ff5b5890
+  languageName: node
+  linkType: hard
+
 "@siteimprove/alfa-wcag@npm:^0.99.0":
   version: 0.99.0
   resolution: "@siteimprove/alfa-wcag@npm:0.99.0"
@@ -2904,6 +4003,25 @@ __metadata:
     "@siteimprove/alfa-predicate": "npm:^0.99.0"
     "@siteimprove/alfa-refinement": "npm:^0.99.0"
   checksum: 10/561b12e57565e1fe03bc4a6ac6dbb950ffd47c70d2be8797e5975402d2d8fab82c2b8c606b8dfbe7b36d8d5bfa3b6206a53e78fc287525acb87bedb2dde85acf
+  languageName: node
+  linkType: hard
+
+"@siteimprove/alfa-web@npm:^0.100.0":
+  version: 0.100.0
+  resolution: "@siteimprove/alfa-web@npm:0.100.0"
+  dependencies:
+    "@siteimprove/alfa-cache": "npm:^0.100.0"
+    "@siteimprove/alfa-device": "npm:^0.100.0"
+    "@siteimprove/alfa-dom": "npm:^0.100.0"
+    "@siteimprove/alfa-earl": "npm:^0.100.0"
+    "@siteimprove/alfa-encoding": "npm:^0.100.0"
+    "@siteimprove/alfa-graph": "npm:^0.100.0"
+    "@siteimprove/alfa-http": "npm:^0.100.0"
+    "@siteimprove/alfa-json": "npm:^0.100.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+    "@siteimprove/alfa-sarif": "npm:^0.100.0"
+  checksum: 10/5b008860d54cec6cf4718b0bfc2078f323fc4969deadd5a2865746843feaec9a9fbfa387ec1a6930f5ca9ff4708d0bb98f923aed6a0b10fcdb9dc61be5636b64
   languageName: node
   linkType: hard
 
@@ -5284,7 +6402,7 @@ __metadata:
   resolution: "code-checker-puppeteer@workspace:accessibility-code-checker/puppeteer"
   dependencies:
     "@siteimprove/alfa-puppeteer": "npm:^0.78.0"
-    "@siteimprove/alfa-test-deprecated": "npm:^0.99.0"
+    "@siteimprove/alfa-test-deprecated": "npm:^0.100.0"
     "@siteimprove/alfa-test-utils": "npm:^0.78.0"
     puppeteer: "npm:^24.0.0"
   languageName: unknown
@@ -5295,7 +6413,7 @@ __metadata:
   resolution: "code-checker-selenium@workspace:accessibility-code-checker/selenium"
   dependencies:
     "@siteimprove/alfa-selenium": "npm:^0.78.0"
-    "@siteimprove/alfa-test-deprecated": "npm:^0.99.0"
+    "@siteimprove/alfa-test-deprecated": "npm:^0.100.0"
     "@siteimprove/alfa-test-utils": "npm:^0.78.0"
     "@types/selenium-webdriver": "npm:^4"
     selenium-webdriver: "npm:^4.25.0"
@@ -5410,13 +6528,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "common@workspace:common"
   dependencies:
-    "@siteimprove/alfa-act": "npm:^0.99.0"
+    "@siteimprove/alfa-act": "npm:^0.100.0"
     "@siteimprove/alfa-assert": "npm:^0.78.0"
     "@siteimprove/alfa-formatter": "npm:^0.78.0"
     "@siteimprove/alfa-formatter-earl": "npm:^0.78.0"
-    "@siteimprove/alfa-future": "npm:^0.99.0"
-    "@siteimprove/alfa-hash": "npm:^0.99.0"
-    "@siteimprove/alfa-mapper": "npm:^0.99.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-mapper": "npm:^0.100.0"
   languageName: unknown
   linkType: soft
 
@@ -5733,15 +6851,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "custom-testing-adding-rules@workspace:custom-testing/adding-rules"
   dependencies:
-    "@siteimprove/alfa-act": "npm:^0.99.0"
+    "@siteimprove/alfa-act": "npm:^0.100.0"
     "@siteimprove/alfa-chai": "npm:^0.78.0"
-    "@siteimprove/alfa-dom": "npm:^0.99.0"
-    "@siteimprove/alfa-future": "npm:^0.99.0"
+    "@siteimprove/alfa-dom": "npm:^0.100.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
     "@siteimprove/alfa-playwright": "npm:^0.78.0"
-    "@siteimprove/alfa-refinement": "npm:^0.99.0"
-    "@siteimprove/alfa-result": "npm:^0.99.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
-    "@siteimprove/alfa-web": "npm:^0.99.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-result": "npm:^0.100.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
+    "@siteimprove/alfa-web": "npm:^0.100.0"
     "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
@@ -5755,16 +6873,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "custom-testing-answering@workspace:custom-testing/answering"
   dependencies:
-    "@siteimprove/alfa-act": "npm:^0.99.0"
+    "@siteimprove/alfa-act": "npm:^0.100.0"
     "@siteimprove/alfa-chai": "npm:^0.78.0"
-    "@siteimprove/alfa-css": "npm:^0.99.0"
-    "@siteimprove/alfa-dom": "npm:^0.99.0"
-    "@siteimprove/alfa-future": "npm:^0.99.0"
-    "@siteimprove/alfa-hash": "npm:^0.99.0"
-    "@siteimprove/alfa-option": "npm:^0.99.0"
+    "@siteimprove/alfa-css": "npm:^0.100.0"
+    "@siteimprove/alfa-dom": "npm:^0.100.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-option": "npm:^0.100.0"
     "@siteimprove/alfa-playwright": "npm:^0.78.0"
-    "@siteimprove/alfa-refinement": "npm:^0.99.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
@@ -5778,11 +6896,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "custom-testing-crawling@workspace:custom-testing/crawling"
   dependencies:
-    "@siteimprove/alfa-act": "npm:^0.99.0"
+    "@siteimprove/alfa-act": "npm:^0.100.0"
     "@siteimprove/alfa-crawler": "npm:^0.78.0"
     "@siteimprove/alfa-frontier": "npm:^0.78.0"
-    "@siteimprove/alfa-hash": "npm:^0.99.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
   languageName: unknown
   linkType: soft
 
@@ -5790,15 +6908,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "custom-testing-filtering@workspace:custom-testing/filtering"
   dependencies:
-    "@siteimprove/alfa-act": "npm:^0.99.0"
+    "@siteimprove/alfa-act": "npm:^0.100.0"
     "@siteimprove/alfa-chai": "npm:^0.78.0"
-    "@siteimprove/alfa-future": "npm:^0.99.0"
-    "@siteimprove/alfa-hash": "npm:^0.99.0"
-    "@siteimprove/alfa-iterable": "npm:^0.99.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-iterable": "npm:^0.100.0"
     "@siteimprove/alfa-playwright": "npm:^0.78.0"
-    "@siteimprove/alfa-refinement": "npm:^0.99.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
-    "@siteimprove/alfa-wcag": "npm:^0.99.0"
+    "@siteimprove/alfa-refinement": "npm:^0.100.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
+    "@siteimprove/alfa-wcag": "npm:^0.100.0"
     "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
@@ -5813,9 +6931,9 @@ __metadata:
   resolution: "custom-testing-interacting@workspace:custom-testing/interacting"
   dependencies:
     "@siteimprove/alfa-chai": "npm:^0.78.0"
-    "@siteimprove/alfa-future": "npm:^0.99.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
     "@siteimprove/alfa-playwright": "npm:^0.78.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
@@ -5829,11 +6947,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "custom-testing-measuring-performance@workspace:custom-testing/measuring-performances"
   dependencies:
-    "@siteimprove/alfa-act": "npm:^0.99.0"
-    "@siteimprove/alfa-aria": "npm:^0.99.0"
-    "@siteimprove/alfa-cascade": "npm:^0.99.0"
-    "@siteimprove/alfa-performance": "npm:^0.99.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-act": "npm:^0.100.0"
+    "@siteimprove/alfa-aria": "npm:^0.100.0"
+    "@siteimprove/alfa-cascade": "npm:^0.100.0"
+    "@siteimprove/alfa-performance": "npm:^0.100.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     "@siteimprove/alfa-scraper": "npm:^0.78.0"
   languageName: unknown
   linkType: soft
@@ -5843,9 +6961,9 @@ __metadata:
   resolution: "custom-testing-navigating@workspace:custom-testing/navigating"
   dependencies:
     "@siteimprove/alfa-chai": "npm:^0.78.0"
-    "@siteimprove/alfa-future": "npm:^0.99.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
     "@siteimprove/alfa-playwright": "npm:^0.78.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
@@ -5858,9 +6976,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "custom-testing-scraping@workspace:custom-testing/scraping"
   dependencies:
-    "@siteimprove/alfa-act": "npm:^0.99.0"
-    "@siteimprove/alfa-hash": "npm:^0.99.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-act": "npm:^0.100.0"
+    "@siteimprove/alfa-hash": "npm:^0.100.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     "@siteimprove/alfa-scraper": "npm:^0.78.0"
   languageName: unknown
   linkType: soft
@@ -6551,7 +7669,7 @@ __metadata:
   resolution: "end-to-end-testing-cypress@workspace:end-to-end-testing/cypress"
   dependencies:
     "@siteimprove/alfa-cypress": "npm:^0.78.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     cypress: "npm:^14.0.0"
   languageName: unknown
   linkType: soft
@@ -6561,9 +7679,9 @@ __metadata:
   resolution: "end-to-end-testing-playwright@workspace:end-to-end-testing/playwright"
   dependencies:
     "@siteimprove/alfa-chai": "npm:^0.78.0"
-    "@siteimprove/alfa-future": "npm:^0.99.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
     "@siteimprove/alfa-playwright": "npm:^0.78.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
@@ -6578,9 +7696,9 @@ __metadata:
   resolution: "end-to-end-testing-puppeteer@workspace:end-to-end-testing/puppeteer"
   dependencies:
     "@siteimprove/alfa-chai": "npm:^0.78.0"
-    "@siteimprove/alfa-future": "npm:^0.99.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
     "@siteimprove/alfa-puppeteer": "npm:^0.78.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
     chai: "npm:^5.0.0"
@@ -6595,8 +7713,8 @@ __metadata:
   resolution: "end-to-end-testing-webdriver@workspace:end-to-end-testing/webdriver"
   dependencies:
     "@siteimprove/alfa-chai": "npm:^0.78.0"
-    "@siteimprove/alfa-future": "npm:^0.99.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     "@siteimprove/alfa-webdriver": "npm:^0.78.0"
     "@types/chai": "npm:^5.0.0"
     "@types/mocha": "npm:^10.0.0"
@@ -13299,9 +14417,9 @@ __metadata:
     "@angular/core": "npm:^11.0.5"
     "@angular/platform-browser-dynamic": "npm:^8.2.0"
     "@siteimprove/alfa-angular": "npm:^0.78.0"
-    "@siteimprove/alfa-future": "npm:^0.99.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
     "@siteimprove/alfa-jest": "npm:^0.78.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     "@types/jest": "npm:^29.5.1"
     common: "workspace:^"
     jest: "npm:^29.5.0"
@@ -13318,7 +14436,7 @@ __metadata:
   dependencies:
     "@siteimprove/alfa-enzyme": "npm:^0.78.0"
     "@siteimprove/alfa-jest": "npm:^0.78.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     "@types/enzyme": "npm:^3.10.5"
     "@types/enzyme-adapter-react-16": "npm:^1.0.5"
     "@types/jest": "npm:^29.5.1"
@@ -13338,9 +14456,9 @@ __metadata:
   resolution: "unit-testing-vue@workspace:unit-testing/vue"
   dependencies:
     "@jest/environment": "npm:^29.7.0"
-    "@siteimprove/alfa-future": "npm:^0.99.0"
+    "@siteimprove/alfa-future": "npm:^0.100.0"
     "@siteimprove/alfa-jest": "npm:^0.78.0"
-    "@siteimprove/alfa-rules": "npm:^0.99.0"
+    "@siteimprove/alfa-rules": "npm:^0.100.0"
     "@siteimprove/alfa-vue": "npm:^0.78.0"
     "@types/jest": "npm:^29.5.1"
     "@vue/test-utils": "npm:^1.0.0-beta.29"
