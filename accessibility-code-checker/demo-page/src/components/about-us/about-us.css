@@ -39,3 +39,15 @@
   gap: var(--size--regular);
   padding-bottom: var(--size--regular);
 }
+
+.about-us-img {
+  background:url("../../assets/img/about-us.webp") no-repeat 0 0;
+  display:block;
+  background-size:cover;
+  height:100%;
+}
+.about-us-content-left a{
+  display:block;
+  height:600px;;
+  width:100%;
+}
