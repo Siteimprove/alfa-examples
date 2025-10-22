@@ -32,9 +32,9 @@
   },
   "devDependencies": {
     "@jest/environment": "^29.7.0",
-    "@siteimprove/alfa-future": "^0.104.0",
+    "@siteimprove/alfa-future": "^0.106.0",
     "@siteimprove/alfa-jest": "^0.80.0",
-    "@siteimprove/alfa-rules": "^0.104.0",
+    "@siteimprove/alfa-rules": "^0.106.0",
     "@siteimprove/alfa-vue": "^0.80.0",
     "@types/jest": "^29.5.1",
     "@vue/test-utils": "^1.0.0-beta.29",
