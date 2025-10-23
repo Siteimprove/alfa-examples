@@ -36,10 +36,6 @@ jobs:
         with:
           path: .yarn/cache
           key: yarn-${{ hashFiles('yarn.lock') }}
-      - run: >
-          yarn config set
-          npmScopes.siteimprove.npmAuthToken
-          ${{ secrets.GITHUB_TOKEN }}
       - run: yarn install --immutable
       - run: yarn playwright install
       - run: yarn dedupe --check
