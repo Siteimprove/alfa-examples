@@ -17,7 +17,7 @@
     "@types/chai": "^5.0.0",
     "@types/mocha": "^10.0.0",
     "@wdio/cli": "^5.14.4",
-    "@wdio/mocha-framework": "^7.1.1",
+    "@wdio/mocha-framework": "^9.20.0",
     "@wdio/spec-reporter": "^7.1.1",
     "chai": "^6.0.0",
     "chromedriver": "^119.0.1",
