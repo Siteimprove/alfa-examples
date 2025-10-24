@@ -20,11 +20,11 @@
     "@siteimprove/alfa-playwright": "^0.80.0",
     "@siteimprove/alfa-refinement": "^0.104.0",
     "@siteimprove/alfa-rules": "^0.104.0",
-    "@types/chai": "^5.0.0",
+    "@types/chai": "^5.2.3",
     "@types/mocha": "^10.0.0",
     "chai": "^6.0.0",
     "common": "workspace:^",
-    "mocha": "^11.0.0",
-    "playwright": "^1.10.0"
+    "mocha": "^11.7.4",
+    "playwright": "^1.56.1"
   }
 }
