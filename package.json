@@ -25,10 +25,10 @@
   ],
   "devDependencies": {
     "@types/node": "^22.5.4",
-    "knip": "^5.29.1",
-    "playwright": "^1.47.0",
-    "prettier": "^3.0.0",
-    "typescript": "^5.0.4"
+    "knip": "^5.66.2",
+    "playwright": "^1.56.1",
+    "prettier": "^3.6.2",
+    "typescript": "^5.9.3"
   },
   "//": [
     "Somehow, https://github.com/enzymejs/enzyme/blob/master/packages/enzyme/package.json correctly pins cheerio",
