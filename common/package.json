@@ -19,6 +19,6 @@
   },
   "dependencies": {
     "@siteimprove/alfa-formatter-earl": "^0.80.0",
-    "@siteimprove/alfa-future": "^0.104.0"
+    "@siteimprove/alfa-future": "^0.106.1"
   }
 }

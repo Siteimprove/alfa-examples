@@ -40,7 +40,7 @@
   },
   "devDependencies": {
     "@siteimprove/alfa-angular": "^0.80.0",
-    "@siteimprove/alfa-future": "^0.104.0",
+    "@siteimprove/alfa-future": "^0.106.1",
     "@siteimprove/alfa-jest": "^0.80.0",
     "@siteimprove/alfa-rules": "^0.104.0",
     "@types/jest": "^29.5.1",
