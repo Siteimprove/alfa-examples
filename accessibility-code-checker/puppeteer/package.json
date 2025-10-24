@@ -13,7 +13,7 @@
     "@siteimprove/alfa-test-utils": "^0.80.0"
   },
   "dependencies": {
-    "@siteimprove/alfa-puppeteer": "^0.80.0",
+    "@siteimprove/alfa-puppeteer": "^0.80.2",
     "puppeteer": "^24.0.0"
   }
 }
