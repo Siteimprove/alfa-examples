@@ -12,8 +12,8 @@
     "test": "cypress run"
   },
   "devDependencies": {
-    "@siteimprove/alfa-cypress": "^0.80.0",
-    "@siteimprove/alfa-test-utils": "^0.80.0",
+    "@siteimprove/alfa-cypress": "^0.80.2",
+    "@siteimprove/alfa-test-utils": "^0.80.2",
     "cypress": "^15.0.0"
   }
 }

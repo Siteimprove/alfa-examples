@@ -10,8 +10,8 @@
     "node": ">=20.0.0"
   },
   "devDependencies": {
-    "@siteimprove/alfa-cypress": "^0.80.0",
-    "@siteimprove/alfa-rules": "^0.104.0",
+    "@siteimprove/alfa-cypress": "^0.80.2",
+    "@siteimprove/alfa-rules": "^0.106.1",
     "cypress": "^15.0.0"
   }
 }
