@@ -10,10 +10,10 @@
     "node": ">=20.0.0"
   },
   "devDependencies": {
-    "@siteimprove/alfa-chai": "^0.80.0",
-    "@siteimprove/alfa-future": "^0.104.0",
-    "@siteimprove/alfa-rules": "^0.104.0",
-    "@siteimprove/alfa-webdriver": "^0.80.0",
+    "@siteimprove/alfa-chai": "^0.80.3",
+    "@siteimprove/alfa-future": "^0.107.0",
+    "@siteimprove/alfa-rules": "^0.107.0",
+    "@siteimprove/alfa-webdriver": "^0.80.3",
     "@types/chai": "^5.0.0",
     "@types/mocha": "^10.0.0",
     "@wdio/cli": "^5.14.4",
