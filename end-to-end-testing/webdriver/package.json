@@ -19,10 +19,10 @@
     "@wdio/cli": "^5.14.4",
     "@wdio/mocha-framework": "^9.20.0",
     "@wdio/spec-reporter": "^7.1.1",
-    "chai": "^6.0.0",
+    "chai": "^6.2.1",
     "chromedriver": "^119.0.1",
     "common": "workspace:^",
-    "mocha": "^11.0.0",
+    "mocha": "^11.7.5",
     "webdriverio": "^7.3.1"
   }
 }
