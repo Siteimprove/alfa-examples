@@ -9,7 +9,7 @@
     "test": "playwright test"
   },
   "devDependencies": {
-    "@playwright/test": "^1.47.0",
+    "@playwright/test": "^1.57.0",
     "@siteimprove/alfa-playwright": "^0.80.5",
     "@siteimprove/alfa-test-utils": "^0.80.5"
   }
