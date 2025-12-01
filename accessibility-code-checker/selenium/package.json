@@ -13,6 +13,6 @@
     "@siteimprove/alfa-test-deprecated": "^0.108.1",
     "@siteimprove/alfa-test-utils": "^0.80.5",
     "@types/selenium-webdriver": "^4",
-    "selenium-webdriver": "^4.25.0"
+    "selenium-webdriver": "^4.38.0"
   }
 }
