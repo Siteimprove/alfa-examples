@@ -7,7 +7,13 @@ const config: KnipConfig = {
   ignoreDependencies: ["prettier"],
   workspaces: {
     "accessibility-code-checker/*": { entry, project },
-    "accessibility-code-checker/demo-page": { entry: "src/main.tsx", project },
+    "accessibility-code-checker/demo-page": {
+      // knip is somehow unhappy with something in vite, skipping the config file
+      // avoids looking into that…
+      vite: { config: [] },
+      entry: "src/main.tsx",
+      project: ["src/**/*.ts", "src/**/*.tsx"],
+    },
     common: { entry: "persist.ts", project },
     "custom-testing/*": { entry, project },
     "custom-testing/crawling": { entry: ["crawling.ts"], project },
