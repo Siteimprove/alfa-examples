@@ -10,7 +10,8 @@
   },
   "devDependencies": {
     "@siteimprove/alfa-test": "^0.108.1",
-    "@siteimprove/alfa-test-utils": "^0.80.5"
+    "@siteimprove/alfa-test-utils": "^0.80.5",
+    "vitest": "^4.0.15"
   },
   "dependencies": {
     "@siteimprove/alfa-puppeteer": "^0.80.5",

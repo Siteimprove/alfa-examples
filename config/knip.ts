@@ -11,6 +11,8 @@ const config: KnipConfig = {
       // knip is somehow unhappy with something in vite, skipping the config file
       // avoids looking into that…
       vite: { config: [] },
+      // Which of course causes dependencies usage to not be seen…
+      ignoreDependencies: ["@vitejs/plugin-react"],
       entry: "src/main.tsx",
       project: ["src/**/*.ts", "src/**/*.tsx"],
     },

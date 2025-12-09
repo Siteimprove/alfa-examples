@@ -27,7 +27,6 @@
     "@siteimprove/alfa-rules": "^0.108.1",
     "@types/jest": "^29.5.1",
     "@types/react": "^18.3.5",
-    "@types/react-dom": "^18.3.0",
     "common": "workspace:^",
     "jest": "^29.5.0"
   }
