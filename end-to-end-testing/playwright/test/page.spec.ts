@@ -15,16 +15,14 @@ import rules from "@siteimprove/alfa-rules";
 
 import { persist } from "common/persist";
 
-// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = import.meta.dirname;
 
 chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
     rules.filter((rule) => !rule.uri.includes("r111")),
-    [persist(() => "test/outcomes/page.spec.json")]
-  )
+    [persist(() => "test/outcomes/page.spec.json")],
+  ),
 );
 
 const { expect } = chai;
@@ -40,8 +38,8 @@ describe("page.html", () => {
 
     await page.goto(
       url.pathToFileURL(
-        path.join(__dirname, "..", "..", "fixtures", "page.html")
-      ).href
+        path.join(__dirname, "..", "..", "fixtures", "page.html"),
+      ).href,
     );
 
     document = await page.evaluateHandle(() => window.document);

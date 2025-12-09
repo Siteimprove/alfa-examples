@@ -16,9 +16,7 @@ if (!scope) {
   process.exit(1);
 }
 
-// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = import.meta.dirname;
 
 const frontier = Frontier.of(scope, [scope, ...seed]);
 
@@ -42,7 +40,7 @@ Crawler.with(async (crawler) => {
           __dirname,
           "outcomes",
           url.host.getOr(""),
-          ...url.path.filter((segment) => segment !== "")
+          ...url.path.filter((segment) => segment !== ""),
         ) + ".json";
 
       fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -53,7 +51,7 @@ Crawler.with(async (crawler) => {
 });
 
 function logStats<I, T extends Hashable, Q extends Question.Metadata>(
-  outcomes: Array<Outcome<I, T, Q>>
+  outcomes: Array<Outcome<I, T, Q>>,
 ): void {
   console.log(outcomes.filter(Outcome.isPassed).length, "passed outcomes");
 
@@ -61,6 +59,6 @@ function logStats<I, T extends Hashable, Q extends Question.Metadata>(
 
   console.log(
     outcomes.filter(Outcome.isInapplicable).length,
-    "inapplicable rules"
+    "inapplicable rules",
   );
 }

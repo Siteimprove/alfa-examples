@@ -27,8 +27,8 @@ chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
     rules.filter((rule) => !rule.uri.includes("r111")),
-    [persist(() => "test/outcomes/filtering.spec.json")]
-  )
+    [persist(() => "test/outcomes/filtering.spec.json")],
+  ),
 );
 
 const { expect } = chai;
@@ -37,9 +37,7 @@ const { expect } = chai;
 let browser: playwright.Browser;
 let page: playwright.Page;
 
-// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = iport.meta.dirname;
 
 async function load(file: string): Promise<playwright.JSHandle> {
   const fixture = path.join(__dirname, "fixtures", file);
@@ -89,7 +87,7 @@ describe("conformance.html", () => {
   // Level AA conformance is EAA and WAD requirement
   function aaFilter<T extends Hashable>(outcome: Outcome<unknown, T>): boolean {
     return outcome.rule.hasRequirement(
-      and(Criterion.isCriterion, Conformance.isAA())
+      and(Criterion.isCriterion, Conformance.isAA()),
     );
   }
 
@@ -103,27 +101,27 @@ describe("conformance.html", () => {
   // Other examples of filters, based on conformance:
   // Only keep the outcomes failing a WCAG 2.0 Success Criterion.
   function wcag20Filter<T extends Hashable>(
-    outcome: Outcome<unknown, T>
+    outcome: Outcome<unknown, T>,
   ): boolean {
     return outcome.rule.hasRequirement(
       and(Criterion.isCriterion, (criterion) =>
-        Iterable.some(criterion.versions, (version) => version === "2.0")
-      )
+        Iterable.some(criterion.versions, (version) => version === "2.0"),
+      ),
     );
   }
 
   // Only keep the outcomes failing a WCAG 2.0 AA Success Criterion (ADA requirement)
   function wcag20aaFilter<T extends Hashable>(
-    outcome: Outcome<unknown, T>
+    outcome: Outcome<unknown, T>,
   ): boolean {
     return outcome.rule.hasRequirement(
-      and(Criterion.isCriterion, Conformance.isAA("2.0"))
+      and(Criterion.isCriterion, Conformance.isAA("2.0")),
     );
   }
 
   // Only keep the outcomes failing a WCAG technique
   function techniquesFilter<T extends Hashable>(
-    outcome: Outcome<unknown, T>
+    outcome: Outcome<unknown, T>,
   ): boolean {
     return outcome.rule.hasRequirement(Technique.isTechnique);
   }
@@ -145,7 +143,7 @@ describe("scope.html", () => {
 
   // When filtering to only keep outcomes about components, the test passes.
   function componentFilter<T extends Hashable>(
-    outcome: Outcome<unknown, T>
+    outcome: Outcome<unknown, T>,
   ): boolean {
     return outcome.rule.hasTag((tag) => tag.equals(Scope.Component));
   }

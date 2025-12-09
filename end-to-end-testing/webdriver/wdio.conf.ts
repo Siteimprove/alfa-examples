@@ -1,9 +1,4 @@
-// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
-import * as path from "node:path";
-import * as url from "node:url";
-
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = import.meta.dirname;
 
 export const config: WebdriverIO.Config = {
   runner: "local",

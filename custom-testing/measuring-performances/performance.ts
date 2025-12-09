@@ -13,9 +13,7 @@ import type { Flattened } from "@siteimprove/alfa-rules";
 
 const { isMeasure } = Performance.Measure;
 
-// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = import.meta.dirname;
 
 // We'll record the rules' performance in a duration object with this shape:
 interface Durations {
@@ -56,7 +54,7 @@ function recordRule(entry: Performance.Entry<RuleEvent>): void {
   if (isMeasure(entry)) {
     const ruleId = entry.data.rule.uri.replace(
       "https://alfa.siteimprove.com/rules/",
-      ""
+      "",
     );
     if (durations.rules[ruleId] === undefined) {
       durations.rules[ruleId] = {};

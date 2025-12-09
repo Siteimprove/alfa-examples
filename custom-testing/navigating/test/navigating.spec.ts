@@ -20,15 +20,13 @@ chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
     [R69],
-    []
-  )
+    [],
+  ),
 );
 
 const { expect } = chai;
 
-// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = import.meta.dirname;
 
 describe("Navigating between pages", () => {
   let browser: playwright.Browser;
@@ -40,7 +38,7 @@ describe("Navigating between pages", () => {
     page = await browser.newPage();
 
     await page.goto(
-      url.pathToFileURL(path.join(__dirname, "fixtures", "page1.html")).href
+      url.pathToFileURL(path.join(__dirname, "fixtures", "page1.html")).href,
     );
 
     document = await page.evaluateHandle(() => window.document);

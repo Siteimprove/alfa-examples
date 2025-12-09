@@ -3133,16 +3133,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@siteimprove/alfa-test-deprecated@npm:^0.108.1":
-  version: 0.108.1
-  resolution: "@siteimprove/alfa-test-deprecated@npm:0.108.1"
-  dependencies:
-    "@types/node": "npm:^24.10.1"
-    chalk: "npm:^5.6.2"
-  checksum: 10/7c25aeaffb19b306d09390d83eeec64b992f900ce8d8c6ea9899ec4a6cdec768be496a46f344aa6da882247748c3f97149df3b20c07e5a5d607cafafa7215a3e
-  languageName: node
-  linkType: hard
-
 "@siteimprove/alfa-test-utils@npm:^0.80.5":
   version: 0.80.5
   resolution: "@siteimprove/alfa-test-utils@npm:0.80.5"
@@ -3706,7 +3696,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^24.10.1":
+"@types/node@npm:*":
   version: 24.10.1
   resolution: "@types/node@npm:24.10.1"
   dependencies:
@@ -5721,7 +5711,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chalk@npm:^5.1.2, chalk@npm:^5.3.0, chalk@npm:^5.6.2":
+"chalk@npm:^5.1.2, chalk@npm:^5.3.0":
   version: 5.6.2
   resolution: "chalk@npm:5.6.2"
   checksum: 10/1b2f48f6fba1370670d5610f9cd54c391d6ede28f4b7062dd38244ea5768777af72e5be6b74fb6c6d54cb84c4a2dff3f3afa9b7cb5948f7f022cfd3d087989e0
@@ -6093,7 +6083,7 @@ __metadata:
   resolution: "code-checker-puppeteer@workspace:accessibility-code-checker/puppeteer"
   dependencies:
     "@siteimprove/alfa-puppeteer": "npm:^0.80.5"
-    "@siteimprove/alfa-test-deprecated": "npm:^0.108.1"
+    "@siteimprove/alfa-test": "npm:^0.108.1"
     "@siteimprove/alfa-test-utils": "npm:^0.80.5"
     puppeteer: "npm:^24.0.0"
   languageName: unknown
