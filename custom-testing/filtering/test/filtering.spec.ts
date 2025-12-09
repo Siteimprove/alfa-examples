@@ -37,7 +37,7 @@ const { expect } = chai;
 let browser: playwright.Browser;
 let page: playwright.Page;
 
-const __dirname = iport.meta.dirname;
+const __dirname = import.meta.dirname;
 
 async function load(file: string): Promise<playwright.JSHandle> {
   const fixture = path.join(__dirname, "fixtures", file);
