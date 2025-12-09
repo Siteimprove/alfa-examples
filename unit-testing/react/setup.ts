@@ -7,8 +7,6 @@ const R12 = Rules.get("R12").getUnsafe();
 
 import { persist } from "common/persist";
 
-// enzyme.default.configure({ adapter: new Adapter() });
-
 alfa.Jest.createPlugin(
   (value: React.Type) => React.toPage(value),
   [R12],

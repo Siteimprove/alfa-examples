@@ -28,8 +28,7 @@
     "knip": "^5.29.1",
     "playwright": "^1.47.0",
     "prettier": "^3.0.0",
-    "typescript": "^5.0.4",
-    "vitest": "^4.0.15"
+    "typescript": "^5.0.4"
   },
   "//": [
     "Somehow, https://github.com/enzymejs/enzyme/blob/master/packages/enzyme/package.json correctly pins cheerio",
