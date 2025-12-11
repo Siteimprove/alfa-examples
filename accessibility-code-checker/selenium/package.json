@@ -6,13 +6,14 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "test": "node test/selenium.spec.js"
+    "test": "vitest run"
   },
   "devDependencies": {
     "@siteimprove/alfa-selenium": "^0.80.5",
-    "@siteimprove/alfa-test-deprecated": "^0.108.1",
+    "@siteimprove/alfa-test": "^0.108.1",
     "@siteimprove/alfa-test-utils": "^0.80.5",
     "@types/selenium-webdriver": "^4",
-    "selenium-webdriver": "^4.25.0"
+    "selenium-webdriver": "^4.25.0",
+    "vitest": "^4.0.15"
   }
 }

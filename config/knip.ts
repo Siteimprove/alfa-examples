@@ -7,7 +7,15 @@ const config: KnipConfig = {
   ignoreDependencies: ["prettier"],
   workspaces: {
     "accessibility-code-checker/*": { entry, project },
-    "accessibility-code-checker/demo-page": { entry: "src/main.tsx", project },
+    "accessibility-code-checker/demo-page": {
+      // knip is somehow unhappy with something in vite, skipping the config file
+      // avoids looking into that…
+      vite: { config: [] },
+      // Which of course causes dependencies usage to not be seen…
+      ignoreDependencies: ["@vitejs/plugin-react"],
+      entry: "src/main.tsx",
+      project: ["src/**/*.ts", "src/**/*.tsx"],
+    },
     common: { entry: "persist.ts", project },
     "custom-testing/*": { entry, project },
     "custom-testing/crawling": { entry: ["crawling.ts"], project },

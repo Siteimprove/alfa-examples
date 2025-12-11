@@ -1,13 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../tsconfig.json",
-  "compilerOptions": {
-    "types": ["mocha", "webdriverio/async"]
-  },
+  "compilerOptions": { "types": ["mocha", "webdriverio/async"] },
   "files": ["test/page.spec.ts", "wdio.conf.ts"],
-  "references": [
-    {
-      "path": "../../common"
-    }
-  ]
+  "references": [{ "path": "../../common" }]
 }

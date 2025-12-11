@@ -6,11 +6,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "test": "node test/puppeteer.spec.js"
+    "test": "vitest run"
   },
   "devDependencies": {
-    "@siteimprove/alfa-test-deprecated": "^0.108.1",
-    "@siteimprove/alfa-test-utils": "^0.80.5"
+    "@siteimprove/alfa-test": "^0.108.1",
+    "@siteimprove/alfa-test-utils": "^0.80.5",
+    "vitest": "^4.0.15"
   },
   "dependencies": {
     "@siteimprove/alfa-puppeteer": "^0.80.5",

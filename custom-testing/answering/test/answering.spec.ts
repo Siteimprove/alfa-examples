@@ -27,8 +27,8 @@ chai.use(
   alfa.Chai.createPlugin(
     (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
     rules.filter((rule) => !rule.uri.includes("r111")),
-    [persist(() => "test/outcomes/page.spec.json")]
-  )
+    [persist(() => "test/outcomes/page.spec.json")],
+  ),
 );
 
 const { expect } = chai;
@@ -37,9 +37,7 @@ const { expect } = chai;
 let browser: playwright.Browser;
 let page: playwright.Page;
 
-// TODO: This should be replaced with import.meta.dirname once we switch to Node 22
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __dirname = import.meta.dirname;
 
 async function load(file: string): Promise<playwright.JSHandle> {
   const fixture = path.join(__dirname, "fixtures", file);
@@ -76,7 +74,7 @@ async function teardown(): Promise<void> {
  * tests where the same question might be asked with different subjects).
  */
 function oracle<I, T extends Hashable, S>(
-  color: "blue" | "white" = "white"
+  color: "blue" | "white" = "white",
 ): act.Oracle<I, T, Question.Metadata, S> {
   return (rule, question) => {
     // Checking the question URI to know what to answer
@@ -90,8 +88,8 @@ function oracle<I, T extends Hashable, S>(
           .parent()
           .some(
             and(Element.isElement, (element) =>
-              element.classes.includes("hello")
-            )
+              element.classes.includes("hello"),
+            ),
           )
       ) {
         // The result needs to be wrapped in all the layers needed by the
