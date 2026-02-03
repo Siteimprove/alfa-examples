@@ -25,7 +25,7 @@
     "common": "workspace:^",
     "mocha": "^11.0.0",
     "wdio-chromedriver-service": "^8.1.1",
-    "webdriverio": "^7.3.1"
+    "webdriverio": "^9.23.3"
   },
   "dependencies": {
     "@wdio/globals": "^9.23.0"
