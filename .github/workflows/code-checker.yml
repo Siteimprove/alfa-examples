@@ -9,6 +9,10 @@
 # This reduces noise, and ensure that other problems in the workflow will still be reported.
 
 name: Accessibility Code Checker
+
+permissions:
+  contents: read
+
 on:
   push:
     branches:
