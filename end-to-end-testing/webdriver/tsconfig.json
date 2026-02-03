@@ -1,7 +1,10 @@
 {
   "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../tsconfig.json",
-  "compilerOptions": { "types": ["mocha", "webdriverio/async"] },
+  "compilerOptions": {
+    "types": ["node", "mocha", "@wdio/globals/types"],
+    "skipLibCheck": true
+  },
   "files": ["test/page.spec.ts", "wdio.conf.ts"],
   "references": [{ "path": "../../common" }]
 }
