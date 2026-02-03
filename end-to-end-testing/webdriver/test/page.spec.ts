@@ -4,7 +4,7 @@ import { Future } from "@siteimprove/alfa-future";
 import { WebElement } from "@siteimprove/alfa-webdriver";
 
 import * as alfa from "@siteimprove/alfa-chai";
-import rules from "@siteimprove/alfa-rules";
+import rules, { Scope } from "@siteimprove/alfa-rules";
 
 import { persist } from "common/persist";
 import * as path from "node:path";
@@ -13,7 +13,7 @@ import * as url from "node:url";
 chai.use(
   alfa.Chai.createPlugin(
     (value: WebElement) => Future.from(WebElement.toPage(value, browser)),
-    rules,
+    rules.filter((rule) => rule.hasTag(Scope.Component)),
     [persist(() => "test/outcomes/page.spec.json")],
   ),
 );
