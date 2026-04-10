@@ -10,11 +10,11 @@
     "node": ">=20.0.0"
   },
   "devDependencies": {
-    "@siteimprove/alfa-act": "^0.108.1",
-    "@siteimprove/alfa-aria": "^0.108.1",
-    "@siteimprove/alfa-cascade": "^0.108.1",
-    "@siteimprove/alfa-performance": "^0.108.1",
-    "@siteimprove/alfa-rules": "^0.108.1",
-    "@siteimprove/alfa-scraper": "^0.80.5"
+    "@siteimprove/alfa-act": "^0.114.3",
+    "@siteimprove/alfa-aria": "^0.114.3",
+    "@siteimprove/alfa-cascade": "^0.114.3",
+    "@siteimprove/alfa-performance": "^0.114.3",
+    "@siteimprove/alfa-rules": "^0.114.3",
+    "@siteimprove/alfa-scraper": "^0.81.10"
   }
 }

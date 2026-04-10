@@ -11,14 +11,14 @@
     "./persist.js": "./persist.js"
   },
   "devDependencies": {
-    "@siteimprove/alfa-act": "^0.108.1",
-    "@siteimprove/alfa-assert": "^0.80.5",
-    "@siteimprove/alfa-formatter": "^0.80.5",
-    "@siteimprove/alfa-hash": "^0.108.1",
-    "@siteimprove/alfa-mapper": "^0.108.1"
+    "@siteimprove/alfa-act": "^0.114.3",
+    "@siteimprove/alfa-assert": "^0.81.10",
+    "@siteimprove/alfa-formatter": "^0.81.10",
+    "@siteimprove/alfa-hash": "^0.114.3",
+    "@siteimprove/alfa-mapper": "^0.114.3"
   },
   "dependencies": {
-    "@siteimprove/alfa-formatter-earl": "^0.80.5",
-    "@siteimprove/alfa-future": "^0.108.1"
+    "@siteimprove/alfa-formatter-earl": "^0.81.10",
+    "@siteimprove/alfa-future": "^0.114.3"
   }
 }
