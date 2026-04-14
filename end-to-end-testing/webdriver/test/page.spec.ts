@@ -12,7 +12,7 @@ import * as url from "node:url";
 
 chai.use(
   alfa.Chai.createPlugin(
-    (value: WebElement) => Future.from(WebElement.toPage(value, browser)),
+    (value: WebElement.Type) => Future.from(WebElement.toPage(value, browser)),
     rules,
     [persist(() => "test/outcomes/page.spec.json")],
   ),
