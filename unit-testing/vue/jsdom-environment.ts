@@ -1,10 +1,10 @@
-/**
+/*
  * Workaround for the missing stuff in JSDOM.
+ * This injects in the Jest environment stuff that is normally defined in Node,
+ * and that is used by our code or its dependencies.
  *
  * {@link https://github.com/mswjs/mswjs.io/issues/292#issue-1977585807}
  */
-
-import crypto from "node:crypto";
 
 import type {
   EnvironmentContext,
@@ -20,10 +20,6 @@ class MyJSDOMEnvironment extends JSDOMEnvironment.default {
     // here, you have access to regular Node globals, which you can add to the test environment
     this.global.TextEncoder = TextEncoder;
     this.global.TextDecoder = TextDecoder;
-
-    // @ts-ignore
-    this.global.crypto = crypto;
-    this.global.crypto.randomUUID = crypto.randomUUID;
 
     this.global.setImmediate = setImmediate;
     this.global.ReadableStream = ReadableStream;

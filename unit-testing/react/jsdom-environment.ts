@@ -1,5 +1,7 @@
-/**
+/*
  * Workaround for the missing stuff in JSDOM.
+ * This injects in the Jest environment stuff that is normally defined in Node,
+ * and that is used by our code or its dependencies.
  *
  * {@link https://github.com/mswjs/mswjs.io/issues/292#issue-1977585807}
  */
