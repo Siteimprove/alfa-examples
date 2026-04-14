@@ -16,7 +16,7 @@ test("is page accessible", async ({ page }) => {
   await page.goto("http://localhost:5173");
 
   // Get the document handle from the page
-  const document = await page.evaluateHandle(() => window.document);
+  const document = await page.evaluateHandle("document");
 
   /*
    * Usual Playwright instructions can live here.
