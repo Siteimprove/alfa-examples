@@ -3799,7 +3799,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18.2.66, @types/react@npm:^18.3.5":
+"@types/react@npm:*, @types/react@npm:^19.2.14":
+  version: 19.2.14
+  resolution: "@types/react@npm:19.2.14"
+  dependencies:
+    csstype: "npm:^3.2.2"
+  checksum: 10/fbff239089ee64b6bd9b00543594db498278b06de527ef1b0f71bb0eb09cc4445a71b5dd3c0d3d0257255c4eed94406be40a74ad4a987ade8a8d5dd65c82bc5f
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:^18.2.66":
   version: 18.3.27
   resolution: "@types/react@npm:18.3.27"
   dependencies:
@@ -13916,9 +13925,11 @@ __metadata:
     "@siteimprove/alfa-react": "npm:^0.82.0"
     "@siteimprove/alfa-rules": "npm:^0.114.3"
     "@types/jest": "npm:^29.5.1"
-    "@types/react": "npm:^18.3.5"
+    "@types/react": "npm:^19.2.14"
     common: "workspace:^"
     jest: "npm:^29.5.0"
+    jest-environment-jsdom: "npm:^29.5.0"
+    react: "npm:^19.2.5"
   languageName: unknown
   linkType: soft
 
