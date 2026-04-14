@@ -1,5 +1,5 @@
 /**
- * Workaround for the missing `TextEncoder` and `crypto` in JSDOM.
+ * Workaround for the missing stuff in JSDOM.
  *
  * {@link https://github.com/mswjs/mswjs.io/issues/292#issue-1977585807}
  */
@@ -24,6 +24,9 @@ class MyJSDOMEnvironment extends JSDOMEnvironment.default {
     // @ts-ignore
     this.global.crypto = crypto;
     this.global.crypto.randomUUID = crypto.randomUUID;
+
+    this.global.setImmediate = setImmediate;
+    this.global.ReadableStream = ReadableStream;
   }
 }
 
