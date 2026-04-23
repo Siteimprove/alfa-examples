@@ -16,8 +16,8 @@
   "devDependencies": {
     "@siteimprove/alfa-future": "^0.114.3",
     "@siteimprove/alfa-rules": "^0.114.3",
-    "@siteimprove/alfa-vitest": "^0.82.0",
-    "@siteimprove/alfa-vue": "^0.82.0",
+    "@siteimprove/alfa-vitest": "^0.82.1",
+    "@siteimprove/alfa-vue": "^0.82.1",
     "@vue/test-utils": "^2.4.6",
     "common": "workspace:^",
     "vitest": "^4.1.5"
