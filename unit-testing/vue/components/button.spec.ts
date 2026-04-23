@@ -1,12 +1,12 @@
-/// <reference types="@siteimprove/alfa-jest" />
+/// <reference types="@siteimprove/alfa-vitest" />
 
 import { mount } from "@vue/test-utils";
+import { describe, expect, it } from "vitest";
 
 import { EmptyButton, NamedButton } from "./button.js";
 
-// window.matchMedia is not currently implemented by JSDOM, used by Jest, so
-// we need to mock it.
-// see https://jestjs.io/docs/manual-mocks#mocking-methods-which-are-not-implemented-in-jsdom
+// window.matchMedia is not currently implemented by JSDOM which vitest uses,
+// so we need a mock.
 // For the purpose of this test, we actually don't care about the result (they
 // are not actually used), so we are OK with a mock that always answer `false`.
 window.matchMedia =
@@ -17,10 +17,14 @@ window.matchMedia =
     };
   };
 
-it("should not have a name", async () => {
-  await expect(mount(EmptyButton)).not.toBeAccessible();
+describe("Empty button", () => {
+  it("should not have a name", () => {
+    expect(mount(EmptyButton)).not.toBeAccessible();
+  });
 });
 
-it("should have a name", async () => {
-  await expect(mount(NamedButton)).toBeAccessible();
+describe("Named button", () => {
+  it("should have a name", () => {
+    expect(mount(NamedButton)).toBeAccessible();
+  });
 });
