@@ -30,13 +30,5 @@
     "prettier": "^3.0.0",
     "typescript": "^5.0.4"
   },
-  "//": [
-    "Somehow, https://github.com/enzymejs/enzyme/blob/master/packages/enzyme/package.json correctly pins cheerio",
-    "but once installed it is replaced with ^1.0.0-rc.3 which resolves to 1.0.0 whose internal organisation has",
-    "changed. This results in non-working enzyme installation."
-  ],
-  "resolutions": {
-    "enzyme/cheerio": "=1.0.0-rc.3"
-  },
   "packageManager": "yarn@4.14.1"
 }
