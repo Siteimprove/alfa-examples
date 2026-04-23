@@ -1,16 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../tsconfig.json",
-  "compilerOptions": {
-    "esModuleInterop": true,
-    "types": ["jest"],
-    "skipLibCheck": true
-  },
-  "files": [
-    "components/button.spec.ts",
-    "components/button.ts",
-    "jsdom-environment.ts",
-    "setup.ts"
-  ],
+  "compilerOptions": { "noEmit": true },
+  "files": ["components/button.spec.ts", "components/button.ts", "setup.ts"],
   "references": [{ "path": "../../common" }]
 }
