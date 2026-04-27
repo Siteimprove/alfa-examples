@@ -1,0 +1,28 @@
+{
+  "name": "unit-testing-angular",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "test": "ng test --no-watch"
+  },
+  "private": true,
+  "packageManager": "yarn@4.14.1",
+  "dependencies": {
+    "@angular/common": "^21.2.10",
+    "@angular/compiler": "^21.2.0",
+    "@angular/core": "^21.2.0",
+    "@angular/platform-browser": "^21.2.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^21.2.8",
+    "@angular/cli": "^21.2.8",
+    "@angular/compiler-cli": "^21.2.0",
+    "@siteimprove/alfa-angular": "^0.82.1",
+    "@siteimprove/alfa-future": "^0.114.3",
+    "@siteimprove/alfa-rules": "^0.114.3",
+    "@siteimprove/alfa-vitest": "^0.82.1",
+    "ng-packagr": "^21.2.0",
+    "vitest": "^4.0.8"
+  }
+}

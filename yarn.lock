@@ -9996,27 +9996,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"foo@workspace:unit-testing/foo":
-  version: 0.0.0-use.local
-  resolution: "foo@workspace:unit-testing/foo"
-  dependencies:
-    "@angular/build": "npm:^21.2.8"
-    "@angular/cli": "npm:^21.2.8"
-    "@angular/common": "npm:^21.2.10"
-    "@angular/compiler": "npm:^21.2.0"
-    "@angular/compiler-cli": "npm:^21.2.0"
-    "@angular/core": "npm:^21.2.0"
-    "@angular/platform-browser": "npm:^21.2.0"
-    "@siteimprove/alfa-angular": "npm:^0.82.1"
-    "@siteimprove/alfa-future": "npm:^0.114.3"
-    "@siteimprove/alfa-rules": "npm:^0.114.3"
-    "@siteimprove/alfa-vitest": "npm:^0.82.1"
-    ng-packagr: "npm:^21.2.0"
-    tslib: "npm:^2.3.0"
-    vitest: "npm:^4.0.8"
-  languageName: unknown
-  linkType: soft
-
 "foreground-child@npm:^3.1.0":
   version: 3.3.0
   resolution: "foreground-child@npm:3.3.0"
@@ -16747,6 +16726,27 @@ __metadata:
   checksum: 10/6cfaf91976acc9c125fd0686c561ee9ca0784bb4b2b408972e6cd30e747b4ff0ca50264c01bcf5e711b463535ea611ffb84199e9f73088cd79ac9ddee8154042
   languageName: node
   linkType: hard
+
+"unit-testing-angular@workspace:unit-testing/angular":
+  version: 0.0.0-use.local
+  resolution: "unit-testing-angular@workspace:unit-testing/angular"
+  dependencies:
+    "@angular/build": "npm:^21.2.8"
+    "@angular/cli": "npm:^21.2.8"
+    "@angular/common": "npm:^21.2.10"
+    "@angular/compiler": "npm:^21.2.0"
+    "@angular/compiler-cli": "npm:^21.2.0"
+    "@angular/core": "npm:^21.2.0"
+    "@angular/platform-browser": "npm:^21.2.0"
+    "@siteimprove/alfa-angular": "npm:^0.82.1"
+    "@siteimprove/alfa-future": "npm:^0.114.3"
+    "@siteimprove/alfa-rules": "npm:^0.114.3"
+    "@siteimprove/alfa-vitest": "npm:^0.82.1"
+    ng-packagr: "npm:^21.2.0"
+    tslib: "npm:^2.3.0"
+    vitest: "npm:^4.0.8"
+  languageName: unknown
+  linkType: soft
 
 "unit-testing-react@workspace:unit-testing/react":
   version: 0.0.0-use.local
