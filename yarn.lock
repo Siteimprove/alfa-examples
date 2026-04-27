@@ -16742,6 +16742,7 @@ __metadata:
     "@siteimprove/alfa-future": "npm:^0.114.3"
     "@siteimprove/alfa-rules": "npm:^0.114.3"
     "@siteimprove/alfa-vitest": "npm:^0.82.1"
+    common: "workspace:^"
     ng-packagr: "npm:^21.2.0"
     tslib: "npm:^2.3.0"
     vitest: "npm:^4.0.8"
