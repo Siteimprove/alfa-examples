@@ -1,26 +1,43 @@
-// Knip is somehow unhappy about the use of import.meta.url, not being able to
-// detect that this should be a module. So, keeping the old way.
+import * as alfa from "@siteimprove/alfa-chai";
+import { Future } from "@siteimprove/alfa-future";
+import rules from "@siteimprove/alfa-rules";
+import { WebElement } from "@siteimprove/alfa-webdriver";
 
-import * as path from "node:path";
-import * as url from "node:url";
-
-const __filename = url.fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-// const __dirname = import.meta.dirname;
+import * as chai from "chai";
+import { persist } from "common/persist";
 
 export const config: WebdriverIO.Config = {
   runner: "local",
-  path: "/",
-  specs: ["./test/**/*.spec.js"],
-  capabilities: [{ browserName: "chrome" }],
+  tsConfigPath: "./tsconfig.json",
+  specs: ["./test/*.ts"],
+  capabilities: [
+    {
+      browserName: "chrome",
+      "goog:chromeOptions": {
+        args: [
+          "headless",
+          "disable-gpu",
+          "--no-sandbox",
+          "--disable-dev-shm-usage",
+        ],
+      },
+    },
+  ],
   logLevel: "info",
-  baseUrl: "http://localhost",
   waitforTimeout: 10000,
-  connectionRetryTimeout: 90000,
+  connectionRetryTimeout: 120000,
   connectionRetryCount: 3,
-  services: ["chromedriver"],
   framework: "mocha",
   reporters: ["spec"],
-  outputDir: __dirname,
+  mochaOpts: { ui: "bdd", timeout: 60000 },
+  before: function () {
+    chai.use(
+      alfa.Chai.createPlugin(
+        (value: WebElement.Type) =>
+          Future.from(WebElement.toPage(value, browser)),
+        rules.filter((rule) => !rule.uri.includes("r111")),
+        [persist(() => "test/outcomes/page.spec.json")],
+      ),
+    );
+  },
 };
