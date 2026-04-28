@@ -6,6 +6,6 @@
     { "path": "cypress" },
     { "path": "playwright" },
     { "path": "puppeteer" },
-    { "path": "webdriver" }
+    { "path": "webdriver-old" }
   ]
 }
