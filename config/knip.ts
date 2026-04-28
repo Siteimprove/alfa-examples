@@ -33,11 +33,12 @@ const config: KnipConfig = {
       },
     },
     "end-to-end-testing/webdriver": {
-      "webdriver-io": { config: ["wdio.conf.ts"], entry, project },
-      ignoreDependencies: [
-        // imported through the config file
-        "chromedriver",
-      ],
+      "webdriver-io": {
+        config: ["wdio.conf.ts"],
+        entry: ["test/test.e2e.ts"],
+        project,
+      },
+      ignoreDependencies: ["@wdio/local-runner"],
     },
     "unit-testing/*": { entry, project },
     "unit-testing/angular": {

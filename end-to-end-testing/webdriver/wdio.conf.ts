@@ -30,14 +30,7 @@ export const config: WebdriverIO.Config = {
   framework: "mocha",
   reporters: ["spec"],
   mochaOpts: { ui: "bdd", timeout: 60000 },
-  /**
-   * Gets executed before test execution begins. At this point you can access to all global
-   * variables like `browser`. It is the perfect place to define custom commands.
-   * @param {Array.<Object>} capabilities list of capabilities details
-   * @param {Array.<String>} specs        List of spec file paths that are to be run
-   * @param {object}         browser      instance of created browser/device session
-   */
-  before: function (capabilities, specs) {
+  before: function () {
     chai.use(
       alfa.Chai.createPlugin(
         (value: WebElement.Type) =>
