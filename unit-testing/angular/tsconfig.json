@@ -1,14 +1,30 @@
 {
   "$schema": "http://json.schemastore.org/tsconfig",
-  "extends": "../tsconfig.json",
+  "compileOnSave": false,
   "compilerOptions": {
+    "composite": true,
+    "paths": { "button": ["./dist/button"] },
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
     "experimentalDecorators": true,
-    "types": ["jest"]
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "preserve"
   },
-  "files": ["components/button.spec.ts", "components/button.ts", "setup.ts"],
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
+  "files": ["setup.ts"],
   "references": [
-    {
-      "path": "../../common"
-    }
+    { "path": "./button/tsconfig.lib.json" },
+    { "path": "./button/tsconfig.spec.json" }
   ]
 }

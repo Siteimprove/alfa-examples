@@ -40,7 +40,11 @@ const config: KnipConfig = {
       ],
     },
     "unit-testing/*": { entry, project },
-    "unit-testing/angular": { entry: ["components/*.ts", "setup.ts"], project },
+    "unit-testing/angular": {
+      entry: ["button/*.ts", "setup.ts"],
+      project,
+      ignoreDependencies: ["@angular/common"],
+    },
     "unit-testing/react": {
       entry: ["components/*.tsx", "jsdom-environment.ts", "setup.ts"],
       project,
