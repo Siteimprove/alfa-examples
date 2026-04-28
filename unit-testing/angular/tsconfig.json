@@ -1,6 +1,8 @@
 {
+  "$schema": "http://json.schemastore.org/tsconfig",
   "compileOnSave": false,
   "compilerOptions": {
+    "composite": true,
     "paths": { "button": ["./dist/button"] },
     "strict": true,
     "noImplicitOverride": true,
