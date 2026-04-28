@@ -14,9 +14,9 @@
     "@siteimprove/alfa-rules": "^0.114.3",
     "@siteimprove/alfa-vitest": "^0.82.1",
     "@siteimprove/alfa-vue": "^0.82.1",
-    "@vue/test-utils": "^2.4.6",
+    "@vue/test-utils": "^2.4.9",
     "common": "workspace:^",
-    "jsdom": "^29.0.2",
+    "jsdom": "^29.1.0",
     "vitest": "^4.1.5"
   }
 }
