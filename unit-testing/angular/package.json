@@ -14,9 +14,9 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@angular/build": "^21.2.8",
-    "@angular/cli": "^21.2.8",
-    "@angular/compiler-cli": "^21.2.0",
+    "@angular/build": "^21.2.9",
+    "@angular/cli": "^21.2.9",
+    "@angular/compiler-cli": "^21.2.11",
     "@siteimprove/alfa-angular": "^0.82.1",
     "@siteimprove/alfa-future": "^0.114.3",
     "@siteimprove/alfa-rules": "^0.114.3",
