@@ -32,6 +32,6 @@
     "common": "workspace:^",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
-    "react": "^19.2.5"
+    "react": "^19.2.6"
   }
 }

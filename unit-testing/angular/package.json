@@ -7,10 +7,10 @@
     "test": "ng test --no-watch"
   },
   "dependencies": {
-    "@angular/common": "^21.2.11",
-    "@angular/compiler": "^21.2.11",
-    "@angular/core": "^21.2.11",
-    "@angular/platform-browser": "^21.2.11",
+    "@angular/common": "^21.2.12",
+    "@angular/compiler": "^21.2.12",
+    "@angular/core": "^21.2.12",
+    "@angular/platform-browser": "^21.2.12",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
