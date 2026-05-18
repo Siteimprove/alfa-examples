@@ -1,10 +1,10 @@
 import type { KnipConfig } from "knip";
 
 const entry = ["test/**/*.spec.ts", "test/**/*.spec.tsx"];
-const project = ["**/*.ts", "**/*.tsx"];
+const project = ["**/*.ts", "**/*.tsx", "!**/*.d.ts", "!**/*.js"];
 
 const config: KnipConfig = {
-  ignoreDependencies: ["prettier"],
+  ignoreWorkspaces: ["."],
   workspaces: {
     "accessibility-code-checker/*": { entry, project },
     "accessibility-code-checker/demo-page": {
@@ -44,14 +44,14 @@ const config: KnipConfig = {
     "unit-testing/angular": {
       entry: ["button/*.ts", "setup.ts"],
       project,
-      ignoreDependencies: ["@angular/common"],
     },
     "unit-testing/react": {
       entry: ["components/*.tsx", "jsdom-environment.ts", "setup.ts"],
       project,
+      ignoreDependencies: ["jest"],
     },
     "unit-testing/vue": {
-      entry: ["components/*.ts", "jsdom-environment.ts", "setup.ts"],
+      entry: ["components/*.ts", "setup.ts"],
       project,
     },
   },
