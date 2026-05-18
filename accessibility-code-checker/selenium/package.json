@@ -13,7 +13,7 @@
     "@siteimprove/alfa-test": "^0.114.3",
     "@siteimprove/alfa-test-utils": "^0.82.1",
     "@types/selenium-webdriver": "^4.35.5",
-    "selenium-webdriver": "^4.43.0",
-    "vitest": "^4.1.5"
+    "selenium-webdriver": "^4.44.0",
+    "vitest": "^4.1.6"
   }
 }
