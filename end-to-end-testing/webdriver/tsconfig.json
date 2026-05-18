@@ -2,16 +2,10 @@
   "$schema": "http://json.schemastore.org/tsconfig",
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "moduleResolution": "node",
     "module": "ESNext",
     "target": "es2022",
     "lib": ["es2022", "dom"],
-    "types": [
-      "node",
-      "@wdio/globals/types",
-      "chai",
-      "@wdio/mocha-framework"
-    ],
+    "types": ["node", "@wdio/globals/types", "chai", "@wdio/mocha-framework"],
     "skipLibCheck": true,
     "noEmit": true,
     "allowImportingTsExtensions": true,
