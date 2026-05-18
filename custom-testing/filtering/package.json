@@ -24,6 +24,6 @@
     "chai": "^6.0.0",
     "common": "workspace:^",
     "mocha": "^11.7.5",
-    "playwright": "^1.59.1"
+    "playwright": "^1.60.0"
   }
 }
