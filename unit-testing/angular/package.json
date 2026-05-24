@@ -14,15 +14,15 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
-    "@angular/build": "^21.2.11",
-    "@angular/cli": "^21.2.11",
-    "@angular/compiler-cli": "^21.2.13",
+    "@angular/build": "^21.2.12",
+    "@angular/cli": "^21.2.12",
+    "@angular/compiler-cli": "^21.2.14",
     "@siteimprove/alfa-angular": "^0.82.1",
     "@siteimprove/alfa-future": "^0.114.3",
     "@siteimprove/alfa-rules": "^0.114.3",
     "@siteimprove/alfa-vitest": "^0.82.1",
     "common": "workspace:^",
     "ng-packagr": "^21.2.0",
-    "vitest": "^4.1.6"
+    "vitest": "^4.1.7"
   }
 }
