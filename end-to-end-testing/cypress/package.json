@@ -7,7 +7,7 @@
   },
   "type": "module",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.0.0"
   },
   "devDependencies": {
     "@siteimprove/alfa-cypress": "^0.82.1",

@@ -16,12 +16,18 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [22, 24]
+        # 22 is in Maintenance until April 2027.
+        # 24 is Active until October 2026, Maintenance until April 2028.
+        # 26 is Current from May 2026 to October 2026, then Active until October 2027, Maintenance until April 2029.
+        # 28 will be Current in April/May 2027.
+        # https://nodejs.org/en/about/previous-releases
+        node-version: [22, 24, 26]
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node-version }}
+          cache: "yarn"
 
       - name: Disable AppArmor on ubuntu
         # Security on Ubuntu ⩾ 23 causes problem with Chrome, this is copied from
@@ -29,11 +35,6 @@ jobs:
         # where they probably know what they do.
         #       if: ${{ matrix.os == 'ubuntu-latest' }}
         run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
-
-      - uses: actions/cache@v4
-        with:
-          path: .yarn/cache
-          key: yarn-${{ hashFiles('yarn.lock') }}
 
       - run: yarn install --immutable
       - name: Install Playwright browsers

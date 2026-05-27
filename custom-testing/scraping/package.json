@@ -4,7 +4,7 @@
   "name": "custom-testing-scraping",
   "type": "module",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.0.0"
   },
   "scripts": {
     "test": "node scraping.js"
