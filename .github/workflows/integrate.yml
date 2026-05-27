@@ -37,9 +37,13 @@ jobs:
         run: echo 0 | sudo tee /proc/sys/kernel/apparmor_restrict_unprivileged_userns
 
       - run: yarn install --immutable
+
       - name: Install Playwright browsers
         # https://playwright.dev/docs/ci-intro
         run: yarn playwright install
+
+      - name: Install Puppeteer browsers
+        run: npx puppeteer browsers install chrome
 
       - run: yarn dedupe --check
       - run: yarn build
