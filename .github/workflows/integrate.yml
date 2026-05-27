@@ -42,9 +42,6 @@ jobs:
         # https://playwright.dev/docs/ci-intro
         run: yarn playwright install
 
-      - name: Install Puppeteer browsers
-        run: npx puppeteer browsers install chrome
-
       - run: yarn dedupe --check
       - run: yarn build
       - run: yarn test
