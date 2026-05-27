@@ -19,6 +19,6 @@
     "chai": "^6.0.0",
     "common": "workspace:^",
     "mocha": "^11.7.5",
-    "puppeteer": "^24.0.0"
+    "puppeteer": "^25.1.0"
   }
 }
