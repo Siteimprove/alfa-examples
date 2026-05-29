@@ -322,15 +322,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/common@npm:^21.2.13":
-  version: 21.2.13
-  resolution: "@angular/common@npm:21.2.13"
+"@angular/common@npm:^21.2.15":
+  version: 21.2.15
+  resolution: "@angular/common@npm:21.2.15"
   dependencies:
     tslib: "npm:^2.3.0"
   peerDependencies:
-    "@angular/core": 21.2.13
+    "@angular/core": 21.2.15
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: 10/66381ec2bab40e5d5936bce458b6059c29922141be29f6e3e817a63fc3ebaf2b2610643c3186304f0d4857820c49893d3b76aeee1033ea69634d291eb9c3b599
+  checksum: 10/a64d1b25c077effc040e145b0c5b663594832a734227112d0957879780962f28df0d6715790d8926064bd3347084736ccb3c6e25d5998bd6686dd128b48fe979
   languageName: node
   linkType: hard
 
@@ -359,12 +359,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/compiler@npm:^21.2.13":
-  version: 21.2.13
-  resolution: "@angular/compiler@npm:21.2.13"
+"@angular/compiler@npm:^21.2.15":
+  version: 21.2.15
+  resolution: "@angular/compiler@npm:21.2.15"
   dependencies:
     tslib: "npm:^2.3.0"
-  checksum: 10/9ede825a77fe87de21a9ba4bf19ca4994c459e31887b28d94ab3801ec6343b663a8f7360173258e09ddd9dec1b966040d4e5e89ca6d97ed884a0d55e0194f62f
+  checksum: 10/083cbfa1fa90865b9c15cd91e4710d2c15e8834034c15bfa3056b180e76f9714b2cdbc0a084d34163a2589dbe6d2ddb8df8779979e5081af4b87e78fa5971ded
   languageName: node
   linkType: hard
 
@@ -386,19 +386,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/platform-browser@npm:^21.2.13":
-  version: 21.2.13
-  resolution: "@angular/platform-browser@npm:21.2.13"
+"@angular/platform-browser@npm:^21.2.15":
+  version: 21.2.15
+  resolution: "@angular/platform-browser@npm:21.2.15"
   dependencies:
     tslib: "npm:^2.3.0"
   peerDependencies:
-    "@angular/animations": 21.2.13
-    "@angular/common": 21.2.13
-    "@angular/core": 21.2.13
+    "@angular/animations": 21.2.15
+    "@angular/common": 21.2.15
+    "@angular/core": 21.2.15
   peerDependenciesMeta:
     "@angular/animations":
       optional: true
-  checksum: 10/e2da9686649ad66ba544a79d7633c883ca794f9d059f49b542cba16b1be2d09dc9c650289b2943f9de6aaf461865c20edb20af3bd2ce3538477fd63f47274547
+  checksum: 10/a1cd8928c1b1dc289b0e762beb4063d8fcc2b11330bddf3ded721b1bcf34f89c09a2b53d69068c856cdcce71635c45e2b7ba20d40a661e46e6d24dd3ba729039
   languageName: node
   linkType: hard
 
@@ -15215,11 +15215,11 @@ __metadata:
   dependencies:
     "@angular/build": "npm:^21.2.13"
     "@angular/cli": "npm:^21.2.13"
-    "@angular/common": "npm:^21.2.13"
-    "@angular/compiler": "npm:^21.2.13"
+    "@angular/common": "npm:^21.2.15"
+    "@angular/compiler": "npm:^21.2.15"
     "@angular/compiler-cli": "npm:^21.2.15"
     "@angular/core": "npm:^21.2.13"
-    "@angular/platform-browser": "npm:^21.2.13"
+    "@angular/platform-browser": "npm:^21.2.15"
     "@siteimprove/alfa-angular": "npm:^0.83.0"
     "@siteimprove/alfa-future": "npm:^0.115.1"
     "@siteimprove/alfa-rules": "npm:^0.115.1"
