@@ -7,11 +7,11 @@
   },
   "type": "module",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.0.0"
   },
   "devDependencies": {
-    "@siteimprove/alfa-cypress": "^0.82.1",
-    "@siteimprove/alfa-rules": "^0.114.3",
+    "@siteimprove/alfa-cypress": "^0.83.0",
+    "@siteimprove/alfa-rules": "^0.115.1",
     "cypress": "^15.15.0"
   }
 }

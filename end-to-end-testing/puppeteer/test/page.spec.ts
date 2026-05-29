@@ -3,7 +3,7 @@
 import * as chai from "chai";
 import * as path from "node:path";
 import * as url from "node:url";
-import puppeteer from "puppeteer";
+import * as puppeteer from "puppeteer";
 
 import { Future } from "@siteimprove/alfa-future";
 import { Puppeteer } from "@siteimprove/alfa-puppeteer";

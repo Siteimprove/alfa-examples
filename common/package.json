@@ -4,21 +4,21 @@
   "name": "common",
   "type": "module",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.0.0"
   },
   "exports": {
     "./persist": "./persist.js",
     "./persist.js": "./persist.js"
   },
   "devDependencies": {
-    "@siteimprove/alfa-act": "^0.114.3",
-    "@siteimprove/alfa-assert": "^0.82.1",
-    "@siteimprove/alfa-formatter": "^0.82.1",
-    "@siteimprove/alfa-hash": "^0.114.3",
-    "@siteimprove/alfa-mapper": "^0.114.3"
+    "@siteimprove/alfa-act": "^0.115.1",
+    "@siteimprove/alfa-assert": "^0.83.0",
+    "@siteimprove/alfa-formatter": "^0.83.0",
+    "@siteimprove/alfa-hash": "^0.115.1",
+    "@siteimprove/alfa-mapper": "^0.115.1"
   },
   "dependencies": {
-    "@siteimprove/alfa-formatter-earl": "^0.82.1",
-    "@siteimprove/alfa-future": "^0.114.3"
+    "@siteimprove/alfa-formatter-earl": "^0.83.0",
+    "@siteimprove/alfa-future": "^0.115.1"
   }
 }
