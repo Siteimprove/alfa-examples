@@ -6,14 +6,14 @@
   "version": "0.0.0",
   "type": "module",
   "engines": {
-    "node": ">=20.0.0"
+    "node": ">=22.0.0"
   },
   "scripts": {
     "test": "cypress run"
   },
   "devDependencies": {
-    "@siteimprove/alfa-cypress": "^0.82.1",
-    "@siteimprove/alfa-test-utils": "^0.82.1",
+    "@siteimprove/alfa-cypress": "^0.83.0",
+    "@siteimprove/alfa-test-utils": "^0.83.0",
     "cypress": "^15.15.0"
   }
 }
