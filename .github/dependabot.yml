@@ -20,6 +20,7 @@ updates:
       angular:
         patterns:
           - "@angular/*"
+          - "ng-packagr"
         applies-to: version-updates
 
 
