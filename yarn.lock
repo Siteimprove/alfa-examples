@@ -359,12 +359,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/compiler@npm:^21.2.15":
-  version: 21.2.15
-  resolution: "@angular/compiler@npm:21.2.15"
+"@angular/compiler@npm:^22.0.0":
+  version: 22.0.0
+  resolution: "@angular/compiler@npm:22.0.0"
   dependencies:
     tslib: "npm:^2.3.0"
-  checksum: 10/083cbfa1fa90865b9c15cd91e4710d2c15e8834034c15bfa3056b180e76f9714b2cdbc0a084d34163a2589dbe6d2ddb8df8779979e5081af4b87e78fa5971ded
+  checksum: 10/dbe3dc66309ed2536a8a0f029d6f36a9c1c21cfafcedac2c49258ad939861e3f3990623cda0db51d3760ba05008b7fe6fd5b9e6fa84f979b302a8d862840a0d8
   languageName: node
   linkType: hard
 
@@ -15156,7 +15156,7 @@ __metadata:
     "@angular/build": "npm:^21.2.13"
     "@angular/cli": "npm:^21.2.13"
     "@angular/common": "npm:^21.2.15"
-    "@angular/compiler": "npm:^21.2.15"
+    "@angular/compiler": "npm:^22.0.0"
     "@angular/compiler-cli": "npm:^21.2.15"
     "@angular/core": "npm:^21.2.13"
     "@angular/platform-browser": "npm:^21.2.15"
