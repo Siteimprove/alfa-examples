@@ -24,8 +24,8 @@
     "unit-testing/*"
   ],
   "devDependencies": {
-    "@types/node": "^25.9.1",
-    "knip": "^6.15.0",
+    "@types/node": "^25.9.2",
+    "knip": "^6.16.1",
     "playwright": "^1.60.0",
     "prettier": "^3.0.0",
     "typescript": "^6.0.3"
