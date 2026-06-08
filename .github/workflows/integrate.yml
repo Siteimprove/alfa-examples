@@ -25,7 +25,7 @@ jobs:
         # 24.16 and 26 cause problems with webdriverio, sticking to working versions for now.
         # Monitor https://github.com/webdriverio/webdriverio/issues/15265 for updates
         # on Webdriver side.
-        node-version: [22, 24.14]
+        node-version: [22, 24.15]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
