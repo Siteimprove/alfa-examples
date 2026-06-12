@@ -18,7 +18,7 @@ const __dirname = import.meta.dirname;
 
 chai.use(
   alfa.Chai.createPlugin(
-    (value: Playwright.Type) => Playwright.toPage(value),
+    Playwright.toPage,
     rules.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")],
   ),

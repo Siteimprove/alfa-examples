@@ -18,7 +18,7 @@ import { persist } from "common/persist";
 
 chai.use(
   alfa.Chai.createPlugin(
-    (value: Playwright.Type) => Playwright.toPage(value),
+    Playwright.toPage,
     [R69],
     [persist(() => "test/outcomes/page.spec.json")],
   ),

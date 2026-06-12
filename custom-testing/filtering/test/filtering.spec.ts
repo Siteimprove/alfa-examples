@@ -24,7 +24,7 @@ const { and } = Refinement;
 // Creating a Chai plugin which uses all rules.
 chai.use(
   alfa.Chai.createPlugin(
-    (value: Playwright.Type) => Playwright.toPage(value),
+    Playwright.toPage,
     rules.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/filtering.spec.json")],
   ),

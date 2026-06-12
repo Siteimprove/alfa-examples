@@ -14,7 +14,7 @@ import { persist } from "common/persist";
 
 chai.use(
   alfa.Chai.createPlugin(
-    (value: Puppeteer.Type) => Puppeteer.toPage(value),
+    Puppeteer.toPage,
     rules.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")],
   ),

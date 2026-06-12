@@ -65,11 +65,9 @@ const allRules = rules.append(myRule);
 
 // Creating a Chai plugin which runs all rules (default and custom).
 chai.use(
-  alfa.Chai.createPlugin(
-    (value: Playwright.Type) => Playwright.toPage(value),
-    allRules,
-    [persist(() => "test/outcomes/page.spec.json")],
-  ),
+  alfa.Chai.createPlugin(Playwright.toPage, allRules, [
+    persist(() => "test/outcomes/page.spec.json"),
+  ]),
 );
 
 const { expect } = chai;

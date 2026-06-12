@@ -15,13 +15,7 @@ import { Rules } from "@siteimprove/alfa-rules";
 const R69 = Rules.get("R69").getUnsafe();
 
 // Creating a Chai plugin which only uses R69.
-chai.use(
-  alfa.Chai.createPlugin(
-    (value: Playwright.Type) => Playwright.toPage(value),
-    [R69],
-    [],
-  ),
-);
+chai.use(alfa.Chai.createPlugin(Playwright.toPage, [R69], []));
 
 const { expect } = chai;
 

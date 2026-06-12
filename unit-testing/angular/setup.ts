@@ -7,7 +7,7 @@ import { persist } from "common/persist";
 const R12 = Rules.get("R12").getUnsafe();
 
 Vitest.createPlugin(
-  (value: Angular.Type) => Angular.toPage(value),
+  Angular.toPage,
   [R12],
   [persist(() => "outcomes/button.spec.json")],
 );

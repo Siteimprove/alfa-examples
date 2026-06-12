@@ -9,7 +9,7 @@ const R12 = Rules.get("R12").getUnsafe();
 import { persist } from "common/persist";
 
 alfa.Vitest.createPlugin(
-  (value: Vue.Type) => Vue.toPage(value),
+  Vue.toPage,
   [R12],
   [persist(() => "outcomes/button.spec.json")],
 );
