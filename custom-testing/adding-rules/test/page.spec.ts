@@ -7,7 +7,6 @@ import { Refinement } from "@siteimprove/alfa-refinement";
 import { Err, Ok } from "@siteimprove/alfa-result";
 import { Page } from "@siteimprove/alfa-web";
 
-import { Future } from "@siteimprove/alfa-future";
 import { Playwright } from "@siteimprove/alfa-playwright";
 
 import * as chai from "chai";
@@ -66,11 +65,9 @@ const allRules = rules.append(myRule);
 
 // Creating a Chai plugin which runs all rules (default and custom).
 chai.use(
-  alfa.Chai.createPlugin(
-    (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
-    allRules,
-    [persist(() => "test/outcomes/page.spec.json")],
-  ),
+  alfa.Chai.createPlugin(Playwright.toPage, allRules, [
+    persist(() => "test/outcomes/page.spec.json"),
+  ]),
 );
 
 const { expect } = chai;

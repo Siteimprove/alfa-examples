@@ -7,7 +7,6 @@ import * as url from "node:url";
 import * as chai from "chai";
 import * as playwright from "playwright";
 
-import { Future } from "@siteimprove/alfa-future";
 import { Playwright } from "@siteimprove/alfa-playwright";
 
 import * as alfa from "@siteimprove/alfa-chai";
@@ -19,7 +18,7 @@ const __dirname = import.meta.dirname;
 
 chai.use(
   alfa.Chai.createPlugin(
-    (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
+    Playwright.toPage,
     rules.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")],
   ),

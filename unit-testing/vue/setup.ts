@@ -1,4 +1,3 @@
-import { Future } from "@siteimprove/alfa-future";
 import { Vue } from "@siteimprove/alfa-vue";
 
 import * as alfa from "@siteimprove/alfa-vitest";
@@ -10,7 +9,7 @@ const R12 = Rules.get("R12").getUnsafe();
 import { persist } from "common/persist";
 
 alfa.Vitest.createPlugin(
-  (value: Vue.Type) => Future.from(Vue.toPage(value)),
+  Vue.toPage,
   [R12],
   [persist(() => "outcomes/button.spec.json")],
 );

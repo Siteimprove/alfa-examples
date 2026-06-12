@@ -3,6 +3,7 @@ import * as path from "node:path";
 import * as url from "node:url";
 
 import { Audit, Outcome, Question } from "@siteimprove/alfa-act";
+import { Array } from "@siteimprove/alfa-array";
 import { Hashable } from "@siteimprove/alfa-hash";
 import { Scraper } from "@siteimprove/alfa-scraper";
 
@@ -27,9 +28,7 @@ Scraper.with(async (scraper) => {
   }
 
   for (const input of alfaPage) {
-    const outcomes = await Audit.of(input, rules)
-      .evaluate()
-      .map((outcomes) => [...outcomes]);
+    const outcomes = Array.from(await Audit.of(input, rules).evaluate());
 
     const earl = outcomes.map((outcome) => outcome.toEARL());
 

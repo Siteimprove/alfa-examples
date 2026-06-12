@@ -1,7 +1,6 @@
 /// <reference types="node" />
 /// <reference types="mocha" />
 
-import { Future } from "@siteimprove/alfa-future";
 import { Playwright } from "@siteimprove/alfa-playwright";
 
 import * as chai from "chai";
@@ -16,13 +15,7 @@ import { Rules } from "@siteimprove/alfa-rules";
 const R69 = Rules.get("R69").getUnsafe();
 
 // Creating a Chai plugin which only uses R69.
-chai.use(
-  alfa.Chai.createPlugin(
-    (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
-    [R69],
-    [],
-  ),
-);
+chai.use(alfa.Chai.createPlugin(Playwright.toPage, [R69], []));
 
 const { expect } = chai;
 

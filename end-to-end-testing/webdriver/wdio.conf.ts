@@ -1,5 +1,4 @@
 import * as alfa from "@siteimprove/alfa-chai";
-import { Future } from "@siteimprove/alfa-future";
 import rules from "@siteimprove/alfa-rules";
 import { WebElement } from "@siteimprove/alfa-webdriver";
 
@@ -33,8 +32,7 @@ export const config: WebdriverIO.Config = {
   before: function () {
     chai.use(
       alfa.Chai.createPlugin(
-        (value: WebElement.Type) =>
-          Future.from(WebElement.toPage(value, browser)),
+        (value: WebElement.Type) => WebElement.toPage(value, browser),
         rules.filter((rule) => !rule.uri.includes("r111")),
         [persist(() => "test/outcomes/page.spec.json")],
       ),

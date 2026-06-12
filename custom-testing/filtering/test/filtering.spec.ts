@@ -2,7 +2,6 @@
 /// <reference types="mocha" />
 
 import { Outcome } from "@siteimprove/alfa-act";
-import { Future } from "@siteimprove/alfa-future";
 import { Hashable } from "@siteimprove/alfa-hash";
 import { Iterable } from "@siteimprove/alfa-iterable";
 import { Playwright } from "@siteimprove/alfa-playwright";
@@ -25,7 +24,7 @@ const { and } = Refinement;
 // Creating a Chai plugin which uses all rules.
 chai.use(
   alfa.Chai.createPlugin(
-    (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
+    Playwright.toPage,
     rules.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/filtering.spec.json")],
   ),
