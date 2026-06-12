@@ -12,7 +12,6 @@
   "devDependencies": {
     "@siteimprove/alfa-act": "^0.117.0",
     "@siteimprove/alfa-chai": "^0.84.0",
-    "@siteimprove/alfa-future": "^0.117.0",
     "@siteimprove/alfa-hash": "^0.117.0",
     "@siteimprove/alfa-iterable": "^0.117.0",
     "@siteimprove/alfa-playwright": "^0.84.0",

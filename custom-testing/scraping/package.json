@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@siteimprove/alfa-act": "^0.117.0",
+    "@siteimprove/alfa-array": "^0.117.0",
     "@siteimprove/alfa-hash": "^0.117.0",
     "@siteimprove/alfa-rules": "^0.117.0",
     "@siteimprove/alfa-scraper": "^0.84.0"

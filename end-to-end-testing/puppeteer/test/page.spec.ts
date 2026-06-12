@@ -5,7 +5,6 @@ import * as path from "node:path";
 import * as url from "node:url";
 import * as puppeteer from "puppeteer";
 
-import { Future } from "@siteimprove/alfa-future";
 import { Puppeteer } from "@siteimprove/alfa-puppeteer";
 
 import * as alfa from "@siteimprove/alfa-chai";
@@ -15,7 +14,7 @@ import { persist } from "common/persist";
 
 chai.use(
   alfa.Chai.createPlugin(
-    (value: Puppeteer.Type) => Future.from(Puppeteer.toPage(value)),
+    (value: Puppeteer.Type) => Puppeteer.toPage(value),
     rules.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")],
   ),

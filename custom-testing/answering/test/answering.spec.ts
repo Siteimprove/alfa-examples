@@ -4,7 +4,6 @@
 import * as act from "@siteimprove/alfa-act";
 import { Color } from "@siteimprove/alfa-css";
 import { Element, Text } from "@siteimprove/alfa-dom";
-import { Future } from "@siteimprove/alfa-future";
 import { Hashable } from "@siteimprove/alfa-hash";
 import { None, Some } from "@siteimprove/alfa-option";
 import { Playwright } from "@siteimprove/alfa-playwright";
@@ -25,7 +24,7 @@ const { and } = Refinement;
 // Creating a Chai plugin which uses all rules.
 chai.use(
   alfa.Chai.createPlugin(
-    (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
+    (value: Playwright.Type) => Playwright.toPage(value),
     rules.filter((rule) => !rule.uri.includes("r111")),
     [persist(() => "test/outcomes/page.spec.json")],
   ),
@@ -99,16 +98,18 @@ function oracle<I, T extends Hashable, S>(
         // * calling `Future.now` is needed because the interview process is
         //   asynchronous (e.g. it can be done "live" in a command line),
         //   therefore the Oracle itself needs to be asynchronous.
-        return Future.now(Some.of([
-          // We know the allowed strings for colors are valid, so we can force
-          // unpack the Result.
-          Color.of(color).getUnsafe().resolve()
-        ]));
+        return Promise.resolve(
+          Some.of([
+            // We know the allowed strings for colors are valid, so we can force
+            // unpack the Result.
+            Color.of(color).getUnsafe().resolve(),
+          ]),
+        );
       }
     }
 
     // Leave any other question unanswered.
-    return Future.now(None);
+    return Promise.resolve(None);
   };
 }
 

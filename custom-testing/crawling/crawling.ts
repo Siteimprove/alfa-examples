@@ -1,8 +1,8 @@
 import * as fs from "node:fs";
-import * as url from "node:url";
 import * as path from "node:path";
 
 import { Audit, Outcome, Question } from "@siteimprove/alfa-act";
+import { Array } from "@siteimprove/alfa-array";
 import { Crawler } from "@siteimprove/alfa-crawler";
 import { Frontier } from "@siteimprove/alfa-frontier";
 import { Hashable } from "@siteimprove/alfa-hash";
@@ -23,9 +23,7 @@ const frontier = Frontier.of(scope, [scope, ...seed]);
 Crawler.with(async (crawler) => {
   for await (const result of crawler.crawl(frontier)) {
     for (const input of result) {
-      const outcomes = await Audit.of(input, rules)
-        .evaluate()
-        .map((outcomes) => [...outcomes]);
+      const outcomes = Array.from(await Audit.of(input, rules).evaluate());
 
       const earl = outcomes.map((outcome) => outcome.toEARL());
 

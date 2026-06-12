@@ -10,7 +10,6 @@
     "node": ">=22.0.0"
   },
   "devDependencies": {
-    "@siteimprove/alfa-future": "^0.117.0",
     "@siteimprove/alfa-rules": "^0.117.0",
     "@siteimprove/alfa-vitest": "^0.84.0",
     "@siteimprove/alfa-vue": "^0.84.0",

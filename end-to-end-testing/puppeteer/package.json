@@ -11,7 +11,6 @@
   },
   "devDependencies": {
     "@siteimprove/alfa-chai": "^0.84.0",
-    "@siteimprove/alfa-future": "^0.117.0",
     "@siteimprove/alfa-puppeteer": "^0.84.0",
     "@siteimprove/alfa-rules": "^0.117.0",
     "@types/chai": "^5.0.0",

@@ -1,7 +1,6 @@
 /// <reference types="node" />
 /// <reference types="mocha" />
 
-import { Future } from "@siteimprove/alfa-future";
 import { Playwright } from "@siteimprove/alfa-playwright";
 
 import * as chai from "chai";
@@ -19,7 +18,7 @@ import { persist } from "common/persist";
 
 chai.use(
   alfa.Chai.createPlugin(
-    (value: Playwright.Type) => Future.from(Playwright.toPage(value)),
+    (value: Playwright.Type) => Playwright.toPage(value),
     [R69],
     [persist(() => "test/outcomes/page.spec.json")],
   ),

@@ -18,7 +18,6 @@
     "@siteimprove/alfa-mapper": "^0.117.0"
   },
   "dependencies": {
-    "@siteimprove/alfa-formatter-earl": "^0.84.0",
-    "@siteimprove/alfa-future": "^0.117.0"
+    "@siteimprove/alfa-formatter-earl": "^0.84.0"
   }
 }
