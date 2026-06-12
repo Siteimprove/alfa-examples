@@ -24,9 +24,9 @@
   },
   "devDependencies": {
     "@jest/environment": "^30.4.1",
-    "@siteimprove/alfa-jest": "^0.83.0",
-    "@siteimprove/alfa-react": "^0.83.0",
-    "@siteimprove/alfa-rules": "^0.115.1",
+    "@siteimprove/alfa-jest": "^0.84.0",
+    "@siteimprove/alfa-react": "^0.84.0",
+    "@siteimprove/alfa-rules": "^0.117.0",
     "@types/jest": "^30.0.0",
     "@types/react": "^19.2.17",
     "common": "workspace:^",
