@@ -24,10 +24,10 @@
     "unit-testing/*"
   ],
   "devDependencies": {
-    "@types/node": "^25.9.2",
+    "@types/node": "^25.9.3",
     "knip": "^6.16.1",
     "playwright": "^1.60.0",
-    "prettier": "^3.0.0",
+    "prettier": "^3.8.4",
     "typescript": "^6.0.3"
   },
   "packageManager": "yarn@4.16.0"
