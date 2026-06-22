@@ -74,25 +74,28 @@ const { expect } = chai;
 
 const __dirname = import.meta.dirname;
 
+let browser: playwright.Browser;
+let page: playwright.Page;
+let document: playwright.JSHandle;
+
+async function setup(): Promise<void> {
+  browser = await playwright.chromium.launch();
+  page = await browser.newPage();
+
+  await page.goto(
+    url.pathToFileURL(path.join(__dirname, "fixtures", "page.html")).href,
+  );
+
+  document = await page.evaluateHandle(() => window.document);
+}
+
+async function teardown(): Promise<void> {
+  await browser.close();
+}
+
 describe("page.html", () => {
-  let browser: playwright.Browser;
-  let page: playwright.Page;
-  let document: playwright.JSHandle;
-
-  before(async () => {
-    browser = await playwright.chromium.launch();
-    page = await browser.newPage();
-
-    await page.goto(
-      url.pathToFileURL(path.join(__dirname, "fixtures", "page.html")).href,
-    );
-
-    document = await page.evaluateHandle(() => window.document);
-  });
-
-  after(async () => {
-    await browser.close();
-  });
+  before(setup);
+  after(teardown);
 
   // due to the custom new rule, the page fails the check.
   it("should not be accessible", async () => {
