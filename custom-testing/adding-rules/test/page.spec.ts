@@ -1,6 +1,3 @@
-/// <reference types="node" />
-/// <reference types="mocha" />
-
 import { Diagnostic, Rule } from "@siteimprove/alfa-act";
 import { Element, Node } from "@siteimprove/alfa-dom";
 import { Refinement } from "@siteimprove/alfa-refinement";
@@ -9,12 +6,12 @@ import { Page } from "@siteimprove/alfa-web";
 
 import { Playwright } from "@siteimprove/alfa-playwright";
 
-import * as chai from "chai";
+import { afterEach, beforeEach, describe, expect, it } from "vitest";
 import * as path from "node:path";
 import * as url from "node:url";
 import * as playwright from "playwright";
 
-import * as alfa from "@siteimprove/alfa-chai";
+import * as alfa from "@siteimprove/alfa-vitest";
 
 import rules from "@siteimprove/alfa-rules";
 
@@ -63,14 +60,10 @@ const myRule = Rule.Atomic.of<Page, Element>({
 // adding myRule to the default ruleset
 const allRules = rules.append(myRule);
 
-// Creating a Chai plugin which runs all rules (default and custom).
-chai.use(
-  alfa.Chai.createPlugin(Playwright.toPage, allRules, [
-    persist(() => "test/outcomes/page.spec.json"),
-  ]),
-);
-
-const { expect } = chai;
+// Creating a Vitest plugin which runs all rules (default and custom).
+alfa.Vitest.createPlugin(Playwright.toPage, allRules, [
+  persist(() => "test/outcomes/page.spec.json"),
+]);
 
 const __dirname = import.meta.dirname;
 
@@ -94,11 +87,11 @@ async function teardown(): Promise<void> {
 }
 
 describe("page.html", () => {
-  before(setup);
-  after(teardown);
+  beforeEach(setup);
+  afterEach(teardown);
 
   // due to the custom new rule, the page fails the check.
   it("should not be accessible", async () => {
-    await expect(document).not.to.be.accessible();
+    await expect(document).not.toBeAccessible();
   });
 });
