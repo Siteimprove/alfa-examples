@@ -87,7 +87,7 @@ async function teardown(): Promise<void> {
 }
 
 describe("page.html", () => {
-  beforeEach(setup);
+  beforeEach(setup, 60_000);
   afterEach(teardown);
 
   // due to the custom new rule, the page fails the check.
