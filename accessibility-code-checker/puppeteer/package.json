@@ -9,12 +9,12 @@
     "test": "vitest run"
   },
   "devDependencies": {
-    "@siteimprove/alfa-test": "^0.117.0",
-    "@siteimprove/alfa-test-utils": "^0.84.0",
+    "@siteimprove/alfa-test": "^0.118.0",
+    "@siteimprove/alfa-test-utils": "^0.84.1",
     "vitest": "^4.1.10"
   },
   "dependencies": {
-    "@siteimprove/alfa-puppeteer": "^0.84.0",
+    "@siteimprove/alfa-puppeteer": "^0.84.1",
     "puppeteer": "^25.3.0"
   }
 }
