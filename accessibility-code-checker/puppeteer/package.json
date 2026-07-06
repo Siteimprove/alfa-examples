@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "@siteimprove/alfa-puppeteer": "^0.84.0",
-    "puppeteer": "^25.2.1"
+    "puppeteer": "^25.3.0"
   }
 }
