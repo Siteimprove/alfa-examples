@@ -2,7 +2,9 @@ name: Dependabot auto-approve and auto-merge
 # Failures of this workflow will be reported to the latest editor; currently Jym77.
 on:
   # We need to run on `pull_request_target`, not `pull_request`, i.e. as the `main` branch, otherwise we do not have access to the builduser tokens.
-  # This also hardens against tempering the workflow file in a branch.
+  # This creates risks as the permissions are higher.
+  # See https://securitylab.github.com/resources/github-actions-preventing-pwn-requests/
+  # Since the workflow does not actually read the content of the PR, and is gated by only running on Dependabot PRs, this is OK.
   pull_request_target:
     types:
       - opened
@@ -24,6 +26,8 @@ jobs:
         uses: dependabot/fetch-metadata@v3
 
       - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
 
       - name: Approve a PR if not already approved
         run: |
