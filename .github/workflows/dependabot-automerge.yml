@@ -18,7 +18,7 @@ jobs:
   dependabot:
     runs-on: ubuntu-latest
     # Checking the author prevents the workflow running and failing on non-Dependabot PRs.
-    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'siteimprove/alfa-companion'
+    if: github.event.pull_request.user.login == 'dependabot[bot]' && github.repository == 'siteimprove/alfa-examples'
     steps:
       - name: Dependabot metadata
         # Fetch dependabot metadata. This fails if the PR is not from dependabot, acting as a safeguard.
