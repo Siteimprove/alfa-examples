@@ -19,7 +19,7 @@
     "@siteimprove/alfa-vitest": "^0.84.1",
     "@siteimprove/alfa-web": "^0.118.0",
     "common": "workspace:^",
-    "playwright": "^1.61.1",
+    "playwright": "^1.62.1",
     "vitest": "^4.1.10"
   }
 }
