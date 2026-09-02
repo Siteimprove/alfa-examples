@@ -11,7 +11,7 @@
   "devDependencies": {
     "@siteimprove/alfa-test": "^0.118.0",
     "@siteimprove/alfa-test-utils": "^0.84.1",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   },
   "dependencies": {
     "@siteimprove/alfa-puppeteer": "^0.84.1",
