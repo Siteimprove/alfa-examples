@@ -13,7 +13,7 @@ export const TopSection: React.FC = () => {
           <span className="top-section-dimmer-light"></span>
           <Layout>
             <div className="top-section-top-content">
-              <h3>Birmingham Services</h3>
+              <h1>Birmingham Services</h1>
               <Button
                 text="Get started"
                 onClick={() => console.log("Button clicked")}
