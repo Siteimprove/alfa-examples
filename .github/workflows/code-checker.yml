@@ -17,6 +17,7 @@ on:
   push:
     branches:
       - main
+      - product-walk-test
   workflow_dispatch:
   schedule:
     # Run weekly, on Monday morning at 05:00 UTC.
