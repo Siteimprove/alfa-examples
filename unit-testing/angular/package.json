@@ -22,6 +22,6 @@
     "@siteimprove/alfa-vitest": "^0.84.1",
     "common": "workspace:^",
     "ng-packagr": "^22.0.2",
-    "vitest": "^4.1.10"
+    "vitest": "^4.1.11"
   }
 }
