@@ -20,9 +20,9 @@
     "@siteimprove/alfa-wcag": "^0.118.0",
     "@types/chai": "^5.0.0",
     "@types/mocha": "^10.0.0",
-    "chai": "^6.0.0",
+    "chai": "^6.3.0",
     "common": "workspace:^",
     "mocha": "^11.7.6",
-    "playwright": "^1.61.1"
+    "playwright": "^1.64.0"
   }
 }
