@@ -369,13 +369,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@angular/core@npm:^22.0.5, @angular/core@npm:^22.0.8":
-  version: 22.0.8
-  resolution: "@angular/core@npm:22.0.8"
+"@angular/core@npm:^22.0.5, @angular/core@npm:^22.1.0":
+  version: 22.1.6
+  resolution: "@angular/core@npm:22.1.6"
   dependencies:
     tslib: "npm:^2.3.0"
   peerDependencies:
-    "@angular/compiler": 22.0.8
+    "@angular/compiler": 22.1.6
     rxjs: ^6.5.3 || ^7.4.0
     zone.js: ~0.15.0 || ~0.16.0
   peerDependenciesMeta:
@@ -383,7 +383,7 @@ __metadata:
       optional: true
     zone.js:
       optional: true
-  checksum: 10/4423f5ac652facf695a067ed8b4dc81a50bdc9ac1a4c8f879c36ddf24d768ae77cbb5766837f03f35823e22f0beafc31f2e9e98d91ed7148048779c7ad4d3554
+  checksum: 10/e8699fee2431d67bf32a86807d117fee61530733e1e3986f86716b51fbfec9a43426dcb665cfbb76a1e278e0fbb89aa4e00da2d28ea48ae7e52c044a5b0a0e49
   languageName: node
   linkType: hard
 
@@ -15218,7 +15218,7 @@ __metadata:
     "@angular/common": "npm:^22.0.8"
     "@angular/compiler": "npm:^22.0.8"
     "@angular/compiler-cli": "npm:^22.0.7"
-    "@angular/core": "npm:^22.0.8"
+    "@angular/core": "npm:^22.1.0"
     "@angular/platform-browser": "npm:^22.0.8"
     "@siteimprove/alfa-angular": "npm:^0.84.1"
     "@siteimprove/alfa-rules": "npm:^0.118.0"
